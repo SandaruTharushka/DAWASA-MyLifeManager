@@ -4,7 +4,12 @@ import 'package:go_router/go_router.dart';
 import '../../app/routes.dart';
 import '../../core/l10n/l10n.dart';
 import '../accounts/presentation/accounts_tab.dart';
+import '../bills/presentation/bills_tab.dart';
+import '../budgets/presentation/budgets_tab.dart';
 import '../transactions/presentation/transactions_tab.dart';
+
+/// Savings and loans tabs (schema v3).
+List<HubTab> extraMoneyTabs(BuildContext context) => const [];
 
 /// A secondary tab inside a hub screen.
 class HubTab {
@@ -131,6 +136,21 @@ class MoneyScreen extends StatelessWidget {
           fabLabel: l10n.accountAdd,
           onFab: (c) => c.push(Routes.newAccount),
         ),
+        HubTab(
+          key: 'budgets',
+          label: l10n.tabBudgets,
+          body: const BudgetsTab(),
+          fabLabel: l10n.budgetAdd,
+          onFab: (c) => c.push(Routes.newBudget),
+        ),
+        HubTab(
+          key: 'bills',
+          label: l10n.tabBills,
+          body: const BillsTab(),
+          fabLabel: l10n.billAdd,
+          onFab: (c) => c.push(Routes.newBill),
+        ),
+        ...extraMoneyTabs(context),
       ],
     );
   }

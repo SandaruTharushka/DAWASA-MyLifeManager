@@ -122,6 +122,8 @@ void main() {
           )
           .first,
     );
+    await tester.ensureVisible(save);
+    await tester.pump();
     await tester.tap(save);
     await tester.tap(save, warnIfMissed: false);
     await settle(tester);

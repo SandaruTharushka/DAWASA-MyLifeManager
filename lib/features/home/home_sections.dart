@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../app/routes.dart';
 import '../../core/l10n/l10n.dart';
 import '../../core/money/money.dart';
 import '../../core/providers.dart';
@@ -8,8 +10,12 @@ import '../../ui/theme/app_colors.dart';
 import '../../ui/theme/app_theme.dart';
 import '../../ui/widgets/common.dart';
 import '../../ui/widgets/money_widgets.dart';
+import '../bills/presentation/bill_providers.dart';
+import '../bills/presentation/bills_tab.dart';
 import '../budgets/domain/daily_allowance.dart';
 import '../budgets/presentation/budget_providers.dart';
+import '../tasks/presentation/task_providers.dart';
+import '../tasks/presentation/tasks_tab.dart';
 
 /// "Left to spend today" card.
 class DailyBudgetCard extends ConsumerWidget {
@@ -165,10 +171,96 @@ Future<void> editDailyBudget(BuildContext context, WidgetRef ref) async {
       );
 }
 
-/// Sections contributed by planner and savings modules.
+/// Sections contributed by planner, bills and savings modules.
 class HomeExtraSections extends StatelessWidget {
   const HomeExtraSections({super.key});
 
   @override
-  Widget build(BuildContext context) => const SizedBox.shrink();
+  Widget build(BuildContext context) => const Column(
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    children: [
+      _PendingTasksSection(),
+      _UpcomingPaymentsSection(),
+      ...homeMoneySections,
+    ],
+  );
+}
+
+/// Savings goals summary (schema v3).
+const List<Widget> homeMoneySections = [];
+
+class _PendingTasksSection extends ConsumerWidget {
+  const _PendingTasksSection();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = context.l10n;
+    final tasks = ref.watch(todayTasksProvider).value ?? const [];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        SectionHeader(
+          title:
+              '${l10n.homePendingTasks} · ${l10n.taskCountToday(tasks.length)}',
+          actionLabel: l10n.homeSeeTasks,
+          onAction: () => context.go(Routes.plannerTab('tasks')),
+        ),
+        AppCard(
+          padding: const EdgeInsets.symmetric(vertical: Gap.xs),
+          child: tasks.isEmpty
+              ? ListTile(
+                  leading: Icon(
+                    Icons.wb_sunny_outlined,
+                    color: context.colors.primary,
+                  ),
+                  title: Text(l10n.homeNoPendingTasks),
+                  trailing: TextButton(
+                    onPressed: () => context.push(Routes.newTask),
+                    child: Text(l10n.actionAdd),
+                  ),
+                )
+              : Column(
+                  children: [
+                    for (final t in tasks.take(4))
+                      TaskTile(item: t, compact: true),
+                  ],
+                ),
+        ),
+      ],
+    );
+  }
+}
+
+class _UpcomingPaymentsSection extends ConsumerWidget {
+  const _UpcomingPaymentsSection();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = context.l10n;
+    final bills = ref.watch(upcomingBillsProvider).value ?? const [];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        SectionHeader(
+          title: l10n.homeUpcomingPayments,
+          actionLabel: l10n.homeSeeBills,
+          onAction: () => context.go(Routes.moneyTab('bills')),
+        ),
+        AppCard(
+          padding: const EdgeInsets.symmetric(vertical: Gap.xs),
+          child: bills.isEmpty
+              ? ListTile(
+                  leading: Icon(
+                    Icons.event_available_outlined,
+                    color: context.colors.primary,
+                  ),
+                  title: Text(l10n.homeNoUpcomingPayments),
+                )
+              : Column(
+                  children: [for (final b in bills.take(4)) BillTile(view: b)],
+                ),
+        ),
+      ],
+    );
+  }
 }

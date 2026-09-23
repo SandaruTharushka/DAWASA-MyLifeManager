@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/notifications/notification_providers.dart';
 import '../core/providers.dart';
+import '../features/reminders/reminder_sync_service.dart';
 import '../features/transactions/presentation/transaction_providers.dart';
 import 'router.dart';
 
@@ -58,4 +59,12 @@ final startupTasksProvider = Provider<StartupTasks>(StartupTasks.new);
 
 /// Additional launch/resume work of feature modules (reminder sync, update
 /// check, ...). Hooks must never throw for offline conditions.
-final startupHooksProvider = Provider<List<StartupHook>>((ref) => const []);
+final startupHooksProvider = Provider<List<StartupHook>>(
+  (ref) => [_syncReminders],
+);
+
+Future<void> _syncReminders(Ref ref, {required bool launch}) async {
+  final service = ref.read(reminderSyncServiceProvider);
+  if (launch) service.startWatching();
+  await service.sync();
+}

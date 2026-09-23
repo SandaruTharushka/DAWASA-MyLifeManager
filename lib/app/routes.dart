@@ -36,8 +36,20 @@ abstract final class Routes {
   static String account(String id) => '/accounts/$id';
   static String editAccount(String id) => '/accounts/$id/edit';
 
+  // Budgets
+  static const newBudget = '/budgets/new';
+  static String editBudget(String id) => '/budgets/$id/edit';
+
+  // Bills
+  static const newBill = '/bills/new';
+  static String bill(String id) => '/bills/$id';
+  static String editBill(String id) => '/bills/$id/edit';
+
   // Planner
   static const newTask = '/tasks/new';
+  static String newTaskOn(String isoDate) => '/tasks/new?date=$isoDate';
+  static String editTask(String id) => '/tasks/$id/edit';
+  static String shoppingList(String id) => '/shopping/$id';
 
   // Settings sub pages
   static const privacy = '/settings/privacy';

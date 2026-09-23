@@ -2929,6 +2929,1056 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The currency cannot be changed after transactions are recorded.'**
   String get accountCurrencyLocked;
+
+  /// No description provided for @plannerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Planner'**
+  String get plannerTitle;
+
+  /// No description provided for @tabTasks.
+  ///
+  /// In en, this message translates to:
+  /// **'Tasks'**
+  String get tabTasks;
+
+  /// No description provided for @tabShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping'**
+  String get tabShopping;
+
+  /// No description provided for @tabHabits.
+  ///
+  /// In en, this message translates to:
+  /// **'Habits'**
+  String get tabHabits;
+
+  /// No description provided for @tabEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Dates'**
+  String get tabEvents;
+
+  /// No description provided for @budgetsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Budgets'**
+  String get budgetsTitle;
+
+  /// No description provided for @budgetAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'New budget'**
+  String get budgetAdd;
+
+  /// No description provided for @budgetEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit budget'**
+  String get budgetEdit;
+
+  /// No description provided for @budgetName.
+  ///
+  /// In en, this message translates to:
+  /// **'Budget name'**
+  String get budgetName;
+
+  /// No description provided for @budgetAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Budget amount'**
+  String get budgetAmount;
+
+  /// No description provided for @budgetPeriod.
+  ///
+  /// In en, this message translates to:
+  /// **'Period'**
+  String get budgetPeriod;
+
+  /// No description provided for @budgetPeriodDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily'**
+  String get budgetPeriodDaily;
+
+  /// No description provided for @budgetPeriodWeekly.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly'**
+  String get budgetPeriodWeekly;
+
+  /// No description provided for @budgetPeriodMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly'**
+  String get budgetPeriodMonthly;
+
+  /// No description provided for @budgetPeriodCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom dates'**
+  String get budgetPeriodCustom;
+
+  /// No description provided for @budgetScope.
+  ///
+  /// In en, this message translates to:
+  /// **'Applies to'**
+  String get budgetScope;
+
+  /// No description provided for @budgetScopeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All spending'**
+  String get budgetScopeAll;
+
+  /// No description provided for @budgetScopeCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected categories'**
+  String get budgetScopeCategories;
+
+  /// No description provided for @budgetWarnAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Warn me at {percent}% used'**
+  String budgetWarnAt(int percent);
+
+  /// No description provided for @budgetNotify.
+  ///
+  /// In en, this message translates to:
+  /// **'Budget notifications'**
+  String get budgetNotify;
+
+  /// No description provided for @budgetSpent.
+  ///
+  /// In en, this message translates to:
+  /// **'Spent'**
+  String get budgetSpent;
+
+  /// No description provided for @budgetLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'Left'**
+  String get budgetLeft;
+
+  /// No description provided for @budgetOverBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Over by {amount}'**
+  String budgetOverBy(String amount);
+
+  /// No description provided for @budgetDaysLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Last day} =1{1 day left} other{{count} days left}}'**
+  String budgetDaysLeft(int count);
+
+  /// No description provided for @budgetPerDay.
+  ///
+  /// In en, this message translates to:
+  /// **'About {amount} per day'**
+  String budgetPerDay(String amount);
+
+  /// No description provided for @budgetEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No budgets yet. A budget helps you keep spending under control.'**
+  String get budgetEmpty;
+
+  /// No description provided for @budgetNotCounted.
+  ///
+  /// In en, this message translates to:
+  /// **'Transfers, savings movements and loan principal are not counted as spending.'**
+  String get budgetNotCounted;
+
+  /// No description provided for @budgetEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Ended'**
+  String get budgetEnded;
+
+  /// No description provided for @budgetNotStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Starts {date}'**
+  String budgetNotStarted(String date);
+
+  /// No description provided for @budgetDeleteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this budget?'**
+  String get budgetDeleteTitle;
+
+  /// No description provided for @budgetDeleteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your transactions are not affected.'**
+  String get budgetDeleteBody;
+
+  /// No description provided for @budgetChooseCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose at least one category'**
+  String get budgetChooseCategories;
+
+  /// No description provided for @budgetPerformance.
+  ///
+  /// In en, this message translates to:
+  /// **'Budget performance'**
+  String get budgetPerformance;
+
+  /// No description provided for @tasksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tasks'**
+  String get tasksTitle;
+
+  /// No description provided for @taskAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'New task'**
+  String get taskAdd;
+
+  /// No description provided for @taskEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit task'**
+  String get taskEdit;
+
+  /// No description provided for @taskTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get taskTitle;
+
+  /// No description provided for @taskTitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What do you need to do?'**
+  String get taskTitleHint;
+
+  /// No description provided for @taskDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get taskDescription;
+
+  /// No description provided for @taskDueDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Due date'**
+  String get taskDueDate;
+
+  /// No description provided for @taskDueTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get taskDueTime;
+
+  /// No description provided for @taskPriority.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority'**
+  String get taskPriority;
+
+  /// No description provided for @taskPriorityLow.
+  ///
+  /// In en, this message translates to:
+  /// **'Low'**
+  String get taskPriorityLow;
+
+  /// No description provided for @taskPriorityMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium'**
+  String get taskPriorityMedium;
+
+  /// No description provided for @taskPriorityHigh.
+  ///
+  /// In en, this message translates to:
+  /// **'High'**
+  String get taskPriorityHigh;
+
+  /// No description provided for @taskReminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder'**
+  String get taskReminder;
+
+  /// No description provided for @taskReminderNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No reminder'**
+  String get taskReminderNone;
+
+  /// No description provided for @taskReminderAtTime.
+  ///
+  /// In en, this message translates to:
+  /// **'At the due time'**
+  String get taskReminderAtTime;
+
+  /// No description provided for @taskReminderMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 minute before} other{{count} minutes before}}'**
+  String taskReminderMinutes(int count);
+
+  /// No description provided for @taskReminderHours.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 hour before} other{{count} hours before}}'**
+  String taskReminderHours(int count);
+
+  /// No description provided for @taskReminderDays.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day before} other{{count} days before}}'**
+  String taskReminderDays(int count);
+
+  /// No description provided for @taskReminderNeedsDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Set a due date to add a reminder'**
+  String get taskReminderNeedsDate;
+
+  /// No description provided for @taskViewToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get taskViewToday;
+
+  /// No description provided for @taskViewTomorrow.
+  ///
+  /// In en, this message translates to:
+  /// **'Tomorrow'**
+  String get taskViewTomorrow;
+
+  /// No description provided for @taskViewUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get taskViewUpcoming;
+
+  /// No description provided for @taskViewCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get taskViewCompleted;
+
+  /// No description provided for @taskViewAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get taskViewAll;
+
+  /// No description provided for @taskOverdue.
+  ///
+  /// In en, this message translates to:
+  /// **'Overdue'**
+  String get taskOverdue;
+
+  /// No description provided for @taskNoDate.
+  ///
+  /// In en, this message translates to:
+  /// **'No due date'**
+  String get taskNoDate;
+
+  /// No description provided for @taskEmptyToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing planned for today. Enjoy your day!'**
+  String get taskEmptyToday;
+
+  /// No description provided for @taskEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No tasks here'**
+  String get taskEmpty;
+
+  /// No description provided for @taskCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Task completed'**
+  String get taskCompleted;
+
+  /// No description provided for @taskNextCreated.
+  ///
+  /// In en, this message translates to:
+  /// **'Next repeat scheduled for {date}'**
+  String taskNextCreated(String date);
+
+  /// No description provided for @taskMarkDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as done'**
+  String get taskMarkDone;
+
+  /// No description provided for @taskMarkNotDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as not done'**
+  String get taskMarkNotDone;
+
+  /// No description provided for @taskSortDue.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by due date'**
+  String get taskSortDue;
+
+  /// No description provided for @taskSortPriority.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by priority'**
+  String get taskSortPriority;
+
+  /// No description provided for @taskDeleteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this task?'**
+  String get taskDeleteTitle;
+
+  /// No description provided for @taskClearCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete completed tasks'**
+  String get taskClearCompleted;
+
+  /// No description provided for @taskCountToday.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No tasks} =1{1 task} other{{count} tasks}}'**
+  String taskCountToday(int count);
+
+  /// No description provided for @billsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bills & payments'**
+  String get billsTitle;
+
+  /// No description provided for @billAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'New bill'**
+  String get billAdd;
+
+  /// No description provided for @billEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit bill'**
+  String get billEdit;
+
+  /// No description provided for @billName.
+  ///
+  /// In en, this message translates to:
+  /// **'Bill name'**
+  String get billName;
+
+  /// No description provided for @billNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. CEB electricity'**
+  String get billNameHint;
+
+  /// No description provided for @billCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get billCategory;
+
+  /// No description provided for @billCatElectricity.
+  ///
+  /// In en, this message translates to:
+  /// **'Electricity'**
+  String get billCatElectricity;
+
+  /// No description provided for @billCatWater.
+  ///
+  /// In en, this message translates to:
+  /// **'Water'**
+  String get billCatWater;
+
+  /// No description provided for @billCatInternet.
+  ///
+  /// In en, this message translates to:
+  /// **'Internet'**
+  String get billCatInternet;
+
+  /// No description provided for @billCatMobile.
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile'**
+  String get billCatMobile;
+
+  /// No description provided for @billCatRent.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent'**
+  String get billCatRent;
+
+  /// No description provided for @billCatInsurance.
+  ///
+  /// In en, this message translates to:
+  /// **'Insurance'**
+  String get billCatInsurance;
+
+  /// No description provided for @billCatLoan.
+  ///
+  /// In en, this message translates to:
+  /// **'Loan instalment'**
+  String get billCatLoan;
+
+  /// No description provided for @billCatOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get billCatOther;
+
+  /// No description provided for @billAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Usual amount'**
+  String get billAmount;
+
+  /// No description provided for @billDueDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Next due date'**
+  String get billDueDate;
+
+  /// No description provided for @billRepeat.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeats'**
+  String get billRepeat;
+
+  /// No description provided for @billOneTime.
+  ///
+  /// In en, this message translates to:
+  /// **'One-time payment'**
+  String get billOneTime;
+
+  /// No description provided for @billRemind.
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me'**
+  String get billRemind;
+
+  /// No description provided for @billRemindDaysBefore.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{On the due date} =1{1 day before} other{{count} days before}}'**
+  String billRemindDaysBefore(int count);
+
+  /// No description provided for @billPaymentAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Usually paid from'**
+  String get billPaymentAccount;
+
+  /// No description provided for @billPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid'**
+  String get billPaid;
+
+  /// No description provided for @billUnpaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpaid'**
+  String get billUnpaid;
+
+  /// No description provided for @billDueToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Due today'**
+  String get billDueToday;
+
+  /// No description provided for @billDueIn.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Due tomorrow} other{Due in {count} days}}'**
+  String billDueIn(int count);
+
+  /// No description provided for @billOverdueBy.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day overdue} other{{count} days overdue}}'**
+  String billOverdueBy(int count);
+
+  /// No description provided for @billMarkPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as paid'**
+  String get billMarkPaid;
+
+  /// No description provided for @billPayTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Record payment'**
+  String get billPayTitle;
+
+  /// No description provided for @billPaidAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount paid'**
+  String get billPaidAmount;
+
+  /// No description provided for @billPaidOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid on'**
+  String get billPaidOn;
+
+  /// No description provided for @billRecordExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Record as an expense'**
+  String get billRecordExpense;
+
+  /// No description provided for @billRecordExpenseHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Adds an expense in the \"Bills\" category and reduces the account balance.'**
+  String get billRecordExpenseHelp;
+
+  /// No description provided for @billPossibleDuplicate.
+  ///
+  /// In en, this message translates to:
+  /// **'You already recorded a similar expense'**
+  String get billPossibleDuplicate;
+
+  /// No description provided for @billPossibleDuplicateBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Link that expense to this bill instead of creating a duplicate?'**
+  String get billPossibleDuplicateBody;
+
+  /// No description provided for @billLinkExisting.
+  ///
+  /// In en, this message translates to:
+  /// **'Link existing expense'**
+  String get billLinkExisting;
+
+  /// No description provided for @billCreateNew.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a new expense'**
+  String get billCreateNew;
+
+  /// No description provided for @billDontRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'Just mark as paid'**
+  String get billDontRecord;
+
+  /// No description provided for @billPaymentSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment recorded'**
+  String get billPaymentSaved;
+
+  /// No description provided for @billAlreadyPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'This due date is already marked as paid'**
+  String get billAlreadyPaid;
+
+  /// No description provided for @billHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment history'**
+  String get billHistory;
+
+  /// No description provided for @billNoHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'No payments yet'**
+  String get billNoHistory;
+
+  /// No description provided for @billEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No bills yet. Add electricity, water, phone and other regular payments to get reminders.'**
+  String get billEmpty;
+
+  /// No description provided for @billUndoPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo payment'**
+  String get billUndoPayment;
+
+  /// No description provided for @billUndoPaymentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The payment record is removed and the bill becomes unpaid again. A linked expense is kept unless you delete it.'**
+  String get billUndoPaymentBody;
+
+  /// No description provided for @billExpenseLinked.
+  ///
+  /// In en, this message translates to:
+  /// **'Expense recorded'**
+  String get billExpenseLinked;
+
+  /// No description provided for @billUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get billUpcoming;
+
+  /// No description provided for @billInactive.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished'**
+  String get billInactive;
+
+  /// No description provided for @billStop.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop this bill'**
+  String get billStop;
+
+  /// No description provided for @billResume.
+  ///
+  /// In en, this message translates to:
+  /// **'Resume this bill'**
+  String get billResume;
+
+  /// No description provided for @shoppingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping lists'**
+  String get shoppingTitle;
+
+  /// No description provided for @shoppingNewList.
+  ///
+  /// In en, this message translates to:
+  /// **'New list'**
+  String get shoppingNewList;
+
+  /// No description provided for @shoppingListName.
+  ///
+  /// In en, this message translates to:
+  /// **'List name'**
+  String get shoppingListName;
+
+  /// No description provided for @shoppingListNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Weekly groceries'**
+  String get shoppingListNameHint;
+
+  /// No description provided for @shoppingAddItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Add item'**
+  String get shoppingAddItem;
+
+  /// No description provided for @shoppingEditItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit item'**
+  String get shoppingEditItem;
+
+  /// No description provided for @shoppingItemName.
+  ///
+  /// In en, this message translates to:
+  /// **'Item'**
+  String get shoppingItemName;
+
+  /// No description provided for @shoppingQuantity.
+  ///
+  /// In en, this message translates to:
+  /// **'Quantity'**
+  String get shoppingQuantity;
+
+  /// No description provided for @shoppingUnit.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit'**
+  String get shoppingUnit;
+
+  /// No description provided for @shoppingEstimated.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated price'**
+  String get shoppingEstimated;
+
+  /// No description provided for @shoppingActual.
+  ///
+  /// In en, this message translates to:
+  /// **'Actual price'**
+  String get shoppingActual;
+
+  /// No description provided for @shoppingPriceHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Total for this line, not per unit'**
+  String get shoppingPriceHelp;
+
+  /// No description provided for @shoppingEstimatedTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated total'**
+  String get shoppingEstimatedTotal;
+
+  /// No description provided for @shoppingActualTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Actual total'**
+  String get shoppingActualTotal;
+
+  /// No description provided for @shoppingEstimateNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimates are only a guide. They never change your balances.'**
+  String get shoppingEstimateNote;
+
+  /// No description provided for @shoppingPurchased.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchased'**
+  String get shoppingPurchased;
+
+  /// No description provided for @shoppingToBuy.
+  ///
+  /// In en, this message translates to:
+  /// **'To buy'**
+  String get shoppingToBuy;
+
+  /// No description provided for @shoppingEmptyLists.
+  ///
+  /// In en, this message translates to:
+  /// **'No shopping lists. Create one before you go to the shop.'**
+  String get shoppingEmptyLists;
+
+  /// No description provided for @shoppingEmptyItems.
+  ///
+  /// In en, this message translates to:
+  /// **'This list is empty'**
+  String get shoppingEmptyItems;
+
+  /// No description provided for @shoppingRecordExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Record purchases as expense'**
+  String get shoppingRecordExpense;
+
+  /// No description provided for @shoppingRecordExpenseBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 purchased item} other{{count} purchased items}} not recorded yet · {amount}'**
+  String shoppingRecordExpenseBody(int count, String amount);
+
+  /// No description provided for @shoppingMissingPrices.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the actual price of every purchased item first'**
+  String get shoppingMissingPrices;
+
+  /// No description provided for @shoppingRecorded.
+  ///
+  /// In en, this message translates to:
+  /// **'Expense recorded. These items will not be counted again.'**
+  String get shoppingRecorded;
+
+  /// No description provided for @shoppingAllRecorded.
+  ///
+  /// In en, this message translates to:
+  /// **'All purchases are recorded'**
+  String get shoppingAllRecorded;
+
+  /// No description provided for @shoppingCompleteList.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark list as done'**
+  String get shoppingCompleteList;
+
+  /// No description provided for @shoppingReopenList.
+  ///
+  /// In en, this message translates to:
+  /// **'Reopen list'**
+  String get shoppingReopenList;
+
+  /// No description provided for @shoppingListDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get shoppingListDone;
+
+  /// No description provided for @shoppingDeleteList.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete list'**
+  String get shoppingDeleteList;
+
+  /// No description provided for @shoppingDeleteListBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Expenses already recorded from this list are kept.'**
+  String get shoppingDeleteListBody;
+
+  /// No description provided for @shoppingItemRecorded.
+  ///
+  /// In en, this message translates to:
+  /// **'Recorded'**
+  String get shoppingItemRecorded;
+
+  /// No description provided for @shoppingProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {total} bought'**
+  String shoppingProgress(int done, int total);
+
+  /// No description provided for @unitPcs.
+  ///
+  /// In en, this message translates to:
+  /// **'pcs'**
+  String get unitPcs;
+
+  /// No description provided for @unitKg.
+  ///
+  /// In en, this message translates to:
+  /// **'kg'**
+  String get unitKg;
+
+  /// No description provided for @unitG.
+  ///
+  /// In en, this message translates to:
+  /// **'g'**
+  String get unitG;
+
+  /// No description provided for @unitL.
+  ///
+  /// In en, this message translates to:
+  /// **'L'**
+  String get unitL;
+
+  /// No description provided for @unitMl.
+  ///
+  /// In en, this message translates to:
+  /// **'ml'**
+  String get unitMl;
+
+  /// No description provided for @unitPack.
+  ///
+  /// In en, this message translates to:
+  /// **'pack'**
+  String get unitPack;
+
+  /// No description provided for @unitBottle.
+  ///
+  /// In en, this message translates to:
+  /// **'bottle'**
+  String get unitBottle;
+
+  /// No description provided for @unitDozen.
+  ///
+  /// In en, this message translates to:
+  /// **'dozen'**
+  String get unitDozen;
+
+  /// No description provided for @homeSeeTasks.
+  ///
+  /// In en, this message translates to:
+  /// **'See tasks'**
+  String get homeSeeTasks;
+
+  /// No description provided for @homeSeeBills.
+  ///
+  /// In en, this message translates to:
+  /// **'See bills'**
+  String get homeSeeBills;
+
+  /// No description provided for @notifTaskTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Task: {title}'**
+  String notifTaskTitle(String title);
+
+  /// No description provided for @notifTaskBodyDue.
+  ///
+  /// In en, this message translates to:
+  /// **'Due {when}'**
+  String notifTaskBodyDue(String when);
+
+  /// No description provided for @notifBillTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bill due: {name}'**
+  String notifBillTitle(String name);
+
+  /// No description provided for @notifBillBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} due {when}'**
+  String notifBillBody(String amount, String when);
+
+  /// No description provided for @notifBudgetWarnTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Budget almost used: {name}'**
+  String notifBudgetWarnTitle(String name);
+
+  /// No description provided for @notifBudgetWarnBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You have used {percent}% of {amount}'**
+  String notifBudgetWarnBody(int percent, String amount);
+
+  /// No description provided for @notifBudgetOverTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Budget exceeded: {name}'**
+  String notifBudgetOverTitle(String name);
+
+  /// No description provided for @notifBudgetOverBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Spent {spent} of {amount}'**
+  String notifBudgetOverBody(String spent, String amount);
+
+  /// No description provided for @notifDailyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan your day with DAWASA'**
+  String get notifDailyTitle;
+
+  /// No description provided for @notifDailyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Review today\'s tasks and record your spending.'**
+  String get notifDailyBody;
+
+  /// No description provided for @notifWhenToday.
+  ///
+  /// In en, this message translates to:
+  /// **'today'**
+  String get notifWhenToday;
+
+  /// No description provided for @notifWhenTomorrow.
+  ///
+  /// In en, this message translates to:
+  /// **'tomorrow'**
+  String get notifWhenTomorrow;
+
+  /// No description provided for @notifWhenOn.
+  ///
+  /// In en, this message translates to:
+  /// **'on {date}'**
+  String notifWhenOn(String date);
+
+  /// No description provided for @notifWhenAt.
+  ///
+  /// In en, this message translates to:
+  /// **'at {time}'**
+  String notifWhenAt(String time);
+
+  /// No description provided for @billLoanNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.'**
+  String get billLoanNote;
 }
 
 class _AppLocalizationsDelegate

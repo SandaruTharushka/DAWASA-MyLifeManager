@@ -1604,4 +1604,649 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get accountCurrencyLocked =>
       'The currency cannot be changed after transactions are recorded.';
+
+  @override
+  String get plannerTitle => 'Planner';
+
+  @override
+  String get tabTasks => 'Tasks';
+
+  @override
+  String get tabShopping => 'Shopping';
+
+  @override
+  String get tabHabits => 'Habits';
+
+  @override
+  String get tabEvents => 'Dates';
+
+  @override
+  String get budgetsTitle => 'Budgets';
+
+  @override
+  String get budgetAdd => 'New budget';
+
+  @override
+  String get budgetEdit => 'Edit budget';
+
+  @override
+  String get budgetName => 'Budget name';
+
+  @override
+  String get budgetAmount => 'Budget amount';
+
+  @override
+  String get budgetPeriod => 'Period';
+
+  @override
+  String get budgetPeriodDaily => 'Daily';
+
+  @override
+  String get budgetPeriodWeekly => 'Weekly';
+
+  @override
+  String get budgetPeriodMonthly => 'Monthly';
+
+  @override
+  String get budgetPeriodCustom => 'Custom dates';
+
+  @override
+  String get budgetScope => 'Applies to';
+
+  @override
+  String get budgetScopeAll => 'All spending';
+
+  @override
+  String get budgetScopeCategories => 'Selected categories';
+
+  @override
+  String budgetWarnAt(int percent) {
+    return 'Warn me at $percent% used';
+  }
+
+  @override
+  String get budgetNotify => 'Budget notifications';
+
+  @override
+  String get budgetSpent => 'Spent';
+
+  @override
+  String get budgetLeft => 'Left';
+
+  @override
+  String budgetOverBy(String amount) {
+    return 'Over by $amount';
+  }
+
+  @override
+  String budgetDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days left',
+      one: '1 day left',
+      zero: 'Last day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String budgetPerDay(String amount) {
+    return 'About $amount per day';
+  }
+
+  @override
+  String get budgetEmpty =>
+      'No budgets yet. A budget helps you keep spending under control.';
+
+  @override
+  String get budgetNotCounted =>
+      'Transfers, savings movements and loan principal are not counted as spending.';
+
+  @override
+  String get budgetEnded => 'Ended';
+
+  @override
+  String budgetNotStarted(String date) {
+    return 'Starts $date';
+  }
+
+  @override
+  String get budgetDeleteTitle => 'Delete this budget?';
+
+  @override
+  String get budgetDeleteBody => 'Your transactions are not affected.';
+
+  @override
+  String get budgetChooseCategories => 'Choose at least one category';
+
+  @override
+  String get budgetPerformance => 'Budget performance';
+
+  @override
+  String get tasksTitle => 'Tasks';
+
+  @override
+  String get taskAdd => 'New task';
+
+  @override
+  String get taskEdit => 'Edit task';
+
+  @override
+  String get taskTitle => 'Title';
+
+  @override
+  String get taskTitleHint => 'What do you need to do?';
+
+  @override
+  String get taskDescription => 'Details';
+
+  @override
+  String get taskDueDate => 'Due date';
+
+  @override
+  String get taskDueTime => 'Time';
+
+  @override
+  String get taskPriority => 'Priority';
+
+  @override
+  String get taskPriorityLow => 'Low';
+
+  @override
+  String get taskPriorityMedium => 'Medium';
+
+  @override
+  String get taskPriorityHigh => 'High';
+
+  @override
+  String get taskReminder => 'Reminder';
+
+  @override
+  String get taskReminderNone => 'No reminder';
+
+  @override
+  String get taskReminderAtTime => 'At the due time';
+
+  @override
+  String taskReminderMinutes(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count minutes before',
+      one: '1 minute before',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String taskReminderHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hours before',
+      one: '1 hour before',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String taskReminderDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days before',
+      one: '1 day before',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get taskReminderNeedsDate => 'Set a due date to add a reminder';
+
+  @override
+  String get taskViewToday => 'Today';
+
+  @override
+  String get taskViewTomorrow => 'Tomorrow';
+
+  @override
+  String get taskViewUpcoming => 'Upcoming';
+
+  @override
+  String get taskViewCompleted => 'Completed';
+
+  @override
+  String get taskViewAll => 'All';
+
+  @override
+  String get taskOverdue => 'Overdue';
+
+  @override
+  String get taskNoDate => 'No due date';
+
+  @override
+  String get taskEmptyToday => 'Nothing planned for today. Enjoy your day!';
+
+  @override
+  String get taskEmpty => 'No tasks here';
+
+  @override
+  String get taskCompleted => 'Task completed';
+
+  @override
+  String taskNextCreated(String date) {
+    return 'Next repeat scheduled for $date';
+  }
+
+  @override
+  String get taskMarkDone => 'Mark as done';
+
+  @override
+  String get taskMarkNotDone => 'Mark as not done';
+
+  @override
+  String get taskSortDue => 'Sort by due date';
+
+  @override
+  String get taskSortPriority => 'Sort by priority';
+
+  @override
+  String get taskDeleteTitle => 'Delete this task?';
+
+  @override
+  String get taskClearCompleted => 'Delete completed tasks';
+
+  @override
+  String taskCountToday(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tasks',
+      one: '1 task',
+      zero: 'No tasks',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get billsTitle => 'Bills & payments';
+
+  @override
+  String get billAdd => 'New bill';
+
+  @override
+  String get billEdit => 'Edit bill';
+
+  @override
+  String get billName => 'Bill name';
+
+  @override
+  String get billNameHint => 'e.g. CEB electricity';
+
+  @override
+  String get billCategory => 'Type';
+
+  @override
+  String get billCatElectricity => 'Electricity';
+
+  @override
+  String get billCatWater => 'Water';
+
+  @override
+  String get billCatInternet => 'Internet';
+
+  @override
+  String get billCatMobile => 'Mobile';
+
+  @override
+  String get billCatRent => 'Rent';
+
+  @override
+  String get billCatInsurance => 'Insurance';
+
+  @override
+  String get billCatLoan => 'Loan instalment';
+
+  @override
+  String get billCatOther => 'Other';
+
+  @override
+  String get billAmount => 'Usual amount';
+
+  @override
+  String get billDueDate => 'Next due date';
+
+  @override
+  String get billRepeat => 'Repeats';
+
+  @override
+  String get billOneTime => 'One-time payment';
+
+  @override
+  String get billRemind => 'Remind me';
+
+  @override
+  String billRemindDaysBefore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days before',
+      one: '1 day before',
+      zero: 'On the due date',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get billPaymentAccount => 'Usually paid from';
+
+  @override
+  String get billPaid => 'Paid';
+
+  @override
+  String get billUnpaid => 'Unpaid';
+
+  @override
+  String get billDueToday => 'Due today';
+
+  @override
+  String billDueIn(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Due in $count days',
+      one: 'Due tomorrow',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String billOverdueBy(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days overdue',
+      one: '1 day overdue',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get billMarkPaid => 'Mark as paid';
+
+  @override
+  String get billPayTitle => 'Record payment';
+
+  @override
+  String get billPaidAmount => 'Amount paid';
+
+  @override
+  String get billPaidOn => 'Paid on';
+
+  @override
+  String get billRecordExpense => 'Record as an expense';
+
+  @override
+  String get billRecordExpenseHelp =>
+      'Adds an expense in the \"Bills\" category and reduces the account balance.';
+
+  @override
+  String get billPossibleDuplicate => 'You already recorded a similar expense';
+
+  @override
+  String get billPossibleDuplicateBody =>
+      'Link that expense to this bill instead of creating a duplicate?';
+
+  @override
+  String get billLinkExisting => 'Link existing expense';
+
+  @override
+  String get billCreateNew => 'Create a new expense';
+
+  @override
+  String get billDontRecord => 'Just mark as paid';
+
+  @override
+  String get billPaymentSaved => 'Payment recorded';
+
+  @override
+  String get billAlreadyPaid => 'This due date is already marked as paid';
+
+  @override
+  String get billHistory => 'Payment history';
+
+  @override
+  String get billNoHistory => 'No payments yet';
+
+  @override
+  String get billEmpty =>
+      'No bills yet. Add electricity, water, phone and other regular payments to get reminders.';
+
+  @override
+  String get billUndoPayment => 'Undo payment';
+
+  @override
+  String get billUndoPaymentBody =>
+      'The payment record is removed and the bill becomes unpaid again. A linked expense is kept unless you delete it.';
+
+  @override
+  String get billExpenseLinked => 'Expense recorded';
+
+  @override
+  String get billUpcoming => 'Upcoming';
+
+  @override
+  String get billInactive => 'Finished';
+
+  @override
+  String get billStop => 'Stop this bill';
+
+  @override
+  String get billResume => 'Resume this bill';
+
+  @override
+  String get shoppingTitle => 'Shopping lists';
+
+  @override
+  String get shoppingNewList => 'New list';
+
+  @override
+  String get shoppingListName => 'List name';
+
+  @override
+  String get shoppingListNameHint => 'e.g. Weekly groceries';
+
+  @override
+  String get shoppingAddItem => 'Add item';
+
+  @override
+  String get shoppingEditItem => 'Edit item';
+
+  @override
+  String get shoppingItemName => 'Item';
+
+  @override
+  String get shoppingQuantity => 'Quantity';
+
+  @override
+  String get shoppingUnit => 'Unit';
+
+  @override
+  String get shoppingEstimated => 'Estimated price';
+
+  @override
+  String get shoppingActual => 'Actual price';
+
+  @override
+  String get shoppingPriceHelp => 'Total for this line, not per unit';
+
+  @override
+  String get shoppingEstimatedTotal => 'Estimated total';
+
+  @override
+  String get shoppingActualTotal => 'Actual total';
+
+  @override
+  String get shoppingEstimateNote =>
+      'Estimates are only a guide. They never change your balances.';
+
+  @override
+  String get shoppingPurchased => 'Purchased';
+
+  @override
+  String get shoppingToBuy => 'To buy';
+
+  @override
+  String get shoppingEmptyLists =>
+      'No shopping lists. Create one before you go to the shop.';
+
+  @override
+  String get shoppingEmptyItems => 'This list is empty';
+
+  @override
+  String get shoppingRecordExpense => 'Record purchases as expense';
+
+  @override
+  String shoppingRecordExpenseBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count purchased items',
+      one: '1 purchased item',
+    );
+    return '$_temp0 not recorded yet · $amount';
+  }
+
+  @override
+  String get shoppingMissingPrices =>
+      'Enter the actual price of every purchased item first';
+
+  @override
+  String get shoppingRecorded =>
+      'Expense recorded. These items will not be counted again.';
+
+  @override
+  String get shoppingAllRecorded => 'All purchases are recorded';
+
+  @override
+  String get shoppingCompleteList => 'Mark list as done';
+
+  @override
+  String get shoppingReopenList => 'Reopen list';
+
+  @override
+  String get shoppingListDone => 'Done';
+
+  @override
+  String get shoppingDeleteList => 'Delete list';
+
+  @override
+  String get shoppingDeleteListBody =>
+      'Expenses already recorded from this list are kept.';
+
+  @override
+  String get shoppingItemRecorded => 'Recorded';
+
+  @override
+  String shoppingProgress(int done, int total) {
+    return '$done of $total bought';
+  }
+
+  @override
+  String get unitPcs => 'pcs';
+
+  @override
+  String get unitKg => 'kg';
+
+  @override
+  String get unitG => 'g';
+
+  @override
+  String get unitL => 'L';
+
+  @override
+  String get unitMl => 'ml';
+
+  @override
+  String get unitPack => 'pack';
+
+  @override
+  String get unitBottle => 'bottle';
+
+  @override
+  String get unitDozen => 'dozen';
+
+  @override
+  String get homeSeeTasks => 'See tasks';
+
+  @override
+  String get homeSeeBills => 'See bills';
+
+  @override
+  String notifTaskTitle(String title) {
+    return 'Task: $title';
+  }
+
+  @override
+  String notifTaskBodyDue(String when) {
+    return 'Due $when';
+  }
+
+  @override
+  String notifBillTitle(String name) {
+    return 'Bill due: $name';
+  }
+
+  @override
+  String notifBillBody(String amount, String when) {
+    return '$amount due $when';
+  }
+
+  @override
+  String notifBudgetWarnTitle(String name) {
+    return 'Budget almost used: $name';
+  }
+
+  @override
+  String notifBudgetWarnBody(int percent, String amount) {
+    return 'You have used $percent% of $amount';
+  }
+
+  @override
+  String notifBudgetOverTitle(String name) {
+    return 'Budget exceeded: $name';
+  }
+
+  @override
+  String notifBudgetOverBody(String spent, String amount) {
+    return 'Spent $spent of $amount';
+  }
+
+  @override
+  String get notifDailyTitle => 'Plan your day with DAWASA';
+
+  @override
+  String get notifDailyBody =>
+      'Review today\'s tasks and record your spending.';
+
+  @override
+  String get notifWhenToday => 'today';
+
+  @override
+  String get notifWhenTomorrow => 'tomorrow';
+
+  @override
+  String notifWhenOn(String date) {
+    return 'on $date';
+  }
+
+  @override
+  String notifWhenAt(String time) {
+    return 'at $time';
+  }
+
+  @override
+  String get billLoanNote =>
+      'Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.';
 }

@@ -702,5 +702,370 @@
   "accountArchivedSection": "Archived accounts",
   "accountHistory": "Account history",
   "accountOtherCurrencies": "Accounts in other currencies are not added to this total.",
-  "accountCurrencyLocked": "The currency cannot be changed after transactions are recorded."
+  "accountCurrencyLocked": "The currency cannot be changed after transactions are recorded.",
+  "plannerTitle": "Planner",
+  "tabTasks": "Tasks",
+  "tabShopping": "Shopping",
+  "tabHabits": "Habits",
+  "tabEvents": "Dates",
+  "budgetsTitle": "Budgets",
+  "budgetAdd": "New budget",
+  "budgetEdit": "Edit budget",
+  "budgetName": "Budget name",
+  "budgetAmount": "Budget amount",
+  "budgetPeriod": "Period",
+  "budgetPeriodDaily": "Daily",
+  "budgetPeriodWeekly": "Weekly",
+  "budgetPeriodMonthly": "Monthly",
+  "budgetPeriodCustom": "Custom dates",
+  "budgetScope": "Applies to",
+  "budgetScopeAll": "All spending",
+  "budgetScopeCategories": "Selected categories",
+  "budgetWarnAt": "Warn me at {percent}% used",
+  "@budgetWarnAt": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetNotify": "Budget notifications",
+  "budgetSpent": "Spent",
+  "budgetLeft": "Left",
+  "budgetOverBy": "Over by {amount}",
+  "@budgetOverBy": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetDaysLeft": "{count, plural, =0{Last day} =1{1 day left} other{{count} days left}}",
+  "@budgetDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetPerDay": "About {amount} per day",
+  "@budgetPerDay": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetEmpty": "No budgets yet. A budget helps you keep spending under control.",
+  "budgetNotCounted": "Transfers, savings movements and loan principal are not counted as spending.",
+  "budgetEnded": "Ended",
+  "budgetNotStarted": "Starts {date}",
+  "@budgetNotStarted": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetDeleteTitle": "Delete this budget?",
+  "budgetDeleteBody": "Your transactions are not affected.",
+  "budgetChooseCategories": "Choose at least one category",
+  "budgetPerformance": "Budget performance",
+  "tasksTitle": "Tasks",
+  "taskAdd": "New task",
+  "taskEdit": "Edit task",
+  "taskTitle": "Title",
+  "taskTitleHint": "What do you need to do?",
+  "taskDescription": "Details",
+  "taskDueDate": "Due date",
+  "taskDueTime": "Time",
+  "taskPriority": "Priority",
+  "taskPriorityLow": "Low",
+  "taskPriorityMedium": "Medium",
+  "taskPriorityHigh": "High",
+  "taskReminder": "Reminder",
+  "taskReminderNone": "No reminder",
+  "taskReminderAtTime": "At the due time",
+  "taskReminderMinutes": "{count, plural, =1{1 minute before} other{{count} minutes before}}",
+  "@taskReminderMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "taskReminderHours": "{count, plural, =1{1 hour before} other{{count} hours before}}",
+  "@taskReminderHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "taskReminderDays": "{count, plural, =1{1 day before} other{{count} days before}}",
+  "@taskReminderDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "taskReminderNeedsDate": "Set a due date to add a reminder",
+  "taskViewToday": "Today",
+  "taskViewTomorrow": "Tomorrow",
+  "taskViewUpcoming": "Upcoming",
+  "taskViewCompleted": "Completed",
+  "taskViewAll": "All",
+  "taskOverdue": "Overdue",
+  "taskNoDate": "No due date",
+  "taskEmptyToday": "Nothing planned for today. Enjoy your day!",
+  "taskEmpty": "No tasks here",
+  "taskCompleted": "Task completed",
+  "taskNextCreated": "Next repeat scheduled for {date}",
+  "@taskNextCreated": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "taskMarkDone": "Mark as done",
+  "taskMarkNotDone": "Mark as not done",
+  "taskSortDue": "Sort by due date",
+  "taskSortPriority": "Sort by priority",
+  "taskDeleteTitle": "Delete this task?",
+  "taskClearCompleted": "Delete completed tasks",
+  "taskCountToday": "{count, plural, =0{No tasks} =1{1 task} other{{count} tasks}}",
+  "@taskCountToday": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "billsTitle": "Bills & payments",
+  "billAdd": "New bill",
+  "billEdit": "Edit bill",
+  "billName": "Bill name",
+  "billNameHint": "e.g. CEB electricity",
+  "billCategory": "Type",
+  "billCatElectricity": "Electricity",
+  "billCatWater": "Water",
+  "billCatInternet": "Internet",
+  "billCatMobile": "Mobile",
+  "billCatRent": "Rent",
+  "billCatInsurance": "Insurance",
+  "billCatLoan": "Loan instalment",
+  "billCatOther": "Other",
+  "billAmount": "Usual amount",
+  "billDueDate": "Next due date",
+  "billRepeat": "Repeats",
+  "billOneTime": "One-time payment",
+  "billRemind": "Remind me",
+  "billRemindDaysBefore": "{count, plural, =0{On the due date} =1{1 day before} other{{count} days before}}",
+  "@billRemindDaysBefore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "billPaymentAccount": "Usually paid from",
+  "billPaid": "Paid",
+  "billUnpaid": "Unpaid",
+  "billDueToday": "Due today",
+  "billDueIn": "{count, plural, =1{Due tomorrow} other{Due in {count} days}}",
+  "@billDueIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "billOverdueBy": "{count, plural, =1{1 day overdue} other{{count} days overdue}}",
+  "@billOverdueBy": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "billMarkPaid": "Mark as paid",
+  "billPayTitle": "Record payment",
+  "billPaidAmount": "Amount paid",
+  "billPaidOn": "Paid on",
+  "billRecordExpense": "Record as an expense",
+  "billRecordExpenseHelp": "Adds an expense in the \"Bills\" category and reduces the account balance.",
+  "billPossibleDuplicate": "You already recorded a similar expense",
+  "billPossibleDuplicateBody": "Link that expense to this bill instead of creating a duplicate?",
+  "billLinkExisting": "Link existing expense",
+  "billCreateNew": "Create a new expense",
+  "billDontRecord": "Just mark as paid",
+  "billPaymentSaved": "Payment recorded",
+  "billAlreadyPaid": "This due date is already marked as paid",
+  "billHistory": "Payment history",
+  "billNoHistory": "No payments yet",
+  "billEmpty": "No bills yet. Add electricity, water, phone and other regular payments to get reminders.",
+  "billUndoPayment": "Undo payment",
+  "billUndoPaymentBody": "The payment record is removed and the bill becomes unpaid again. A linked expense is kept unless you delete it.",
+  "billExpenseLinked": "Expense recorded",
+  "billUpcoming": "Upcoming",
+  "billInactive": "Finished",
+  "billStop": "Stop this bill",
+  "billResume": "Resume this bill",
+  "shoppingTitle": "Shopping lists",
+  "shoppingNewList": "New list",
+  "shoppingListName": "List name",
+  "shoppingListNameHint": "e.g. Weekly groceries",
+  "shoppingAddItem": "Add item",
+  "shoppingEditItem": "Edit item",
+  "shoppingItemName": "Item",
+  "shoppingQuantity": "Quantity",
+  "shoppingUnit": "Unit",
+  "shoppingEstimated": "Estimated price",
+  "shoppingActual": "Actual price",
+  "shoppingPriceHelp": "Total for this line, not per unit",
+  "shoppingEstimatedTotal": "Estimated total",
+  "shoppingActualTotal": "Actual total",
+  "shoppingEstimateNote": "Estimates are only a guide. They never change your balances.",
+  "shoppingPurchased": "Purchased",
+  "shoppingToBuy": "To buy",
+  "shoppingEmptyLists": "No shopping lists. Create one before you go to the shop.",
+  "shoppingEmptyItems": "This list is empty",
+  "shoppingRecordExpense": "Record purchases as expense",
+  "shoppingRecordExpenseBody": "{count, plural, =1{1 purchased item} other{{count} purchased items}} not recorded yet · {amount}",
+  "@shoppingRecordExpenseBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "shoppingMissingPrices": "Enter the actual price of every purchased item first",
+  "shoppingRecorded": "Expense recorded. These items will not be counted again.",
+  "shoppingAllRecorded": "All purchases are recorded",
+  "shoppingCompleteList": "Mark list as done",
+  "shoppingReopenList": "Reopen list",
+  "shoppingListDone": "Done",
+  "shoppingDeleteList": "Delete list",
+  "shoppingDeleteListBody": "Expenses already recorded from this list are kept.",
+  "shoppingItemRecorded": "Recorded",
+  "shoppingProgress": "{done} of {total} bought",
+  "@shoppingProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "unitPcs": "pcs",
+  "unitKg": "kg",
+  "unitG": "g",
+  "unitL": "L",
+  "unitMl": "ml",
+  "unitPack": "pack",
+  "unitBottle": "bottle",
+  "unitDozen": "dozen",
+  "homeSeeTasks": "See tasks",
+  "homeSeeBills": "See bills",
+  "notifTaskTitle": "Task: {title}",
+  "@notifTaskTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "notifTaskBodyDue": "Due {when}",
+  "@notifTaskBodyDue": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBillTitle": "Bill due: {name}",
+  "@notifBillTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBillBody": "{amount} due {when}",
+  "@notifBillBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBudgetWarnTitle": "Budget almost used: {name}",
+  "@notifBudgetWarnTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBudgetWarnBody": "You have used {percent}% of {amount}",
+  "@notifBudgetWarnBody": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBudgetOverTitle": "Budget exceeded: {name}",
+  "@notifBudgetOverTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBudgetOverBody": "Spent {spent} of {amount}",
+  "@notifBudgetOverBody": {
+    "placeholders": {
+      "spent": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "notifDailyTitle": "Plan your day with DAWASA",
+  "notifDailyBody": "Review today's tasks and record your spending.",
+  "notifWhenToday": "today",
+  "notifWhenTomorrow": "tomorrow",
+  "notifWhenOn": "on {date}",
+  "@notifWhenOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifWhenAt": "at {time}",
+  "@notifWhenAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "billLoanNote": "Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly."
 }

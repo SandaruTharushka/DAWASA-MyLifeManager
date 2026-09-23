@@ -1607,4 +1607,649 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get accountCurrencyLocked =>
       'ගනුදෙනු සටහන් කළ පසු මුදල් ඒකකය වෙනස් කළ නොහැක.';
+
+  @override
+  String get plannerTitle => 'සැලසුම්';
+
+  @override
+  String get tabTasks => 'කාර්යයන්';
+
+  @override
+  String get tabShopping => 'සාප්පු';
+
+  @override
+  String get tabHabits => 'පුරුදු';
+
+  @override
+  String get tabEvents => 'දින';
+
+  @override
+  String get budgetsTitle => 'අයවැය';
+
+  @override
+  String get budgetAdd => 'නව අයවැයක්';
+
+  @override
+  String get budgetEdit => 'අයවැය සංස්කරණය';
+
+  @override
+  String get budgetName => 'අයවැයේ නම';
+
+  @override
+  String get budgetAmount => 'අයවැය මුදල';
+
+  @override
+  String get budgetPeriod => 'කාලය';
+
+  @override
+  String get budgetPeriodDaily => 'දිනපතා';
+
+  @override
+  String get budgetPeriodWeekly => 'සතිපතා';
+
+  @override
+  String get budgetPeriodMonthly => 'මාසික';
+
+  @override
+  String get budgetPeriodCustom => 'අභිරුචි දින';
+
+  @override
+  String get budgetScope => 'අදාළ වන්නේ';
+
+  @override
+  String get budgetScopeAll => 'සියලු වියදම්';
+
+  @override
+  String get budgetScopeCategories => 'තෝරාගත් වර්ග';
+
+  @override
+  String budgetWarnAt(int percent) {
+    return '$percent% භාවිත කළ විට මට අනතුරු අඟවන්න';
+  }
+
+  @override
+  String get budgetNotify => 'අයවැය දැනුම්දීම්';
+
+  @override
+  String get budgetSpent => 'වියදම් කළ';
+
+  @override
+  String get budgetLeft => 'ඉතිරි';
+
+  @override
+  String budgetOverBy(String amount) {
+    return '$amount කින් ඉක්මවා ඇත';
+  }
+
+  @override
+  String budgetDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'තව දින $countයි',
+      one: 'තව දින 1යි',
+      zero: 'අවසාන දිනය',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String budgetPerDay(String amount) {
+    return 'දිනකට ආසන්න වශයෙන් $amount';
+  }
+
+  @override
+  String get budgetEmpty => 'තවම අයවැය නැත. අයවැයක් ඔබේ වියදම් පාලනයට උදවු වේ.';
+
+  @override
+  String get budgetNotCounted =>
+      'මාරු කිරීම්, ඉතිරිකිරීම් චලනයන් සහ ණය මුදල් වියදම් ලෙස ගණන් නොගැනේ.';
+
+  @override
+  String get budgetEnded => 'අවසන්';
+
+  @override
+  String budgetNotStarted(String date) {
+    return '$date ආරම්භ වේ';
+  }
+
+  @override
+  String get budgetDeleteTitle => 'මෙම අයවැය මකන්නද?';
+
+  @override
+  String get budgetDeleteBody => 'ඔබේ ගනුදෙනුවලට බලපෑමක් නැත.';
+
+  @override
+  String get budgetChooseCategories => 'අවම වශයෙන් එක් වර්ගයක් තෝරන්න';
+
+  @override
+  String get budgetPerformance => 'අයවැය කාර්ය සාධනය';
+
+  @override
+  String get tasksTitle => 'කාර්යයන්';
+
+  @override
+  String get taskAdd => 'නව කාර්යයක්';
+
+  @override
+  String get taskEdit => 'කාර්යය සංස්කරණය';
+
+  @override
+  String get taskTitle => 'මාතෘකාව';
+
+  @override
+  String get taskTitleHint => 'ඔබ කළ යුත්තේ කුමක්ද?';
+
+  @override
+  String get taskDescription => 'විස්තර';
+
+  @override
+  String get taskDueDate => 'නියමිත දිනය';
+
+  @override
+  String get taskDueTime => 'වේලාව';
+
+  @override
+  String get taskPriority => 'ප්‍රමුඛතාව';
+
+  @override
+  String get taskPriorityLow => 'අඩු';
+
+  @override
+  String get taskPriorityMedium => 'මධ්‍යම';
+
+  @override
+  String get taskPriorityHigh => 'ඉහළ';
+
+  @override
+  String get taskReminder => 'සිහිකැඳවීම';
+
+  @override
+  String get taskReminderNone => 'සිහිකැඳවීමක් නැත';
+
+  @override
+  String get taskReminderAtTime => 'නියමිත වේලාවට';
+
+  @override
+  String taskReminderMinutes(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'විනාඩි $countකට පෙර',
+      one: 'විනාඩි 1කට පෙර',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String taskReminderHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'පැය $countකට පෙර',
+      one: 'පැය 1කට පෙර',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String taskReminderDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින $countකට පෙර',
+      one: 'දින 1කට පෙර',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get taskReminderNeedsDate =>
+      'සිහිකැඳවීමක් එක් කිරීමට නියමිත දිනයක් සකසන්න';
+
+  @override
+  String get taskViewToday => 'අද';
+
+  @override
+  String get taskViewTomorrow => 'හෙට';
+
+  @override
+  String get taskViewUpcoming => 'ඉදිරියට';
+
+  @override
+  String get taskViewCompleted => 'සම්පූර්ණ';
+
+  @override
+  String get taskViewAll => 'සියල්ල';
+
+  @override
+  String get taskOverdue => 'කල් ඉකුත්';
+
+  @override
+  String get taskNoDate => 'නියමිත දිනයක් නැත';
+
+  @override
+  String get taskEmptyToday =>
+      'අදට කිසිවක් සැලසුම් කර නැත. ඔබේ දවස භුක්ති විඳින්න!';
+
+  @override
+  String get taskEmpty => 'මෙහි කාර්ය නැත';
+
+  @override
+  String get taskCompleted => 'කාර්යය සම්පූර්ණයි';
+
+  @override
+  String taskNextCreated(String date) {
+    return 'ඊළඟ පුනරාවර්තනය $date සඳහා සැලසුම් කළා';
+  }
+
+  @override
+  String get taskMarkDone => 'සම්පූර්ණ ලෙස සලකුණු කරන්න';
+
+  @override
+  String get taskMarkNotDone => 'අසම්පූර්ණ ලෙස සලකුණු කරන්න';
+
+  @override
+  String get taskSortDue => 'නියමිත දිනය අනුව';
+
+  @override
+  String get taskSortPriority => 'ප්‍රමුඛතාව අනුව';
+
+  @override
+  String get taskDeleteTitle => 'මෙම කාර්යය මකන්නද?';
+
+  @override
+  String get taskClearCompleted => 'සම්පූර්ණ කළ කාර්ය මකන්න';
+
+  @override
+  String taskCountToday(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'කාර්ය $countයි',
+      one: 'කාර්ය 1යි',
+      zero: 'කාර්ය නැත',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get billsTitle => 'බිල්පත් සහ ගෙවීම්';
+
+  @override
+  String get billAdd => 'නව බිල්පතක්';
+
+  @override
+  String get billEdit => 'බිල්පත සංස්කරණය';
+
+  @override
+  String get billName => 'බිල්පතේ නම';
+
+  @override
+  String get billNameHint => 'උදා: ලංවිම විදුලිය';
+
+  @override
+  String get billCategory => 'වර්ගය';
+
+  @override
+  String get billCatElectricity => 'විදුලිය';
+
+  @override
+  String get billCatWater => 'ජලය';
+
+  @override
+  String get billCatInternet => 'අන්තර්ජාලය';
+
+  @override
+  String get billCatMobile => 'ජංගම දුරකථනය';
+
+  @override
+  String get billCatRent => 'කුලිය';
+
+  @override
+  String get billCatInsurance => 'රක්ෂණය';
+
+  @override
+  String get billCatLoan => 'ණය වාරිකය';
+
+  @override
+  String get billCatOther => 'වෙනත්';
+
+  @override
+  String get billAmount => 'සාමාන්‍ය මුදල';
+
+  @override
+  String get billDueDate => 'ඊළඟ නියමිත දිනය';
+
+  @override
+  String get billRepeat => 'නැවත නැවත';
+
+  @override
+  String get billOneTime => 'එක් වරක් ගෙවීම';
+
+  @override
+  String get billRemind => 'මට මතක් කරන්න';
+
+  @override
+  String billRemindDaysBefore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින $countකට පෙර',
+      one: 'දින 1කට පෙර',
+      zero: 'නියමිත දිනයේ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get billPaymentAccount => 'සාමාන්‍යයෙන් ගෙවන ගිණුම';
+
+  @override
+  String get billPaid => 'ගෙවා ඇත';
+
+  @override
+  String get billUnpaid => 'නොගෙවූ';
+
+  @override
+  String get billDueToday => 'අද නියමිතයි';
+
+  @override
+  String billDueIn(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින $countකින් නියමිතයි',
+      one: 'හෙට නියමිතයි',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String billOverdueBy(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින $countක් ප්‍රමාදයි',
+      one: 'දින 1ක් ප්‍රමාදයි',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get billMarkPaid => 'ගෙවූ ලෙස සලකුණු කරන්න';
+
+  @override
+  String get billPayTitle => 'ගෙවීම සටහන් කරන්න';
+
+  @override
+  String get billPaidAmount => 'ගෙවූ මුදල';
+
+  @override
+  String get billPaidOn => 'ගෙවූ දිනය';
+
+  @override
+  String get billRecordExpense => 'වියදමක් ලෙස සටහන් කරන්න';
+
+  @override
+  String get billRecordExpenseHelp =>
+      '\"බිල්පත්\" වර්ගයේ වියදමක් එක් කර ගිණුම් ශේෂය අඩු කරයි.';
+
+  @override
+  String get billPossibleDuplicate => 'ඔබ දැනටමත් සමාන වියදමක් සටහන් කර ඇත';
+
+  @override
+  String get billPossibleDuplicateBody =>
+      'අනුපිටපතක් සෑදීම වෙනුවට එම වියදම මෙම බිල්පතට සම්බන්ධ කරන්නද?';
+
+  @override
+  String get billLinkExisting => 'පවතින වියදම සම්බන්ධ කරන්න';
+
+  @override
+  String get billCreateNew => 'නව වියදමක් සාදන්න';
+
+  @override
+  String get billDontRecord => 'ගෙවූ ලෙස පමණක් සලකුණු කරන්න';
+
+  @override
+  String get billPaymentSaved => 'ගෙවීම සටහන් කරන ලදී';
+
+  @override
+  String get billAlreadyPaid => 'මෙම නියමිත දිනය දැනටමත් ගෙවූ ලෙස සලකුණු කර ඇත';
+
+  @override
+  String get billHistory => 'ගෙවීම් ඉතිහාසය';
+
+  @override
+  String get billNoHistory => 'තවම ගෙවීම් නැත';
+
+  @override
+  String get billEmpty =>
+      'තවම බිල්පත් නැත. සිහිකැඳවීම් ලබා ගැනීමට විදුලිය, ජලය, දුරකථනය සහ අනෙකුත් නිතිපතා ගෙවීම් එක් කරන්න.';
+
+  @override
+  String get billUndoPayment => 'ගෙවීම අහෝසි කරන්න';
+
+  @override
+  String get billUndoPaymentBody =>
+      'ගෙවීමේ වාර්තාව ඉවත් කර බිල්පත නැවත නොගෙවූ තත්ත්වයට පත් වේ. සම්බන්ධිත වියදම ඔබ මකා නොදැමුවහොත් රඳවා ගැනේ.';
+
+  @override
+  String get billExpenseLinked => 'වියදම සටහන් කර ඇත';
+
+  @override
+  String get billUpcoming => 'ඉදිරි';
+
+  @override
+  String get billInactive => 'අවසන්';
+
+  @override
+  String get billStop => 'මෙම බිල්පත නවත්වන්න';
+
+  @override
+  String get billResume => 'මෙම බිල්පත නැවත ආරම්භ කරන්න';
+
+  @override
+  String get shoppingTitle => 'සාප්පු ලැයිස්තු';
+
+  @override
+  String get shoppingNewList => 'නව ලැයිස්තුවක්';
+
+  @override
+  String get shoppingListName => 'ලැයිස්තුවේ නම';
+
+  @override
+  String get shoppingListNameHint => 'උදා: සතිපතා බඩු';
+
+  @override
+  String get shoppingAddItem => 'අයිතමයක් එක් කරන්න';
+
+  @override
+  String get shoppingEditItem => 'අයිතමය සංස්කරණය';
+
+  @override
+  String get shoppingItemName => 'අයිතමය';
+
+  @override
+  String get shoppingQuantity => 'ප්‍රමාණය';
+
+  @override
+  String get shoppingUnit => 'ඒකකය';
+
+  @override
+  String get shoppingEstimated => 'ඇස්තමේන්තු මිල';
+
+  @override
+  String get shoppingActual => 'සැබෑ මිල';
+
+  @override
+  String get shoppingPriceHelp => 'එක් ඒකකයකට නොව, මෙම පේළියේ මුළු මිල';
+
+  @override
+  String get shoppingEstimatedTotal => 'ඇස්තමේන්තු එකතුව';
+
+  @override
+  String get shoppingActualTotal => 'සැබෑ එකතුව';
+
+  @override
+  String get shoppingEstimateNote =>
+      'ඇස්තමේන්තු මඟ පෙන්වීමක් පමණි. ඒවා කිසිවිටෙක ඔබේ ශේෂයන් වෙනස් නොකරයි.';
+
+  @override
+  String get shoppingPurchased => 'මිලදී ගත්';
+
+  @override
+  String get shoppingToBuy => 'මිලදී ගැනීමට';
+
+  @override
+  String get shoppingEmptyLists =>
+      'සාප්පු ලැයිස්තු නැත. සාප්පුවට යාමට පෙර එකක් සාදන්න.';
+
+  @override
+  String get shoppingEmptyItems => 'මෙම ලැයිස්තුව හිස්';
+
+  @override
+  String get shoppingRecordExpense => 'මිලදී ගැනීම් වියදමක් ලෙස සටහන් කරන්න';
+
+  @override
+  String shoppingRecordExpenseBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'මිලදී ගත් අයිතම $countක්',
+      one: 'මිලදී ගත් අයිතම 1ක්',
+    );
+    return '$_temp0 තවම සටහන් කර නැත · $amount';
+  }
+
+  @override
+  String get shoppingMissingPrices =>
+      'පළමුව මිලදී ගත් සෑම අයිතමයකම සැබෑ මිල ඇතුළත් කරන්න';
+
+  @override
+  String get shoppingRecorded =>
+      'වියදම සටහන් කරන ලදී. මෙම අයිතම නැවත ගණන් නොගැනේ.';
+
+  @override
+  String get shoppingAllRecorded => 'සියලු මිලදී ගැනීම් සටහන් කර ඇත';
+
+  @override
+  String get shoppingCompleteList => 'ලැයිස්තුව සම්පූර්ණ ලෙස සලකුණු කරන්න';
+
+  @override
+  String get shoppingReopenList => 'ලැයිස්තුව නැවත විවෘත කරන්න';
+
+  @override
+  String get shoppingListDone => 'අවසන්';
+
+  @override
+  String get shoppingDeleteList => 'ලැයිස්තුව මකන්න';
+
+  @override
+  String get shoppingDeleteListBody =>
+      'මෙම ලැයිස්තුවෙන් දැනටමත් සටහන් කළ වියදම් රඳවා ගැනේ.';
+
+  @override
+  String get shoppingItemRecorded => 'සටහන් කර ඇත';
+
+  @override
+  String shoppingProgress(int done, int total) {
+    return '$total න් $doneක් මිලදී ගෙන ඇත';
+  }
+
+  @override
+  String get unitPcs => 'කෑලි';
+
+  @override
+  String get unitKg => 'කි.ග්‍රෑ.';
+
+  @override
+  String get unitG => 'ග්‍රෑ.';
+
+  @override
+  String get unitL => 'ලී.';
+
+  @override
+  String get unitMl => 'මි.ලී.';
+
+  @override
+  String get unitPack => 'පැකට්';
+
+  @override
+  String get unitBottle => 'බෝතල්';
+
+  @override
+  String get unitDozen => 'දුසිම්';
+
+  @override
+  String get homeSeeTasks => 'කාර්ය බලන්න';
+
+  @override
+  String get homeSeeBills => 'බිල්පත් බලන්න';
+
+  @override
+  String notifTaskTitle(String title) {
+    return 'කාර්යය: $title';
+  }
+
+  @override
+  String notifTaskBodyDue(String when) {
+    return 'නියමිත වන්නේ $when';
+  }
+
+  @override
+  String notifBillTitle(String name) {
+    return 'බිල්පත් නියමිතයි: $name';
+  }
+
+  @override
+  String notifBillBody(String amount, String when) {
+    return '$amount $when ගෙවිය යුතුයි';
+  }
+
+  @override
+  String notifBudgetWarnTitle(String name) {
+    return 'අයවැය බොහෝ දුරට භාවිත කර ඇත: $name';
+  }
+
+  @override
+  String notifBudgetWarnBody(int percent, String amount) {
+    return 'ඔබ $amount න් $percent% භාවිත කර ඇත';
+  }
+
+  @override
+  String notifBudgetOverTitle(String name) {
+    return 'අයවැය ඉක්මවා ඇත: $name';
+  }
+
+  @override
+  String notifBudgetOverBody(String spent, String amount) {
+    return '$amount න් $spent වියදම් කර ඇත';
+  }
+
+  @override
+  String get notifDailyTitle => 'DAWASA සමඟ ඔබේ දවස සැලසුම් කරන්න';
+
+  @override
+  String get notifDailyBody => 'අද කාර්ය සමාලෝචනය කර ඔබේ වියදම් සටහන් කරන්න.';
+
+  @override
+  String get notifWhenToday => 'අද';
+
+  @override
+  String get notifWhenTomorrow => 'හෙට';
+
+  @override
+  String notifWhenOn(String date) {
+    return '$date දින';
+  }
+
+  @override
+  String notifWhenAt(String time) {
+    return '$time ට';
+  }
+
+  @override
+  String get billLoanNote =>
+      'ණය වාරිකවලින් වැඩි කොටස ණය මුදල වන අතර එය වියදමක් නොවේ. ඔබ ගෙවිය යුතු මුදල නිවැරදිව අඩු වීමට ණය කොටසේ ආපසු ගෙවීම සටහන් කරන්න.';
 }
