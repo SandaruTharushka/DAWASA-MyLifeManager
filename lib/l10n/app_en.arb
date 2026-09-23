@@ -1067,5 +1067,346 @@
       }
     }
   },
-  "billLoanNote": "Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly."
+  "billLoanNote": "Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.",
+  "savingsTitle": "Savings goals",
+  "savingsAdd": "New goal",
+  "savingsEdit": "Edit goal",
+  "savingsName": "Goal name",
+  "savingsNameHint": "e.g. New phone, Emergency fund",
+  "savingsTarget": "Target amount",
+  "savingsTargetDate": "Target date",
+  "savingsLinkedAccount": "Kept in account",
+  "savingsLinkedAccountHelp": "If you choose a savings account, adding money moves it there as a transfer. It is never counted as spending.",
+  "savingsNoLinkedAccount": "Just track it (no account)",
+  "savingsSaved": "Saved",
+  "savingsToGo": "To go",
+  "savingsReached": "Goal reached!",
+  "savingsDeposit": "Add money",
+  "savingsWithdraw": "Withdraw",
+  "savingsFromAccount": "Take money from",
+  "savingsToAccount": "Put money into",
+  "savingsDepositNote": "The money moves from {from} to {to}. This is a transfer, not an expense.",
+  "@savingsDepositNote": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "savingsTrackOnlyNote": "Your balances stay the same; the amount is set aside for this goal.",
+  "savingsWithdrawTooMuch": "You cannot withdraw more than is saved",
+  "savingsEmpty": "No savings goals yet. Save a little every month for something you want.",
+  "savingsHistory": "Movements",
+  "savingsMonthlyNeeded": "Save {amount} a month to reach it on time",
+  "@savingsMonthlyNeeded": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "savingsRemindMonthly": "Remind me every month",
+  "savingsDeleteBody": "Transfers already recorded stay in your accounts.",
+  "savingsTotalSaved": "Total saved",
+  "notifSavingsTitle": "Savings: {name}",
+  "@notifSavingsTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifSavingsBody": "{amount} to go. Add a little today?",
+  "@notifSavingsBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "loansTitle": "Loans & debts",
+  "loanAdd": "New loan",
+  "loanEdit": "Edit loan",
+  "loanDirection": "Type",
+  "loanLent": "I lent money",
+  "loanBorrowed": "I borrowed money",
+  "loanOwedToYou": "Owed to you",
+  "loanYouOwe": "You owe",
+  "loanPerson": "Person or institution",
+  "loanPrincipal": "Amount",
+  "loanInterestRate": "Interest rate % per year (optional)",
+  "loanStartDate": "Date",
+  "loanDueDate": "Due date (optional)",
+  "loanRecordMovement": "Record the money movement in an account",
+  "loanRecordMovementHelp": "Updates the account balance. Loan money is never counted as income or spending.",
+  "loanOutstanding": "Outstanding",
+  "loanRepaid": "Repaid",
+  "loanRecordRepayment": "Record repayment",
+  "loanRepaymentPrincipal": "Towards the loan amount",
+  "loanRepaymentInterest": "Interest (optional)",
+  "loanRepaymentInterestHelp": "Interest received is income; interest paid is an expense.",
+  "loanRepaymentTooMuch": "This is more than the outstanding amount",
+  "loanSettle": "Mark as settled",
+  "loanSettleBody": "The loan is closed. Any amount still outstanding is written off and no longer counted.",
+  "loanReopen": "Reopen loan",
+  "loanSettled": "Settled",
+  "loanActive": "Active",
+  "loanEmpty": "No loans. Keep track of money you lent to or borrowed from others.",
+  "loanHistory": "Repayments",
+  "loanNoRepayments": "No repayments yet",
+  "loanDeleteBody": "Money movements recorded for this loan are deleted too, and balances are recalculated.",
+  "loanDueOn": "Due {date}",
+  "@loanDueOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "loanNotifTitleLent": "{name} should repay you",
+  "@loanNotifTitleLent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "loanNotifTitleBorrowed": "Repay {name}",
+  "@loanNotifTitleBorrowed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "loanNotifBody": "{amount} outstanding, due {when}",
+  "@loanNotifBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "loanTotalOwedToYou": "Total owed to you",
+  "loanTotalYouOwe": "Total you owe",
+  "habitsTitle": "Habits",
+  "habitAdd": "New habit",
+  "habitEdit": "Edit habit",
+  "habitName": "Habit",
+  "habitNameHint": "e.g. Drink water, Read, Exercise",
+  "habitFrequency": "Goal",
+  "habitDaily": "Every day",
+  "habitWeekly": "Every week",
+  "habitTimesPerDay": "{count, plural, =1{Once a day} other{{count} times a day}}",
+  "@habitTimesPerDay": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habitTimesPerWeek": "{count, plural, =1{Once a week} other{{count} times a week}}",
+  "@habitTimesPerWeek": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habitTarget": "Times",
+  "habitReminder": "Daily reminder",
+  "habitStreak": "{count, plural, =0{No streak yet} =1{1 day streak} other{{count} day streak}}",
+  "@habitStreak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habitWeekStreak": "{count, plural, =0{No streak yet} =1{1 week streak} other{{count} week streak}}",
+  "@habitWeekStreak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habitBestStreak": "Best: {count}",
+  "@habitBestStreak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habitProgressToday": "{done} of {target} today",
+  "@habitProgressToday": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "habitProgressWeek": "{done} of {target} this week",
+  "@habitProgressWeek": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "habitMarkDone": "Mark done",
+  "habitUndo": "Undo",
+  "habitCalendar": "Last 5 weeks",
+  "habitEmpty": "Build good habits one day at a time. Habits never affect your money reports.",
+  "habitNotifTitle": "Time for: {name}",
+  "@habitNotifTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "habitNotifBody": "Keep your streak going!",
+  "habitDeleteBody": "The habit and its history will be deleted.",
+  "eventsTitle": "Important dates",
+  "eventAdd": "New date",
+  "eventEdit": "Edit date",
+  "eventTitle": "Title",
+  "eventTitleHint": "e.g. Amma's birthday",
+  "eventType": "Type",
+  "eventBirthday": "Birthday",
+  "eventAnniversary": "Anniversary",
+  "eventAppointment": "Appointment",
+  "eventExam": "Examination",
+  "eventOther": "Other",
+  "eventDate": "Date",
+  "eventRemind": "Remind me",
+  "eventNoReminder": "No reminder",
+  "eventBudget": "Budget for this event (optional)",
+  "eventBudgetHelp": "A plan only — it does not change your balances.",
+  "eventEmpty": "Never forget a birthday, anniversary or exam again.",
+  "eventUpcoming": "Upcoming",
+  "eventPast": "Past",
+  "eventInDays": "{count, plural, =0{Today} =1{Tomorrow} other{In {count} days}}",
+  "@eventInDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "eventTurns": "Turns {age}",
+  "@eventTurns": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "eventYears": "{count, plural, =1{1 year} other{{count} years}}",
+  "@eventYears": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "eventCalendar": "Calendar",
+  "eventList": "List",
+  "eventNoneThisDay": "Nothing on this day",
+  "eventNotifTitle": "{title}",
+  "@eventNotifTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "eventNotifBody": "{when}",
+  "@eventNotifBody": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsTitle": "Reports",
+  "reportTotalIncome": "Total income",
+  "reportTotalExpenses": "Total expenses",
+  "reportNetCashFlow": "Net cash flow",
+  "reportNetHelp": "Income minus expenses in this period",
+  "reportOtherMovements": "Other money movements",
+  "reportOtherMovementsHelp": "Loans, repayments, reimbursements and balance corrections. Not income or spending.",
+  "reportMoneyIn": "Money in",
+  "reportMoneyOut": "Money out",
+  "reportIncomeVsExpenses": "Income vs expenses",
+  "reportExpensesByCategory": "Expenses by category",
+  "reportIncomeByCategory": "Income by source",
+  "reportDailyTrend": "Daily spending",
+  "reportMonthlyTrend": "Monthly spending (last 6 months)",
+  "reportAccountBalances": "Account balances (now)",
+  "reportLoanBalances": "Loan balances (now)",
+  "reportSavings": "Savings",
+  "reportSavingsTransfers": "Moved to savings in this period",
+  "reportNoData": "No transactions in this period",
+  "reportChartIncomeExpense": "Income {income}, expenses {expenses}",
+  "@reportChartIncomeExpense": {
+    "placeholders": {
+      "income": {
+        "type": "String"
+      },
+      "expenses": {
+        "type": "String"
+      }
+    }
+  },
+  "reportShare": "Share summary",
+  "reportExportCsv": "Export CSV",
+  "reportShareTitle": "Share report",
+  "reportShareIncludeCategories": "Include category totals",
+  "reportShareIncludeBalances": "Include account balances",
+  "reportSharePrivacy": "Only what you select below is shared. Nothing is sent anywhere unless you choose an app to share with.",
+  "reportPreview": "Preview",
+  "exportTitle": "Export transactions",
+  "exportIncludeNotes": "Include descriptions and notes",
+  "exportIncludeAccounts": "Include account names",
+  "exportRows": "{count, plural, =1{1 transaction} other{{count} transactions}}",
+  "@exportRows": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exportDone": "CSV file ready",
+  "exportNothing": "No transactions to export in this period",
+  "exportPrivacyNote": "A CSV file is not encrypted. Anyone who gets the file can read it.",
+  "csvDate": "Date",
+  "csvTime": "Time",
+  "csvType": "Type",
+  "csvCategory": "Category",
+  "csvAccount": "Account",
+  "csvToAccount": "To account",
+  "csvAmount": "Amount",
+  "csvCurrency": "Currency",
+  "csvDescription": "Description",
+  "csvNote": "Note",
+  "csvCountsAs": "Counts as",
+  "csvCountsIncome": "Income",
+  "csvCountsExpense": "Expense",
+  "csvCountsNeither": "Not income or expense",
+  "homeSeeSavings": "See goals"
 }

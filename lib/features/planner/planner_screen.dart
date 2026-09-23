@@ -4,12 +4,32 @@ import 'package:go_router/go_router.dart';
 
 import '../../app/routes.dart';
 import '../../core/l10n/l10n.dart';
+import '../events/presentation/event_screens.dart';
+import '../habits/presentation/habit_screens.dart';
 import '../money/money_screen.dart';
 import '../shopping/presentation/shopping_tab.dart';
 import '../tasks/presentation/tasks_tab.dart';
 
-/// Habits and important dates tabs (schema v3).
-List<HubTab> extraPlannerTabs(BuildContext context) => const [];
+/// Habits and important dates tabs.
+List<HubTab> extraPlannerTabs(BuildContext context) {
+  final l10n = context.l10n;
+  return [
+    HubTab(
+      key: 'habits',
+      label: l10n.tabHabits,
+      body: const HabitsTab(),
+      fabLabel: l10n.habitAdd,
+      onFab: (c) => c.push(Routes.newHabit),
+    ),
+    HubTab(
+      key: 'events',
+      label: l10n.tabEvents,
+      body: const EventsTab(),
+      fabLabel: l10n.eventAdd,
+      onFab: (c) => c.push(Routes.newEvent),
+    ),
+  ];
+}
 
 /// Planner hub: tasks, shopping lists, habits and important dates.
 class PlannerScreen extends ConsumerWidget {

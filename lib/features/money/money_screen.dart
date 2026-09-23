@@ -6,10 +6,30 @@ import '../../core/l10n/l10n.dart';
 import '../accounts/presentation/accounts_tab.dart';
 import '../bills/presentation/bills_tab.dart';
 import '../budgets/presentation/budgets_tab.dart';
+import '../loans/presentation/loan_screens.dart';
+import '../savings/presentation/savings_screens.dart';
 import '../transactions/presentation/transactions_tab.dart';
 
-/// Savings and loans tabs (schema v3).
-List<HubTab> extraMoneyTabs(BuildContext context) => const [];
+/// Savings and loans tabs.
+List<HubTab> extraMoneyTabs(BuildContext context) {
+  final l10n = context.l10n;
+  return [
+    HubTab(
+      key: 'savings',
+      label: l10n.tabSavings,
+      body: const SavingsTab(),
+      fabLabel: l10n.savingsAdd,
+      onFab: (c) => c.push(Routes.newSavingsGoal),
+    ),
+    HubTab(
+      key: 'loans',
+      label: l10n.tabLoans,
+      body: const LoansTab(),
+      fabLabel: l10n.loanAdd,
+      onFab: (c) => c.push(Routes.newLoan),
+    ),
+  ];
+}
 
 /// A secondary tab inside a hub screen.
 class HubTab {

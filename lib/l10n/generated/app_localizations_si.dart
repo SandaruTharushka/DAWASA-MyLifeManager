@@ -2252,4 +2252,604 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get billLoanNote =>
       'ණය වාරිකවලින් වැඩි කොටස ණය මුදල වන අතර එය වියදමක් නොවේ. ඔබ ගෙවිය යුතු මුදල නිවැරදිව අඩු වීමට ණය කොටසේ ආපසු ගෙවීම සටහන් කරන්න.';
+
+  @override
+  String get savingsTitle => 'ඉතිරිකිරීම් ඉලක්ක';
+
+  @override
+  String get savingsAdd => 'නව ඉලක්කයක්';
+
+  @override
+  String get savingsEdit => 'ඉලක්කය සංස්කරණය';
+
+  @override
+  String get savingsName => 'ඉලක්කයේ නම';
+
+  @override
+  String get savingsNameHint => 'උදා: නව දුරකථනය, හදිසි අරමුදල';
+
+  @override
+  String get savingsTarget => 'ඉලක්ක මුදල';
+
+  @override
+  String get savingsTargetDate => 'ඉලක්ක දිනය';
+
+  @override
+  String get savingsLinkedAccount => 'තබා ඇති ගිණුම';
+
+  @override
+  String get savingsLinkedAccountHelp =>
+      'ඔබ ඉතිරිකිරීමේ ගිණුමක් තෝරා ගන්නේ නම්, මුදල් එක් කිරීම එම ගිණුමට මාරු කිරීමක් ලෙස සිදු වේ. එය කිසිවිටෙක වියදමක් ලෙස ගණන් නොගැනේ.';
+
+  @override
+  String get savingsNoLinkedAccount => 'නිරීක්ෂණය පමණි (ගිණුමක් නැත)';
+
+  @override
+  String get savingsSaved => 'ඉතිරි කළ';
+
+  @override
+  String get savingsToGo => 'තව අවශ්‍ය';
+
+  @override
+  String get savingsReached => 'ඉලක්කය සපුරා ඇත!';
+
+  @override
+  String get savingsDeposit => 'මුදල් එක් කරන්න';
+
+  @override
+  String get savingsWithdraw => 'ආපසු ගන්න';
+
+  @override
+  String get savingsFromAccount => 'මුදල් ගන්නා ගිණුම';
+
+  @override
+  String get savingsToAccount => 'මුදල් දමන ගිණුම';
+
+  @override
+  String savingsDepositNote(String from, String to) {
+    return 'මුදල් $from සිට $to වෙත මාරු වේ. මෙය වියදමක් නොව මාරු කිරීමකි.';
+  }
+
+  @override
+  String get savingsTrackOnlyNote =>
+      'ඔබේ ශේෂයන් වෙනස් නොවේ; මුදල මෙම ඉලක්කය සඳහා වෙන් කරනු ලැබේ.';
+
+  @override
+  String get savingsWithdrawTooMuch => 'ඉතිරි කර ඇති මුදලට වඩා ආපසු ගත නොහැක';
+
+  @override
+  String get savingsEmpty =>
+      'තවම ඉතිරිකිරීම් ඉලක්ක නැත. ඔබ කැමති දෙයක් සඳහා සෑම මසකම ටිකක් ඉතිරි කරන්න.';
+
+  @override
+  String get savingsHistory => 'චලනයන්';
+
+  @override
+  String savingsMonthlyNeeded(String amount) {
+    return 'නියමිත වේලාවට ළඟා වීමට මසකට $amount ඉතිරි කරන්න';
+  }
+
+  @override
+  String get savingsRemindMonthly => 'සෑම මසකම මට මතක් කරන්න';
+
+  @override
+  String get savingsDeleteBody =>
+      'දැනටමත් සටහන් කළ මාරු කිරීම් ඔබේ ගිණුම්වල රඳවා ගැනේ.';
+
+  @override
+  String get savingsTotalSaved => 'මුළු ඉතිරිකිරීම';
+
+  @override
+  String notifSavingsTitle(String name) {
+    return 'ඉතිරිකිරීම්: $name';
+  }
+
+  @override
+  String notifSavingsBody(String amount) {
+    return 'තව $amount අවශ්‍යයි. අද ටිකක් එක් කරමුද?';
+  }
+
+  @override
+  String get loansTitle => 'ණය සහ බැඳීම්';
+
+  @override
+  String get loanAdd => 'නව ණයක්';
+
+  @override
+  String get loanEdit => 'ණය සංස්කරණය';
+
+  @override
+  String get loanDirection => 'වර්ගය';
+
+  @override
+  String get loanLent => 'මම මුදල් ණයට දුන්නා';
+
+  @override
+  String get loanBorrowed => 'මම මුදල් ණයට ගත්තා';
+
+  @override
+  String get loanOwedToYou => 'ඔබට ලැබිය යුතු';
+
+  @override
+  String get loanYouOwe => 'ඔබ ගෙවිය යුතු';
+
+  @override
+  String get loanPerson => 'පුද්ගලයා හෝ ආයතනය';
+
+  @override
+  String get loanPrincipal => 'මුදල';
+
+  @override
+  String get loanInterestRate => 'වාර්ෂික පොලී අනුපාතය % (අත්‍යවශ්‍ය නැත)';
+
+  @override
+  String get loanStartDate => 'දිනය';
+
+  @override
+  String get loanDueDate => 'නියමිත දිනය (අත්‍යවශ්‍ය නැත)';
+
+  @override
+  String get loanRecordMovement => 'මුදල් චලනය ගිණුමක සටහන් කරන්න';
+
+  @override
+  String get loanRecordMovementHelp =>
+      'ගිණුම් ශේෂය යාවත්කාලීන කරයි. ණය මුදල් කිසිවිටෙක ආදායම හෝ වියදම ලෙස ගණන් නොගැනේ.';
+
+  @override
+  String get loanOutstanding => 'ගෙවීමට ඇති';
+
+  @override
+  String get loanRepaid => 'ආපසු ගෙවූ';
+
+  @override
+  String get loanRecordRepayment => 'ආපසු ගෙවීම සටහන් කරන්න';
+
+  @override
+  String get loanRepaymentPrincipal => 'ණය මුදලට';
+
+  @override
+  String get loanRepaymentInterest => 'පොලිය (අත්‍යවශ්‍ය නැත)';
+
+  @override
+  String get loanRepaymentInterestHelp =>
+      'ලැබුණු පොලිය ආදායමකි; ගෙවූ පොලිය වියදමකි.';
+
+  @override
+  String get loanRepaymentTooMuch => 'මෙය ගෙවීමට ඇති මුදලට වඩා වැඩියි';
+
+  @override
+  String get loanSettle => 'සම්පූර්ණයෙන් ගෙවූ ලෙස සලකුණු කරන්න';
+
+  @override
+  String get loanSettleBody =>
+      'ණය වසා දමනු ලැබේ. තවමත් ගෙවීමට ඇති ඕනෑම මුදලක් කපා හැර තවදුරටත් ගණන් නොගැනේ.';
+
+  @override
+  String get loanReopen => 'ණය නැවත විවෘත කරන්න';
+
+  @override
+  String get loanSettled => 'නිරවුල් කළ';
+
+  @override
+  String get loanActive => 'සක්‍රිය';
+
+  @override
+  String get loanEmpty =>
+      'ණය නැත. අන් අයට ණයට දුන් හෝ ඔවුන්ගෙන් ණයට ගත් මුදල් නිරීක්ෂණය කරන්න.';
+
+  @override
+  String get loanHistory => 'ආපසු ගෙවීම්';
+
+  @override
+  String get loanNoRepayments => 'තවම ආපසු ගෙවීම් නැත';
+
+  @override
+  String get loanDeleteBody =>
+      'මෙම ණය සඳහා සටහන් කළ මුදල් චලනයන් ද මකා දමා ශේෂයන් නැවත ගණනය කෙරේ.';
+
+  @override
+  String loanDueOn(String date) {
+    return 'නියමිත දිනය $date';
+  }
+
+  @override
+  String loanNotifTitleLent(String name) {
+    return '$name ඔබට ආපසු ගෙවිය යුතුයි';
+  }
+
+  @override
+  String loanNotifTitleBorrowed(String name) {
+    return '$name ට ආපසු ගෙවන්න';
+  }
+
+  @override
+  String loanNotifBody(String amount, String when) {
+    return 'ගෙවීමට ඇති $amount, නියමිත $when';
+  }
+
+  @override
+  String get loanTotalOwedToYou => 'ඔබට ලැබිය යුතු මුළු මුදල';
+
+  @override
+  String get loanTotalYouOwe => 'ඔබ ගෙවිය යුතු මුළු මුදල';
+
+  @override
+  String get habitsTitle => 'පුරුදු';
+
+  @override
+  String get habitAdd => 'නව පුරුද්දක්';
+
+  @override
+  String get habitEdit => 'පුරුද්ද සංස්කරණය';
+
+  @override
+  String get habitName => 'පුරුද්ද';
+
+  @override
+  String get habitNameHint => 'උදා: වතුර බීම, කියවීම, ව්‍යායාම';
+
+  @override
+  String get habitFrequency => 'ඉලක්කය';
+
+  @override
+  String get habitDaily => 'සෑම දිනකම';
+
+  @override
+  String get habitWeekly => 'සෑම සතියකම';
+
+  @override
+  String habitTimesPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දිනකට $count වරක්',
+      one: 'දිනකට එක් වරක්',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String habitTimesPerWeek(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'සතියකට $count වරක්',
+      one: 'සතියකට එක් වරක්',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get habitTarget => 'වාර ගණන';
+
+  @override
+  String get habitReminder => 'දෛනික සිහිකැඳවීම';
+
+  @override
+  String habitStreak(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'අඛණ්ඩ දින $count',
+      one: 'අඛණ්ඩ දින 1',
+      zero: 'තවම අඛණ්ඩ දින නැත',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String habitWeekStreak(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'අඛණ්ඩ සති $count',
+      one: 'අඛණ්ඩ සති 1',
+      zero: 'තවම අඛණ්ඩ සති නැත',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String habitBestStreak(int count) {
+    return 'හොඳම: $count';
+  }
+
+  @override
+  String habitProgressToday(int done, int target) {
+    return 'අද $target න් $done';
+  }
+
+  @override
+  String habitProgressWeek(int done, int target) {
+    return 'මෙම සතියේ $target න් $done';
+  }
+
+  @override
+  String get habitMarkDone => 'සම්පූර්ණ ලෙස සලකුණු කරන්න';
+
+  @override
+  String get habitUndo => 'අහෝසි කරන්න';
+
+  @override
+  String get habitCalendar => 'පසුගිය සති 5';
+
+  @override
+  String get habitEmpty =>
+      'එක් දිනක් බැගින් යහපත් පුරුදු ගොඩනඟන්න. පුරුදු කිසිවිටෙක ඔබේ මුදල් වාර්තාවලට බලපාන්නේ නැත.';
+
+  @override
+  String habitNotifTitle(String name) {
+    return '$name සඳහා වේලාවයි';
+  }
+
+  @override
+  String get habitNotifBody => 'ඔබේ අඛණ්ඩතාව පවත්වා ගන්න!';
+
+  @override
+  String get habitDeleteBody => 'පුරුද්ද සහ එහි ඉතිහාසය මකා දමනු ලැබේ.';
+
+  @override
+  String get eventsTitle => 'වැදගත් දින';
+
+  @override
+  String get eventAdd => 'නව දිනයක්';
+
+  @override
+  String get eventEdit => 'දිනය සංස්කරණය';
+
+  @override
+  String get eventTitle => 'මාතෘකාව';
+
+  @override
+  String get eventTitleHint => 'උදා: අම්මාගේ උපන්දිනය';
+
+  @override
+  String get eventType => 'වර්ගය';
+
+  @override
+  String get eventBirthday => 'උපන්දිනය';
+
+  @override
+  String get eventAnniversary => 'සංවත්සරය';
+
+  @override
+  String get eventAppointment => 'හමුවීම';
+
+  @override
+  String get eventExam => 'විභාගය';
+
+  @override
+  String get eventOther => 'වෙනත්';
+
+  @override
+  String get eventDate => 'දිනය';
+
+  @override
+  String get eventRemind => 'මට මතක් කරන්න';
+
+  @override
+  String get eventNoReminder => 'සිහිකැඳවීමක් නැත';
+
+  @override
+  String get eventBudget => 'මෙම අවස්ථාව සඳහා අයවැය (අත්‍යවශ්‍ය නැත)';
+
+  @override
+  String get eventBudgetHelp => 'සැලැස්මක් පමණි — එය ඔබේ ශේෂයන් වෙනස් නොකරයි.';
+
+  @override
+  String get eventEmpty =>
+      'උපන්දිනයක්, සංවත්සරයක් හෝ විභාගයක් නැවත කිසිදා අමතක නොකරන්න.';
+
+  @override
+  String get eventUpcoming => 'ඉදිරි';
+
+  @override
+  String get eventPast => 'පසුගිය';
+
+  @override
+  String eventInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින $countකින්',
+      one: 'හෙට',
+      zero: 'අද',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String eventTurns(int age) {
+    return 'වයස $age සපිරේ';
+  }
+
+  @override
+  String eventYears(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'වසර $count',
+      one: 'වසර 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get eventCalendar => 'දින දර්ශනය';
+
+  @override
+  String get eventList => 'ලැයිස්තුව';
+
+  @override
+  String get eventNoneThisDay => 'මෙම දිනයේ කිසිවක් නැත';
+
+  @override
+  String eventNotifTitle(String title) {
+    return '$title';
+  }
+
+  @override
+  String eventNotifBody(String when) {
+    return '$when';
+  }
+
+  @override
+  String get reportsTitle => 'වාර්තා';
+
+  @override
+  String get reportTotalIncome => 'මුළු ආදායම';
+
+  @override
+  String get reportTotalExpenses => 'මුළු වියදම්';
+
+  @override
+  String get reportNetCashFlow => 'ශුද්ධ මුදල් ප්‍රවාහය';
+
+  @override
+  String get reportNetHelp => 'මෙම කාලයේ ආදායම අඩු වියදම්';
+
+  @override
+  String get reportOtherMovements => 'අනෙකුත් මුදල් චලනයන්';
+
+  @override
+  String get reportOtherMovementsHelp =>
+      'ණය, ආපසු ගෙවීම්, ප්‍රතිපූරණ සහ ශේෂ නිවැරදි කිරීම්. ආදායම හෝ වියදම නොවේ.';
+
+  @override
+  String get reportMoneyIn => 'ලැබුණු මුදල්';
+
+  @override
+  String get reportMoneyOut => 'ගිය මුදල්';
+
+  @override
+  String get reportIncomeVsExpenses => 'ආදායම සහ වියදම්';
+
+  @override
+  String get reportExpensesByCategory => 'වර්ගය අනුව වියදම්';
+
+  @override
+  String get reportIncomeByCategory => 'මූලාශ්‍රය අනුව ආදායම';
+
+  @override
+  String get reportDailyTrend => 'දෛනික වියදම්';
+
+  @override
+  String get reportMonthlyTrend => 'මාසික වියදම් (පසුගිය මාස 6)';
+
+  @override
+  String get reportAccountBalances => 'ගිණුම් ශේෂයන් (දැන්)';
+
+  @override
+  String get reportLoanBalances => 'ණය ශේෂයන් (දැන්)';
+
+  @override
+  String get reportSavings => 'ඉතිරිකිරීම්';
+
+  @override
+  String get reportSavingsTransfers => 'මෙම කාලයේ ඉතිරිකිරීම්වලට මාරු කළ';
+
+  @override
+  String get reportNoData => 'මෙම කාලය තුළ ගනුදෙනු නැත';
+
+  @override
+  String reportChartIncomeExpense(String income, String expenses) {
+    return 'ආදායම $income, වියදම් $expenses';
+  }
+
+  @override
+  String get reportShare => 'සාරාංශය බෙදාගන්න';
+
+  @override
+  String get reportExportCsv => 'CSV අපනයනය';
+
+  @override
+  String get reportShareTitle => 'වාර්තාව බෙදාගන්න';
+
+  @override
+  String get reportShareIncludeCategories => 'වර්ග අනුව එකතු ඇතුළත් කරන්න';
+
+  @override
+  String get reportShareIncludeBalances => 'ගිණුම් ශේෂයන් ඇතුළත් කරන්න';
+
+  @override
+  String get reportSharePrivacy =>
+      'ඔබ පහතින් තෝරන දේ පමණක් බෙදාගනු ලැබේ. ඔබ බෙදා ගැනීමට යෙදුමක් තෝරා නොගන්නේ නම් කිසිවක් කොහේවත් යවනු නොලැබේ.';
+
+  @override
+  String get reportPreview => 'පෙරදසුන';
+
+  @override
+  String get exportTitle => 'ගනුදෙනු අපනයනය';
+
+  @override
+  String get exportIncludeNotes => 'විස්තර සහ සටහන් ඇතුළත් කරන්න';
+
+  @override
+  String get exportIncludeAccounts => 'ගිණුම් නම් ඇතුළත් කරන්න';
+
+  @override
+  String exportRows(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ගනුදෙනු $count',
+      one: 'ගනුදෙනු 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get exportDone => 'CSV ගොනුව සූදානම්';
+
+  @override
+  String get exportNothing => 'මෙම කාලයේ අපනයනය කිරීමට ගනුදෙනු නැත';
+
+  @override
+  String get exportPrivacyNote =>
+      'CSV ගොනුවක් සංකේතනය කර නැත. ගොනුව ලබා ගන්නා ඕනෑම අයෙකුට එය කියවිය හැක.';
+
+  @override
+  String get csvDate => 'දිනය';
+
+  @override
+  String get csvTime => 'වේලාව';
+
+  @override
+  String get csvType => 'වර්ගය';
+
+  @override
+  String get csvCategory => 'ප්‍රවර්ගය';
+
+  @override
+  String get csvAccount => 'ගිණුම';
+
+  @override
+  String get csvToAccount => 'ලබන ගිණුම';
+
+  @override
+  String get csvAmount => 'මුදල';
+
+  @override
+  String get csvCurrency => 'මුදල් ඒකකය';
+
+  @override
+  String get csvDescription => 'විස්තරය';
+
+  @override
+  String get csvNote => 'සටහන';
+
+  @override
+  String get csvCountsAs => 'ගණන් ගැනෙන්නේ';
+
+  @override
+  String get csvCountsIncome => 'ආදායම';
+
+  @override
+  String get csvCountsExpense => 'වියදම';
+
+  @override
+  String get csvCountsNeither => 'ආදායම හෝ වියදම නොවේ';
+
+  @override
+  String get homeSeeSavings => 'ඉලක්ක බලන්න';
 }

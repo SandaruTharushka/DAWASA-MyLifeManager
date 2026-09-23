@@ -3979,6 +3979,996 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.'**
   String get billLoanNote;
+
+  /// No description provided for @savingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Savings goals'**
+  String get savingsTitle;
+
+  /// No description provided for @savingsAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'New goal'**
+  String get savingsAdd;
+
+  /// No description provided for @savingsEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit goal'**
+  String get savingsEdit;
+
+  /// No description provided for @savingsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Goal name'**
+  String get savingsName;
+
+  /// No description provided for @savingsNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. New phone, Emergency fund'**
+  String get savingsNameHint;
+
+  /// No description provided for @savingsTarget.
+  ///
+  /// In en, this message translates to:
+  /// **'Target amount'**
+  String get savingsTarget;
+
+  /// No description provided for @savingsTargetDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Target date'**
+  String get savingsTargetDate;
+
+  /// No description provided for @savingsLinkedAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Kept in account'**
+  String get savingsLinkedAccount;
+
+  /// No description provided for @savingsLinkedAccountHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'If you choose a savings account, adding money moves it there as a transfer. It is never counted as spending.'**
+  String get savingsLinkedAccountHelp;
+
+  /// No description provided for @savingsNoLinkedAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Just track it (no account)'**
+  String get savingsNoLinkedAccount;
+
+  /// No description provided for @savingsSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get savingsSaved;
+
+  /// No description provided for @savingsToGo.
+  ///
+  /// In en, this message translates to:
+  /// **'To go'**
+  String get savingsToGo;
+
+  /// No description provided for @savingsReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Goal reached!'**
+  String get savingsReached;
+
+  /// No description provided for @savingsDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Add money'**
+  String get savingsDeposit;
+
+  /// No description provided for @savingsWithdraw.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw'**
+  String get savingsWithdraw;
+
+  /// No description provided for @savingsFromAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Take money from'**
+  String get savingsFromAccount;
+
+  /// No description provided for @savingsToAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Put money into'**
+  String get savingsToAccount;
+
+  /// No description provided for @savingsDepositNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The money moves from {from} to {to}. This is a transfer, not an expense.'**
+  String savingsDepositNote(String from, String to);
+
+  /// No description provided for @savingsTrackOnlyNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Your balances stay the same; the amount is set aside for this goal.'**
+  String get savingsTrackOnlyNote;
+
+  /// No description provided for @savingsWithdrawTooMuch.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot withdraw more than is saved'**
+  String get savingsWithdrawTooMuch;
+
+  /// No description provided for @savingsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No savings goals yet. Save a little every month for something you want.'**
+  String get savingsEmpty;
+
+  /// No description provided for @savingsHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Movements'**
+  String get savingsHistory;
+
+  /// No description provided for @savingsMonthlyNeeded.
+  ///
+  /// In en, this message translates to:
+  /// **'Save {amount} a month to reach it on time'**
+  String savingsMonthlyNeeded(String amount);
+
+  /// No description provided for @savingsRemindMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me every month'**
+  String get savingsRemindMonthly;
+
+  /// No description provided for @savingsDeleteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Transfers already recorded stay in your accounts.'**
+  String get savingsDeleteBody;
+
+  /// No description provided for @savingsTotalSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Total saved'**
+  String get savingsTotalSaved;
+
+  /// No description provided for @notifSavingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Savings: {name}'**
+  String notifSavingsTitle(String name);
+
+  /// No description provided for @notifSavingsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} to go. Add a little today?'**
+  String notifSavingsBody(String amount);
+
+  /// No description provided for @loansTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Loans & debts'**
+  String get loansTitle;
+
+  /// No description provided for @loanAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'New loan'**
+  String get loanAdd;
+
+  /// No description provided for @loanEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit loan'**
+  String get loanEdit;
+
+  /// No description provided for @loanDirection.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get loanDirection;
+
+  /// No description provided for @loanLent.
+  ///
+  /// In en, this message translates to:
+  /// **'I lent money'**
+  String get loanLent;
+
+  /// No description provided for @loanBorrowed.
+  ///
+  /// In en, this message translates to:
+  /// **'I borrowed money'**
+  String get loanBorrowed;
+
+  /// No description provided for @loanOwedToYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Owed to you'**
+  String get loanOwedToYou;
+
+  /// No description provided for @loanYouOwe.
+  ///
+  /// In en, this message translates to:
+  /// **'You owe'**
+  String get loanYouOwe;
+
+  /// No description provided for @loanPerson.
+  ///
+  /// In en, this message translates to:
+  /// **'Person or institution'**
+  String get loanPerson;
+
+  /// No description provided for @loanPrincipal.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get loanPrincipal;
+
+  /// No description provided for @loanInterestRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Interest rate % per year (optional)'**
+  String get loanInterestRate;
+
+  /// No description provided for @loanStartDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get loanStartDate;
+
+  /// No description provided for @loanDueDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Due date (optional)'**
+  String get loanDueDate;
+
+  /// No description provided for @loanRecordMovement.
+  ///
+  /// In en, this message translates to:
+  /// **'Record the money movement in an account'**
+  String get loanRecordMovement;
+
+  /// No description provided for @loanRecordMovementHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Updates the account balance. Loan money is never counted as income or spending.'**
+  String get loanRecordMovementHelp;
+
+  /// No description provided for @loanOutstanding.
+  ///
+  /// In en, this message translates to:
+  /// **'Outstanding'**
+  String get loanOutstanding;
+
+  /// No description provided for @loanRepaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Repaid'**
+  String get loanRepaid;
+
+  /// No description provided for @loanRecordRepayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Record repayment'**
+  String get loanRecordRepayment;
+
+  /// No description provided for @loanRepaymentPrincipal.
+  ///
+  /// In en, this message translates to:
+  /// **'Towards the loan amount'**
+  String get loanRepaymentPrincipal;
+
+  /// No description provided for @loanRepaymentInterest.
+  ///
+  /// In en, this message translates to:
+  /// **'Interest (optional)'**
+  String get loanRepaymentInterest;
+
+  /// No description provided for @loanRepaymentInterestHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Interest received is income; interest paid is an expense.'**
+  String get loanRepaymentInterestHelp;
+
+  /// No description provided for @loanRepaymentTooMuch.
+  ///
+  /// In en, this message translates to:
+  /// **'This is more than the outstanding amount'**
+  String get loanRepaymentTooMuch;
+
+  /// No description provided for @loanSettle.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as settled'**
+  String get loanSettle;
+
+  /// No description provided for @loanSettleBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The loan is closed. Any amount still outstanding is written off and no longer counted.'**
+  String get loanSettleBody;
+
+  /// No description provided for @loanReopen.
+  ///
+  /// In en, this message translates to:
+  /// **'Reopen loan'**
+  String get loanReopen;
+
+  /// No description provided for @loanSettled.
+  ///
+  /// In en, this message translates to:
+  /// **'Settled'**
+  String get loanSettled;
+
+  /// No description provided for @loanActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get loanActive;
+
+  /// No description provided for @loanEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No loans. Keep track of money you lent to or borrowed from others.'**
+  String get loanEmpty;
+
+  /// No description provided for @loanHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Repayments'**
+  String get loanHistory;
+
+  /// No description provided for @loanNoRepayments.
+  ///
+  /// In en, this message translates to:
+  /// **'No repayments yet'**
+  String get loanNoRepayments;
+
+  /// No description provided for @loanDeleteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Money movements recorded for this loan are deleted too, and balances are recalculated.'**
+  String get loanDeleteBody;
+
+  /// No description provided for @loanDueOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Due {date}'**
+  String loanDueOn(String date);
+
+  /// No description provided for @loanNotifTitleLent.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} should repay you'**
+  String loanNotifTitleLent(String name);
+
+  /// No description provided for @loanNotifTitleBorrowed.
+  ///
+  /// In en, this message translates to:
+  /// **'Repay {name}'**
+  String loanNotifTitleBorrowed(String name);
+
+  /// No description provided for @loanNotifBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} outstanding, due {when}'**
+  String loanNotifBody(String amount, String when);
+
+  /// No description provided for @loanTotalOwedToYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Total owed to you'**
+  String get loanTotalOwedToYou;
+
+  /// No description provided for @loanTotalYouOwe.
+  ///
+  /// In en, this message translates to:
+  /// **'Total you owe'**
+  String get loanTotalYouOwe;
+
+  /// No description provided for @habitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Habits'**
+  String get habitsTitle;
+
+  /// No description provided for @habitAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'New habit'**
+  String get habitAdd;
+
+  /// No description provided for @habitEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit habit'**
+  String get habitEdit;
+
+  /// No description provided for @habitName.
+  ///
+  /// In en, this message translates to:
+  /// **'Habit'**
+  String get habitName;
+
+  /// No description provided for @habitNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Drink water, Read, Exercise'**
+  String get habitNameHint;
+
+  /// No description provided for @habitFrequency.
+  ///
+  /// In en, this message translates to:
+  /// **'Goal'**
+  String get habitFrequency;
+
+  /// No description provided for @habitDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'Every day'**
+  String get habitDaily;
+
+  /// No description provided for @habitWeekly.
+  ///
+  /// In en, this message translates to:
+  /// **'Every week'**
+  String get habitWeekly;
+
+  /// No description provided for @habitTimesPerDay.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Once a day} other{{count} times a day}}'**
+  String habitTimesPerDay(int count);
+
+  /// No description provided for @habitTimesPerWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Once a week} other{{count} times a week}}'**
+  String habitTimesPerWeek(int count);
+
+  /// No description provided for @habitTarget.
+  ///
+  /// In en, this message translates to:
+  /// **'Times'**
+  String get habitTarget;
+
+  /// No description provided for @habitReminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily reminder'**
+  String get habitReminder;
+
+  /// No description provided for @habitStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No streak yet} =1{1 day streak} other{{count} day streak}}'**
+  String habitStreak(int count);
+
+  /// No description provided for @habitWeekStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No streak yet} =1{1 week streak} other{{count} week streak}}'**
+  String habitWeekStreak(int count);
+
+  /// No description provided for @habitBestStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'Best: {count}'**
+  String habitBestStreak(int count);
+
+  /// No description provided for @habitProgressToday.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {target} today'**
+  String habitProgressToday(int done, int target);
+
+  /// No description provided for @habitProgressWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {target} this week'**
+  String habitProgressWeek(int done, int target);
+
+  /// No description provided for @habitMarkDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark done'**
+  String get habitMarkDone;
+
+  /// No description provided for @habitUndo.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo'**
+  String get habitUndo;
+
+  /// No description provided for @habitCalendar.
+  ///
+  /// In en, this message translates to:
+  /// **'Last 5 weeks'**
+  String get habitCalendar;
+
+  /// No description provided for @habitEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Build good habits one day at a time. Habits never affect your money reports.'**
+  String get habitEmpty;
+
+  /// No description provided for @habitNotifTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Time for: {name}'**
+  String habitNotifTitle(String name);
+
+  /// No description provided for @habitNotifBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep your streak going!'**
+  String get habitNotifBody;
+
+  /// No description provided for @habitDeleteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The habit and its history will be deleted.'**
+  String get habitDeleteBody;
+
+  /// No description provided for @eventsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Important dates'**
+  String get eventsTitle;
+
+  /// No description provided for @eventAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'New date'**
+  String get eventAdd;
+
+  /// No description provided for @eventEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit date'**
+  String get eventEdit;
+
+  /// No description provided for @eventTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get eventTitle;
+
+  /// No description provided for @eventTitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Amma\'s birthday'**
+  String get eventTitleHint;
+
+  /// No description provided for @eventType.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get eventType;
+
+  /// No description provided for @eventBirthday.
+  ///
+  /// In en, this message translates to:
+  /// **'Birthday'**
+  String get eventBirthday;
+
+  /// No description provided for @eventAnniversary.
+  ///
+  /// In en, this message translates to:
+  /// **'Anniversary'**
+  String get eventAnniversary;
+
+  /// No description provided for @eventAppointment.
+  ///
+  /// In en, this message translates to:
+  /// **'Appointment'**
+  String get eventAppointment;
+
+  /// No description provided for @eventExam.
+  ///
+  /// In en, this message translates to:
+  /// **'Examination'**
+  String get eventExam;
+
+  /// No description provided for @eventOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get eventOther;
+
+  /// No description provided for @eventDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get eventDate;
+
+  /// No description provided for @eventRemind.
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me'**
+  String get eventRemind;
+
+  /// No description provided for @eventNoReminder.
+  ///
+  /// In en, this message translates to:
+  /// **'No reminder'**
+  String get eventNoReminder;
+
+  /// No description provided for @eventBudget.
+  ///
+  /// In en, this message translates to:
+  /// **'Budget for this event (optional)'**
+  String get eventBudget;
+
+  /// No description provided for @eventBudgetHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'A plan only — it does not change your balances.'**
+  String get eventBudgetHelp;
+
+  /// No description provided for @eventEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Never forget a birthday, anniversary or exam again.'**
+  String get eventEmpty;
+
+  /// No description provided for @eventUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get eventUpcoming;
+
+  /// No description provided for @eventPast.
+  ///
+  /// In en, this message translates to:
+  /// **'Past'**
+  String get eventPast;
+
+  /// No description provided for @eventInDays.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Today} =1{Tomorrow} other{In {count} days}}'**
+  String eventInDays(int count);
+
+  /// No description provided for @eventTurns.
+  ///
+  /// In en, this message translates to:
+  /// **'Turns {age}'**
+  String eventTurns(int age);
+
+  /// No description provided for @eventYears.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 year} other{{count} years}}'**
+  String eventYears(int count);
+
+  /// No description provided for @eventCalendar.
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar'**
+  String get eventCalendar;
+
+  /// No description provided for @eventList.
+  ///
+  /// In en, this message translates to:
+  /// **'List'**
+  String get eventList;
+
+  /// No description provided for @eventNoneThisDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing on this day'**
+  String get eventNoneThisDay;
+
+  /// No description provided for @eventNotifTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{title}'**
+  String eventNotifTitle(String title);
+
+  /// No description provided for @eventNotifBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{when}'**
+  String eventNotifBody(String when);
+
+  /// No description provided for @reportsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports'**
+  String get reportsTitle;
+
+  /// No description provided for @reportTotalIncome.
+  ///
+  /// In en, this message translates to:
+  /// **'Total income'**
+  String get reportTotalIncome;
+
+  /// No description provided for @reportTotalExpenses.
+  ///
+  /// In en, this message translates to:
+  /// **'Total expenses'**
+  String get reportTotalExpenses;
+
+  /// No description provided for @reportNetCashFlow.
+  ///
+  /// In en, this message translates to:
+  /// **'Net cash flow'**
+  String get reportNetCashFlow;
+
+  /// No description provided for @reportNetHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Income minus expenses in this period'**
+  String get reportNetHelp;
+
+  /// No description provided for @reportOtherMovements.
+  ///
+  /// In en, this message translates to:
+  /// **'Other money movements'**
+  String get reportOtherMovements;
+
+  /// No description provided for @reportOtherMovementsHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Loans, repayments, reimbursements and balance corrections. Not income or spending.'**
+  String get reportOtherMovementsHelp;
+
+  /// No description provided for @reportMoneyIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Money in'**
+  String get reportMoneyIn;
+
+  /// No description provided for @reportMoneyOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Money out'**
+  String get reportMoneyOut;
+
+  /// No description provided for @reportIncomeVsExpenses.
+  ///
+  /// In en, this message translates to:
+  /// **'Income vs expenses'**
+  String get reportIncomeVsExpenses;
+
+  /// No description provided for @reportExpensesByCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Expenses by category'**
+  String get reportExpensesByCategory;
+
+  /// No description provided for @reportIncomeByCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Income by source'**
+  String get reportIncomeByCategory;
+
+  /// No description provided for @reportDailyTrend.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily spending'**
+  String get reportDailyTrend;
+
+  /// No description provided for @reportMonthlyTrend.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly spending (last 6 months)'**
+  String get reportMonthlyTrend;
+
+  /// No description provided for @reportAccountBalances.
+  ///
+  /// In en, this message translates to:
+  /// **'Account balances (now)'**
+  String get reportAccountBalances;
+
+  /// No description provided for @reportLoanBalances.
+  ///
+  /// In en, this message translates to:
+  /// **'Loan balances (now)'**
+  String get reportLoanBalances;
+
+  /// No description provided for @reportSavings.
+  ///
+  /// In en, this message translates to:
+  /// **'Savings'**
+  String get reportSavings;
+
+  /// No description provided for @reportSavingsTransfers.
+  ///
+  /// In en, this message translates to:
+  /// **'Moved to savings in this period'**
+  String get reportSavingsTransfers;
+
+  /// No description provided for @reportNoData.
+  ///
+  /// In en, this message translates to:
+  /// **'No transactions in this period'**
+  String get reportNoData;
+
+  /// No description provided for @reportChartIncomeExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Income {income}, expenses {expenses}'**
+  String reportChartIncomeExpense(String income, String expenses);
+
+  /// No description provided for @reportShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share summary'**
+  String get reportShare;
+
+  /// No description provided for @reportExportCsv.
+  ///
+  /// In en, this message translates to:
+  /// **'Export CSV'**
+  String get reportExportCsv;
+
+  /// No description provided for @reportShareTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Share report'**
+  String get reportShareTitle;
+
+  /// No description provided for @reportShareIncludeCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Include category totals'**
+  String get reportShareIncludeCategories;
+
+  /// No description provided for @reportShareIncludeBalances.
+  ///
+  /// In en, this message translates to:
+  /// **'Include account balances'**
+  String get reportShareIncludeBalances;
+
+  /// No description provided for @reportSharePrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Only what you select below is shared. Nothing is sent anywhere unless you choose an app to share with.'**
+  String get reportSharePrivacy;
+
+  /// No description provided for @reportPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get reportPreview;
+
+  /// No description provided for @exportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Export transactions'**
+  String get exportTitle;
+
+  /// No description provided for @exportIncludeNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Include descriptions and notes'**
+  String get exportIncludeNotes;
+
+  /// No description provided for @exportIncludeAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Include account names'**
+  String get exportIncludeAccounts;
+
+  /// No description provided for @exportRows.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 transaction} other{{count} transactions}}'**
+  String exportRows(int count);
+
+  /// No description provided for @exportDone.
+  ///
+  /// In en, this message translates to:
+  /// **'CSV file ready'**
+  String get exportDone;
+
+  /// No description provided for @exportNothing.
+  ///
+  /// In en, this message translates to:
+  /// **'No transactions to export in this period'**
+  String get exportNothing;
+
+  /// No description provided for @exportPrivacyNote.
+  ///
+  /// In en, this message translates to:
+  /// **'A CSV file is not encrypted. Anyone who gets the file can read it.'**
+  String get exportPrivacyNote;
+
+  /// No description provided for @csvDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get csvDate;
+
+  /// No description provided for @csvTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get csvTime;
+
+  /// No description provided for @csvType.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get csvType;
+
+  /// No description provided for @csvCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get csvCategory;
+
+  /// No description provided for @csvAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get csvAccount;
+
+  /// No description provided for @csvToAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'To account'**
+  String get csvToAccount;
+
+  /// No description provided for @csvAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get csvAmount;
+
+  /// No description provided for @csvCurrency.
+  ///
+  /// In en, this message translates to:
+  /// **'Currency'**
+  String get csvCurrency;
+
+  /// No description provided for @csvDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get csvDescription;
+
+  /// No description provided for @csvNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Note'**
+  String get csvNote;
+
+  /// No description provided for @csvCountsAs.
+  ///
+  /// In en, this message translates to:
+  /// **'Counts as'**
+  String get csvCountsAs;
+
+  /// No description provided for @csvCountsIncome.
+  ///
+  /// In en, this message translates to:
+  /// **'Income'**
+  String get csvCountsIncome;
+
+  /// No description provided for @csvCountsExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Expense'**
+  String get csvCountsExpense;
+
+  /// No description provided for @csvCountsNeither.
+  ///
+  /// In en, this message translates to:
+  /// **'Not income or expense'**
+  String get csvCountsNeither;
+
+  /// No description provided for @homeSeeSavings.
+  ///
+  /// In en, this message translates to:
+  /// **'See goals'**
+  String get homeSeeSavings;
 }
 
 class _AppLocalizationsDelegate

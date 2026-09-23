@@ -14,6 +14,8 @@ import '../bills/presentation/bill_providers.dart';
 import '../bills/presentation/bills_tab.dart';
 import '../budgets/domain/daily_allowance.dart';
 import '../budgets/presentation/budget_providers.dart';
+import '../savings/presentation/savings_providers.dart';
+import '../savings/presentation/savings_screens.dart';
 import '../tasks/presentation/task_providers.dart';
 import '../tasks/presentation/tasks_tab.dart';
 
@@ -186,8 +188,48 @@ class HomeExtraSections extends StatelessWidget {
   );
 }
 
-/// Savings goals summary (schema v3).
-const List<Widget> homeMoneySections = [];
+/// Savings goals summary.
+const List<Widget> homeMoneySections = [_SavingsSection()];
+
+class _SavingsSection extends ConsumerWidget {
+  const _SavingsSection();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = context.l10n;
+    final goals = (ref.watch(savingsGoalsProvider).value ?? const [])
+        .where((g) => !g.goal.isArchived)
+        .toList();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        SectionHeader(
+          title: l10n.homeSavingsProgress,
+          actionLabel: goals.isEmpty ? l10n.savingsAdd : l10n.homeSeeSavings,
+          onAction: () => goals.isEmpty
+              ? context.push(Routes.newSavingsGoal)
+              : context.go(Routes.moneyTab('savings')),
+        ),
+        if (goals.isEmpty)
+          AppCard(
+            child: Row(
+              children: [
+                Icon(Icons.savings_outlined, color: context.colors.primary),
+                const SizedBox(width: Gap.md),
+                Expanded(child: Text(l10n.homeNoSavingsGoals)),
+              ],
+            ),
+          )
+        else
+          for (final g in goals.take(2))
+            Padding(
+              padding: const EdgeInsets.only(bottom: Gap.sm),
+              child: SavingsGoalCard(view: g),
+            ),
+      ],
+    );
+  }
+}
 
 class _PendingTasksSection extends ConsumerWidget {
   const _PendingTasksSection();

@@ -8,6 +8,7 @@ import 'enums.dart';
 import 'seed.dart';
 import 'tables/common.dart';
 import 'tables/finance_tables.dart';
+import 'tables/life_tables.dart';
 import 'tables/planner_tables.dart';
 import 'tables/system_tables.dart';
 
@@ -22,6 +23,8 @@ part 'app_database.g.dart';
 ///  * v1 – accounts, categories, transactions, recurring rules, attachments,
 ///         settings, migration log.
 ///  * v2 – budgets, tasks, task reminders, bills, bill payments, shopping.
+///  * v3 – savings goals and movements, loans and repayments, habits and
+///         habit logs, important dates.
 @DriftDatabase(
   tables: [
     Accounts,
@@ -39,12 +42,19 @@ part 'app_database.g.dart';
     BillPayments,
     ShoppingLists,
     ShoppingItems,
+    SavingsGoals,
+    SavingsMovements,
+    Loans,
+    LoanRepayments,
+    Habits,
+    HabitLogs,
+    PersonalEvents,
   ],
 )
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.e);
 
-  static const int latestSchemaVersion = 2;
+  static const int latestSchemaVersion = 3;
 
   @override
   int get schemaVersion => latestSchemaVersion;
@@ -76,6 +86,23 @@ class AppDatabase extends _$AppDatabase {
             await m.createIndex(schema.idxBillPaymentsBill);
             await m.createIndex(schema.idxShoppingItemsList);
             await _logMigration(2, 'Budgets, tasks, bills and shopping lists');
+          },
+          from2To3: (m, schema) async {
+            await m.createTable(schema.savingsGoals);
+            await m.createTable(schema.savingsMovements);
+            await m.createTable(schema.loans);
+            await m.createTable(schema.loanRepayments);
+            await m.createTable(schema.habits);
+            await m.createTable(schema.habitLogs);
+            await m.createTable(schema.personalEvents);
+            await m.createIndex(schema.idxSavingsMovementsGoal);
+            await m.createIndex(schema.idxLoanRepaymentsLoan);
+            await m.createIndex(schema.idxHabitLogsDate);
+            await m.createIndex(schema.idxEventsDate);
+            await _logMigration(
+              3,
+              'Savings, loans, habits and important dates',
+            );
           },
         )(m, from, to);
       });

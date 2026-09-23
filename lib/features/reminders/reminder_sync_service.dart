@@ -11,6 +11,7 @@ import '../../core/notifications/notification_service.dart';
 import '../../core/providers.dart';
 import '../bills/presentation/bill_providers.dart';
 import '../tasks/presentation/task_providers.dart';
+import 'extra_reminder_sources.dart';
 import 'reminder_planner.dart';
 
 /// Builds additional reminders (savings, loans, habits, events).
@@ -21,13 +22,30 @@ typedef ExtraReminderSource = Future<List<PlannedNotification>> Function(
 );
 
 final extraReminderSourcesProvider = Provider<List<ExtraReminderSource>>(
-  (ref) => const [],
+  (ref) => const [
+    eventReminders,
+    loanReminders,
+    savingsReminders,
+    habitReminders,
+  ],
 );
 
 /// Tables whose changes require a reschedule.
 final reminderTablesProvider = Provider<List<TableInfo<Table, Object?>>>((ref) {
   final db = ref.watch(databaseProvider);
-  return [db.tasks, db.taskReminders, db.bills, db.billPayments];
+  return [
+    db.tasks,
+    db.taskReminders,
+    db.bills,
+    db.billPayments,
+    db.personalEvents,
+    db.loans,
+    db.loanRepayments,
+    db.savingsGoals,
+    db.savingsMovements,
+    db.habits,
+    db.habitLogs,
+  ];
 });
 
 /// Keeps the scheduled Android notifications in sync with the data.

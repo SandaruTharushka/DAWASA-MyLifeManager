@@ -45,6 +45,23 @@ abstract final class Routes {
   static String bill(String id) => '/bills/$id';
   static String editBill(String id) => '/bills/$id/edit';
 
+  // Savings & loans
+  static const newSavingsGoal = '/savings/new';
+  static String savingsGoal(String id) => '/savings/$id';
+  static String editSavingsGoal(String id) => '/savings/$id/edit';
+  static const newLoan = '/loans/new';
+  static String loan(String id) => '/loans/$id';
+  static String editLoan(String id) => '/loans/$id/edit';
+
+  // Habits & events
+  static const newHabit = '/habits/new';
+  static String editHabit(String id) => '/habits/$id/edit';
+  static const newEvent = '/events/new';
+  static String editEvent(String id) => '/events/$id/edit';
+
+  // Reports
+  static const exportCsv = '/reports/export';
+
   // Planner
   static const newTask = '/tasks/new';
   static String newTaskOn(String isoDate) => '/tasks/new?date=$isoDate';

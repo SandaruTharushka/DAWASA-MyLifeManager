@@ -2249,4 +2249,605 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get billLoanNote =>
       'Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.';
+
+  @override
+  String get savingsTitle => 'Savings goals';
+
+  @override
+  String get savingsAdd => 'New goal';
+
+  @override
+  String get savingsEdit => 'Edit goal';
+
+  @override
+  String get savingsName => 'Goal name';
+
+  @override
+  String get savingsNameHint => 'e.g. New phone, Emergency fund';
+
+  @override
+  String get savingsTarget => 'Target amount';
+
+  @override
+  String get savingsTargetDate => 'Target date';
+
+  @override
+  String get savingsLinkedAccount => 'Kept in account';
+
+  @override
+  String get savingsLinkedAccountHelp =>
+      'If you choose a savings account, adding money moves it there as a transfer. It is never counted as spending.';
+
+  @override
+  String get savingsNoLinkedAccount => 'Just track it (no account)';
+
+  @override
+  String get savingsSaved => 'Saved';
+
+  @override
+  String get savingsToGo => 'To go';
+
+  @override
+  String get savingsReached => 'Goal reached!';
+
+  @override
+  String get savingsDeposit => 'Add money';
+
+  @override
+  String get savingsWithdraw => 'Withdraw';
+
+  @override
+  String get savingsFromAccount => 'Take money from';
+
+  @override
+  String get savingsToAccount => 'Put money into';
+
+  @override
+  String savingsDepositNote(String from, String to) {
+    return 'The money moves from $from to $to. This is a transfer, not an expense.';
+  }
+
+  @override
+  String get savingsTrackOnlyNote =>
+      'Your balances stay the same; the amount is set aside for this goal.';
+
+  @override
+  String get savingsWithdrawTooMuch => 'You cannot withdraw more than is saved';
+
+  @override
+  String get savingsEmpty =>
+      'No savings goals yet. Save a little every month for something you want.';
+
+  @override
+  String get savingsHistory => 'Movements';
+
+  @override
+  String savingsMonthlyNeeded(String amount) {
+    return 'Save $amount a month to reach it on time';
+  }
+
+  @override
+  String get savingsRemindMonthly => 'Remind me every month';
+
+  @override
+  String get savingsDeleteBody =>
+      'Transfers already recorded stay in your accounts.';
+
+  @override
+  String get savingsTotalSaved => 'Total saved';
+
+  @override
+  String notifSavingsTitle(String name) {
+    return 'Savings: $name';
+  }
+
+  @override
+  String notifSavingsBody(String amount) {
+    return '$amount to go. Add a little today?';
+  }
+
+  @override
+  String get loansTitle => 'Loans & debts';
+
+  @override
+  String get loanAdd => 'New loan';
+
+  @override
+  String get loanEdit => 'Edit loan';
+
+  @override
+  String get loanDirection => 'Type';
+
+  @override
+  String get loanLent => 'I lent money';
+
+  @override
+  String get loanBorrowed => 'I borrowed money';
+
+  @override
+  String get loanOwedToYou => 'Owed to you';
+
+  @override
+  String get loanYouOwe => 'You owe';
+
+  @override
+  String get loanPerson => 'Person or institution';
+
+  @override
+  String get loanPrincipal => 'Amount';
+
+  @override
+  String get loanInterestRate => 'Interest rate % per year (optional)';
+
+  @override
+  String get loanStartDate => 'Date';
+
+  @override
+  String get loanDueDate => 'Due date (optional)';
+
+  @override
+  String get loanRecordMovement => 'Record the money movement in an account';
+
+  @override
+  String get loanRecordMovementHelp =>
+      'Updates the account balance. Loan money is never counted as income or spending.';
+
+  @override
+  String get loanOutstanding => 'Outstanding';
+
+  @override
+  String get loanRepaid => 'Repaid';
+
+  @override
+  String get loanRecordRepayment => 'Record repayment';
+
+  @override
+  String get loanRepaymentPrincipal => 'Towards the loan amount';
+
+  @override
+  String get loanRepaymentInterest => 'Interest (optional)';
+
+  @override
+  String get loanRepaymentInterestHelp =>
+      'Interest received is income; interest paid is an expense.';
+
+  @override
+  String get loanRepaymentTooMuch => 'This is more than the outstanding amount';
+
+  @override
+  String get loanSettle => 'Mark as settled';
+
+  @override
+  String get loanSettleBody =>
+      'The loan is closed. Any amount still outstanding is written off and no longer counted.';
+
+  @override
+  String get loanReopen => 'Reopen loan';
+
+  @override
+  String get loanSettled => 'Settled';
+
+  @override
+  String get loanActive => 'Active';
+
+  @override
+  String get loanEmpty =>
+      'No loans. Keep track of money you lent to or borrowed from others.';
+
+  @override
+  String get loanHistory => 'Repayments';
+
+  @override
+  String get loanNoRepayments => 'No repayments yet';
+
+  @override
+  String get loanDeleteBody =>
+      'Money movements recorded for this loan are deleted too, and balances are recalculated.';
+
+  @override
+  String loanDueOn(String date) {
+    return 'Due $date';
+  }
+
+  @override
+  String loanNotifTitleLent(String name) {
+    return '$name should repay you';
+  }
+
+  @override
+  String loanNotifTitleBorrowed(String name) {
+    return 'Repay $name';
+  }
+
+  @override
+  String loanNotifBody(String amount, String when) {
+    return '$amount outstanding, due $when';
+  }
+
+  @override
+  String get loanTotalOwedToYou => 'Total owed to you';
+
+  @override
+  String get loanTotalYouOwe => 'Total you owe';
+
+  @override
+  String get habitsTitle => 'Habits';
+
+  @override
+  String get habitAdd => 'New habit';
+
+  @override
+  String get habitEdit => 'Edit habit';
+
+  @override
+  String get habitName => 'Habit';
+
+  @override
+  String get habitNameHint => 'e.g. Drink water, Read, Exercise';
+
+  @override
+  String get habitFrequency => 'Goal';
+
+  @override
+  String get habitDaily => 'Every day';
+
+  @override
+  String get habitWeekly => 'Every week';
+
+  @override
+  String habitTimesPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count times a day',
+      one: 'Once a day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String habitTimesPerWeek(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count times a week',
+      one: 'Once a week',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get habitTarget => 'Times';
+
+  @override
+  String get habitReminder => 'Daily reminder';
+
+  @override
+  String habitStreak(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count day streak',
+      one: '1 day streak',
+      zero: 'No streak yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String habitWeekStreak(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count week streak',
+      one: '1 week streak',
+      zero: 'No streak yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String habitBestStreak(int count) {
+    return 'Best: $count';
+  }
+
+  @override
+  String habitProgressToday(int done, int target) {
+    return '$done of $target today';
+  }
+
+  @override
+  String habitProgressWeek(int done, int target) {
+    return '$done of $target this week';
+  }
+
+  @override
+  String get habitMarkDone => 'Mark done';
+
+  @override
+  String get habitUndo => 'Undo';
+
+  @override
+  String get habitCalendar => 'Last 5 weeks';
+
+  @override
+  String get habitEmpty =>
+      'Build good habits one day at a time. Habits never affect your money reports.';
+
+  @override
+  String habitNotifTitle(String name) {
+    return 'Time for: $name';
+  }
+
+  @override
+  String get habitNotifBody => 'Keep your streak going!';
+
+  @override
+  String get habitDeleteBody => 'The habit and its history will be deleted.';
+
+  @override
+  String get eventsTitle => 'Important dates';
+
+  @override
+  String get eventAdd => 'New date';
+
+  @override
+  String get eventEdit => 'Edit date';
+
+  @override
+  String get eventTitle => 'Title';
+
+  @override
+  String get eventTitleHint => 'e.g. Amma\'s birthday';
+
+  @override
+  String get eventType => 'Type';
+
+  @override
+  String get eventBirthday => 'Birthday';
+
+  @override
+  String get eventAnniversary => 'Anniversary';
+
+  @override
+  String get eventAppointment => 'Appointment';
+
+  @override
+  String get eventExam => 'Examination';
+
+  @override
+  String get eventOther => 'Other';
+
+  @override
+  String get eventDate => 'Date';
+
+  @override
+  String get eventRemind => 'Remind me';
+
+  @override
+  String get eventNoReminder => 'No reminder';
+
+  @override
+  String get eventBudget => 'Budget for this event (optional)';
+
+  @override
+  String get eventBudgetHelp =>
+      'A plan only — it does not change your balances.';
+
+  @override
+  String get eventEmpty =>
+      'Never forget a birthday, anniversary or exam again.';
+
+  @override
+  String get eventUpcoming => 'Upcoming';
+
+  @override
+  String get eventPast => 'Past';
+
+  @override
+  String eventInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'In $count days',
+      one: 'Tomorrow',
+      zero: 'Today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String eventTurns(int age) {
+    return 'Turns $age';
+  }
+
+  @override
+  String eventYears(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count years',
+      one: '1 year',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get eventCalendar => 'Calendar';
+
+  @override
+  String get eventList => 'List';
+
+  @override
+  String get eventNoneThisDay => 'Nothing on this day';
+
+  @override
+  String eventNotifTitle(String title) {
+    return '$title';
+  }
+
+  @override
+  String eventNotifBody(String when) {
+    return '$when';
+  }
+
+  @override
+  String get reportsTitle => 'Reports';
+
+  @override
+  String get reportTotalIncome => 'Total income';
+
+  @override
+  String get reportTotalExpenses => 'Total expenses';
+
+  @override
+  String get reportNetCashFlow => 'Net cash flow';
+
+  @override
+  String get reportNetHelp => 'Income minus expenses in this period';
+
+  @override
+  String get reportOtherMovements => 'Other money movements';
+
+  @override
+  String get reportOtherMovementsHelp =>
+      'Loans, repayments, reimbursements and balance corrections. Not income or spending.';
+
+  @override
+  String get reportMoneyIn => 'Money in';
+
+  @override
+  String get reportMoneyOut => 'Money out';
+
+  @override
+  String get reportIncomeVsExpenses => 'Income vs expenses';
+
+  @override
+  String get reportExpensesByCategory => 'Expenses by category';
+
+  @override
+  String get reportIncomeByCategory => 'Income by source';
+
+  @override
+  String get reportDailyTrend => 'Daily spending';
+
+  @override
+  String get reportMonthlyTrend => 'Monthly spending (last 6 months)';
+
+  @override
+  String get reportAccountBalances => 'Account balances (now)';
+
+  @override
+  String get reportLoanBalances => 'Loan balances (now)';
+
+  @override
+  String get reportSavings => 'Savings';
+
+  @override
+  String get reportSavingsTransfers => 'Moved to savings in this period';
+
+  @override
+  String get reportNoData => 'No transactions in this period';
+
+  @override
+  String reportChartIncomeExpense(String income, String expenses) {
+    return 'Income $income, expenses $expenses';
+  }
+
+  @override
+  String get reportShare => 'Share summary';
+
+  @override
+  String get reportExportCsv => 'Export CSV';
+
+  @override
+  String get reportShareTitle => 'Share report';
+
+  @override
+  String get reportShareIncludeCategories => 'Include category totals';
+
+  @override
+  String get reportShareIncludeBalances => 'Include account balances';
+
+  @override
+  String get reportSharePrivacy =>
+      'Only what you select below is shared. Nothing is sent anywhere unless you choose an app to share with.';
+
+  @override
+  String get reportPreview => 'Preview';
+
+  @override
+  String get exportTitle => 'Export transactions';
+
+  @override
+  String get exportIncludeNotes => 'Include descriptions and notes';
+
+  @override
+  String get exportIncludeAccounts => 'Include account names';
+
+  @override
+  String exportRows(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count transactions',
+      one: '1 transaction',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get exportDone => 'CSV file ready';
+
+  @override
+  String get exportNothing => 'No transactions to export in this period';
+
+  @override
+  String get exportPrivacyNote =>
+      'A CSV file is not encrypted. Anyone who gets the file can read it.';
+
+  @override
+  String get csvDate => 'Date';
+
+  @override
+  String get csvTime => 'Time';
+
+  @override
+  String get csvType => 'Type';
+
+  @override
+  String get csvCategory => 'Category';
+
+  @override
+  String get csvAccount => 'Account';
+
+  @override
+  String get csvToAccount => 'To account';
+
+  @override
+  String get csvAmount => 'Amount';
+
+  @override
+  String get csvCurrency => 'Currency';
+
+  @override
+  String get csvDescription => 'Description';
+
+  @override
+  String get csvNote => 'Note';
+
+  @override
+  String get csvCountsAs => 'Counts as';
+
+  @override
+  String get csvCountsIncome => 'Income';
+
+  @override
+  String get csvCountsExpense => 'Expense';
+
+  @override
+  String get csvCountsNeither => 'Not income or expense';
+
+  @override
+  String get homeSeeSavings => 'See goals';
 }
