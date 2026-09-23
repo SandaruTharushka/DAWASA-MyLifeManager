@@ -29,8 +29,7 @@ class DateRange {
 
   int get lengthInDays => start.daysUntil(end) + 1;
 
-  bool contains(LocalDate date) =>
-      !date.isBefore(start) && !date.isAfter(end);
+  bool contains(LocalDate date) => !date.isBefore(start) && !date.isAfter(end);
 
   Iterable<LocalDate> get days sync* {
     var d = start;

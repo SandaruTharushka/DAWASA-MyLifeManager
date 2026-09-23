@@ -1,0 +1,706 @@
+{
+  "@@locale": "en",
+  "appName": "DAWASA",
+  "appTitle": "DAWASA — Daily Life Manager",
+  "appTagline": "Your Money. Your Plans. Your Day.",
+  "navHome": "Home",
+  "navMoney": "Money",
+  "navPlanner": "Planner",
+  "navReports": "Reports",
+  "navSettings": "Settings",
+  "actionSave": "Save",
+  "actionCancel": "Cancel",
+  "actionDelete": "Delete",
+  "actionEdit": "Edit",
+  "actionAdd": "Add",
+  "actionDone": "Done",
+  "actionNext": "Next",
+  "actionBack": "Back",
+  "actionSkip": "Skip",
+  "actionClose": "Close",
+  "actionConfirm": "Confirm",
+  "actionRetry": "Try again",
+  "actionSearch": "Search",
+  "actionFilter": "Filter",
+  "actionClear": "Clear",
+  "actionDuplicate": "Duplicate",
+  "actionShare": "Share",
+  "actionExport": "Export",
+  "actionChange": "Change",
+  "actionUndo": "Undo",
+  "actionArchive": "Archive",
+  "actionUnarchive": "Restore from archive",
+  "actionGetStarted": "Get started",
+  "actionContinue": "Continue",
+  "actionSeeAll": "See all",
+  "actionShow": "Show",
+  "actionHide": "Hide",
+  "actionSelect": "Select",
+  "actionAllow": "Allow",
+  "actionNotNow": "Not now",
+  "actionOpenSettings": "Open settings",
+  "commonAll": "All",
+  "commonNone": "None",
+  "commonOptional": "Optional",
+  "commonAmount": "Amount",
+  "commonDate": "Date",
+  "commonTime": "Time",
+  "commonNote": "Note",
+  "commonDescription": "Description",
+  "commonCategory": "Category",
+  "commonAccount": "Account",
+  "commonName": "Name",
+  "commonToday": "Today",
+  "commonYesterday": "Yesterday",
+  "commonTomorrow": "Tomorrow",
+  "commonYes": "Yes",
+  "commonNo": "No",
+  "commonOk": "OK",
+  "commonTotal": "Total",
+  "commonStartDate": "Start date",
+  "commonEndDate": "End date",
+  "commonNoDate": "No date",
+  "commonNoTime": "No time",
+  "commonDetails": "Details",
+  "commonHistory": "History",
+  "commonActive": "Active",
+  "commonArchived": "Archived",
+  "commonProgress": "Progress",
+  "commonRemaining": "Remaining",
+  "commonOverdue": "Overdue",
+  "commonCompleted": "Completed",
+  "commonPending": "Pending",
+  "commonUnknown": "Unknown",
+  "commonLoading": "Loading…",
+  "commonNotSet": "Not set",
+  "commonCurrency": "Currency",
+  "commonReminder": "Reminder",
+  "commonRepeat": "Repeat",
+  "commonPercentUsed": "{percent}% used",
+  "@commonPercentUsed": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "commonOfAmount": "{amount} of {total}",
+  "@commonOfAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "commonDaysLeft": "{count, plural, =0{Due today} =1{1 day left} other{{count} days left}}",
+  "@commonDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "commonDaysOverdue": "{count, plural, =1{1 day overdue} other{{count} days overdue}}",
+  "@commonDaysOverdue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "commonItemsCount": "{count, plural, =0{No items} =1{1 item} other{{count} items}}",
+  "@commonItemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "validationRequired": "This field is required",
+  "validationAmountInvalid": "Enter a valid amount",
+  "validationAmountPositive": "Amount must be greater than zero",
+  "validationAmountTooLarge": "Amount is too large",
+  "validationTooManyDecimals": "Too many decimal places",
+  "validationNameTooLong": "Name is too long",
+  "validationNumberInvalid": "Enter a valid number",
+  "validationEndBeforeStart": "End date cannot be before start date",
+  "feedbackSaved": "Saved",
+  "feedbackDeleted": "Deleted",
+  "feedbackError": "Something went wrong. Please try again.",
+  "feedbackAlreadySaved": "Already saved",
+  "confirmDeleteTitle": "Delete?",
+  "confirmDeleteMessage": "This cannot be undone.",
+  "emptyGeneric": "Nothing here yet",
+  "errorLoading": "Could not load data",
+  "greetingMorning": "Good morning",
+  "greetingAfternoon": "Good afternoon",
+  "greetingEvening": "Good evening",
+  "greetingWithName": "{greeting}, {name}",
+  "@greetingWithName": {
+    "placeholders": {
+      "greeting": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "weekdayMon": "Monday",
+  "weekdayTue": "Tuesday",
+  "weekdayWed": "Wednesday",
+  "weekdayThu": "Thursday",
+  "weekdayFri": "Friday",
+  "weekdaySat": "Saturday",
+  "weekdaySun": "Sunday",
+  "repeatNever": "Does not repeat",
+  "repeatDaily": "Daily",
+  "repeatWeekly": "Weekly",
+  "repeatMonthly": "Monthly",
+  "repeatYearly": "Yearly",
+  "repeatCustom": "Custom",
+  "repeatEvery": "Repeat every",
+  "repeatUnitDays": "days",
+  "repeatUnitWeeks": "weeks",
+  "repeatUnitMonths": "months",
+  "repeatUnitYears": "years",
+  "repeatEveryDays": "{count, plural, =1{Every day} other{Every {count} days}}",
+  "@repeatEveryDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "repeatEveryWeeks": "{count, plural, =1{Every week} other{Every {count} weeks}}",
+  "@repeatEveryWeeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "repeatEveryMonths": "{count, plural, =1{Every month} other{Every {count} months}}",
+  "@repeatEveryMonths": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "repeatEveryYears": "{count, plural, =1{Every year} other{Every {count} years}}",
+  "@repeatEveryYears": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "repeatUntilDate": "until {date}",
+  "@repeatUntilDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "repeatTimesCount": "{count, plural, =1{once} other{{count} times}}",
+  "@repeatTimesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "repeatOnDays": "On days",
+  "repeatEnds": "Ends",
+  "repeatEndsNever": "Never",
+  "repeatEndsOnDate": "On a date",
+  "repeatEndsAfter": "After a number of times",
+  "repeatOccurrences": "Number of times",
+  "rangeToday": "Today",
+  "rangeYesterday": "Yesterday",
+  "rangeLast7Days": "Last 7 days",
+  "rangeThisMonth": "This month",
+  "rangeLastMonth": "Previous month",
+  "rangeCustom": "Custom range",
+  "onbWelcomeTitle": "Welcome to DAWASA",
+  "onbWelcomeBody": "Manage your money, plans and daily life in one simple app.",
+  "onbPointFree": "100% free — no ads, no subscriptions",
+  "onbPointOffline": "Works fully offline",
+  "onbPointPrivate": "Your data stays on your phone",
+  "onbPointNoLogin": "No login or registration",
+  "onbLanguageTitle": "Choose your language",
+  "onbLanguageBody": "You can change this later in Settings.",
+  "onbCurrencyTitle": "Choose your currency",
+  "onbCurrencyBody": "All amounts will be shown in this currency.",
+  "onbBalancesTitle": "Your current balances",
+  "onbBalancesBody": "Enter how much money you have now. You can skip this and add accounts later.",
+  "onbCashBalance": "Cash in hand",
+  "onbBankBalance": "Bank balance",
+  "onbWalletBalance": "Other wallet balance",
+  "onbBudgetTitle": "Daily spending budget",
+  "onbBudgetBody": "Set how much you want to spend per day. DAWASA will show what is left each day.",
+  "onbBudgetLabel": "Daily budget",
+  "onbRemindersTitle": "Reminders",
+  "onbRemindersBody": "DAWASA can remind you about tasks, bills and important dates. Reminders are created on your phone — nothing is sent to the internet.",
+  "onbEnableReminders": "Enable reminders",
+  "onbRemindersEnabled": "Reminders are enabled",
+  "onbRemindersDenied": "Permission was not granted. You can enable it later in Settings.",
+  "onbFinish": "Start using DAWASA",
+  "onbStepOf": "Step {step} of {total}",
+  "@onbStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTitle": "Settings",
+  "settingsGeneral": "General",
+  "settingsSecurity": "Security & privacy",
+  "settingsReminders": "Reminders",
+  "settingsData": "Data",
+  "settingsUpdates": "Updates",
+  "settingsAbout": "About",
+  "settingsLanguage": "Language",
+  "settingsCurrency": "Currency",
+  "settingsTheme": "Theme",
+  "settingsThemeSystem": "System default",
+  "settingsThemeLight": "Light",
+  "settingsThemeDark": "Dark",
+  "settingsDateFormat": "Date format",
+  "settingsFirstDayOfWeek": "First day of week",
+  "settingsYourName": "Your name",
+  "settingsYourNameHint": "Used only for the greeting on the home screen",
+  "settingsDailyBudget": "Daily budget",
+  "settingsCategories": "Categories",
+  "settingsCurrencyChangeNote": "Changing the currency only changes how new amounts are shown. Existing amounts are not converted.",
+  "settingsPrivacyMode": "Hide balances when the app opens",
+  "settingsPrivacyModeDesc": "Useful when you open DAWASA in public",
+  "settingsScreenProtection": "Protect screen contents",
+  "settingsScreenProtectionDesc": "Blocks screenshots and hides DAWASA in the recent apps view",
+  "settingsNotifications": "Notifications",
+  "settingsNotificationsEnabled": "Allow reminders",
+  "settingsNotifyTasks": "Task reminders",
+  "settingsNotifyBills": "Bill reminders",
+  "settingsNotifyEvents": "Important date reminders",
+  "settingsNotifyBudgets": "Budget alerts",
+  "settingsNotifyLoans": "Loan repayment reminders",
+  "settingsNotifySavings": "Savings goal reminders",
+  "settingsNotifyHabits": "Habit reminders",
+  "settingsDailyPlanning": "Daily planning reminder",
+  "settingsDailyPlanningDesc": "A daily nudge to review your day and record spending",
+  "settingsDailyPlanningTime": "Reminder time",
+  "settingsNotificationsBlocked": "Notifications are turned off for DAWASA in Android settings.",
+  "settingsBatteryNote": "Some phones delay reminders to save battery. If reminders arrive late, allow DAWASA to run without battery restrictions.",
+  "settingsBackup": "Create backup",
+  "settingsBackupDesc": "Encrypted file protected with your password",
+  "settingsRestore": "Restore from backup",
+  "settingsExportCsv": "Export transactions (CSV)",
+  "settingsDeleteAll": "Delete all personal data",
+  "settingsDeleteAllDesc": "Erases every record from this phone",
+  "settingsUninstallWarning": "Your data is stored only on this phone. Uninstalling DAWASA or clearing its storage deletes it permanently unless you keep a backup file somewhere safe.",
+  "settingsCurrentVersion": "Current version",
+  "settingsCheckUpdates": "Check for updates",
+  "settingsAutoCheckUpdates": "Check for updates automatically",
+  "settingsAutoCheckUpdatesDesc": "At most once a day, only when connected",
+  "settingsWifiOnly": "Download updates on Wi-Fi only",
+  "settingsUpdateServer": "Update server",
+  "settingsUpdateServerHint": "HTTPS address of the DAWASA update folder",
+  "settingsUpdateServerInvalid": "Enter a valid https:// address",
+  "settingsUpdateServerReset": "Use default server",
+  "settingsReleaseNotes": "Release notes",
+  "settingsReplayOnboarding": "Show welcome guide again",
+  "settingsLicenses": "Open-source licenses",
+  "settingsPrivacyPolicy": "Privacy",
+  "aboutDeveloper": "Developer",
+  "aboutDeveloperName": "Sandaru Tharushka",
+  "aboutFree": "100% Free",
+  "aboutNoAds": "No Ads",
+  "aboutNoSubscription": "No Subscription",
+  "aboutWebsite": "Website",
+  "aboutContact": "Contact",
+  "aboutVersion": "Version {version} ({code})",
+  "@aboutVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      },
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "privacyTitle": "Your privacy",
+  "privacyBody": "DAWASA stores all of your financial and personal records only on this phone, in the app's private storage.\n\n• No account, login or registration.\n• No advertising, analytics or tracking.\n• No financial data is ever sent to any server.\n• Android cloud backup of app data is disabled, so your records are not copied to online storage.\n• Backups are encrypted with a password only you know (AES-256-GCM). Without the password nobody — including the developer — can read them.\n• The only internet connection DAWASA makes is to the update server, and only to download the update description and the new app file. No personal data is included in these requests.\n• Receipt photos are copied into the app's private storage and never uploaded.",
+  "securityPin": "PIN lock",
+  "securityPinDesc": "Ask for a PIN when DAWASA opens",
+  "securitySetPin": "Set PIN",
+  "securityChangePin": "Change PIN",
+  "securityRemovePin": "Remove PIN",
+  "securityBiometric": "Unlock with fingerprint or face",
+  "securityBiometricUnavailable": "Biometric unlock is not available on this phone",
+  "securityLockTimeout": "Lock after",
+  "securityLockImmediately": "Immediately",
+  "securityLockAfterMinutes": "{count, plural, =1{After 1 minute} other{After {count} minutes}}",
+  "@securityLockAfterMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "securityEnterPin": "Enter your PIN",
+  "securityCreatePin": "Create a PIN",
+  "securityCreatePinDesc": "Use 4 to 6 digits. Do not use your bank card PIN.",
+  "securityConfirmPin": "Enter the PIN again",
+  "securityPinMismatch": "PINs do not match. Try again.",
+  "securityWrongPin": "{count, plural, =1{Wrong PIN. 1 attempt left before a pause.} other{Wrong PIN. {count} attempts left before a pause.}}",
+  "@securityWrongPin": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "securityLockedOut": "Too many attempts. Try again in {seconds} seconds.",
+  "@securityLockedOut": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "securityUnlockTitle": "DAWASA is locked",
+  "securityUseBiometric": "Use fingerprint / face",
+  "securityBiometricReason": "Unlock DAWASA",
+  "securityPinSet": "PIN lock enabled",
+  "securityPinRemoved": "PIN lock removed",
+  "securityForgotPin": "Forgot PIN?",
+  "securityForgotPinBody": "For your privacy the PIN cannot be recovered. You can erase all data on this phone and restore from a backup file.",
+  "securityDeleteAndReset": "Erase data and reset",
+  "backupTitle": "Backup & restore",
+  "backupIntro": "A backup is a single encrypted file with all your records and receipt photos. Keep it somewhere safe, such as Google Drive, a computer or a memory card.",
+  "backupPassword": "Backup password",
+  "backupPasswordConfirm": "Confirm password",
+  "backupPasswordRules": "At least 8 characters. You will need this password to restore. It cannot be recovered.",
+  "backupPasswordTooShort": "Use at least 8 characters",
+  "backupPasswordMismatch": "Passwords do not match",
+  "backupCreating": "Encrypting your data…",
+  "backupCreated": "Backup created",
+  "backupSaveToDevice": "Save to a folder",
+  "backupShareFile": "Share / send file",
+  "backupSavedTo": "Backup saved",
+  "backupLastBackup": "Last backup: {date}",
+  "@backupLastBackup": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "backupNever": "No backup made yet",
+  "restoreChooseFile": "Choose backup file",
+  "restoreEnterPassword": "Enter the password used for this backup",
+  "restoreVerifying": "Checking backup…",
+  "restoreConfirmTitle": "Replace all data?",
+  "restoreConfirmBody": "Restoring replaces ALL data currently in DAWASA on this phone with the contents of the backup. A safety copy of your current data is saved first.",
+  "restoreBackupInfo": "Backup from {date} · app {version}",
+  "@restoreBackupInfo": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreContents": "Contains {transactions} transactions, {accounts} accounts, {tasks} tasks",
+  "@restoreContents": {
+    "placeholders": {
+      "transactions": {
+        "type": "int"
+      },
+      "accounts": {
+        "type": "int"
+      },
+      "tasks": {
+        "type": "int"
+      }
+    }
+  },
+  "restoreAction": "Replace and restore",
+  "restoreInProgress": "Restoring…",
+  "restoreDone": "Restore complete. DAWASA will reload.",
+  "restoreErrorWrongPassword": "Wrong password, or the file was changed or damaged.",
+  "restoreErrorNotBackup": "This is not a DAWASA backup file.",
+  "restoreErrorCorrupted": "The backup file is damaged and cannot be restored.",
+  "restoreErrorNewer": "This backup was made by a newer version of DAWASA. Update the app first.",
+  "restoreSafetyNote": "Safety copy saved in the app before restoring.",
+  "deleteAllTitle": "Delete all personal data?",
+  "deleteAllBody": "Every account, transaction, task, bill, receipt photo and setting will be erased from this phone. This cannot be undone. Type DELETE to confirm.",
+  "deleteAllConfirmWord": "DELETE",
+  "deleteAllDone": "All data deleted",
+  "updateTitle": "App updates",
+  "updateChecking": "Checking for updates…",
+  "updateUpToDate": "DAWASA is up to date",
+  "updateAvailable": "Update available: {version}",
+  "@updateAvailable": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "updateRequired": "This version is no longer supported. Please update.",
+  "updateDownloading": "Downloading… {percent}%",
+  "@updateDownloading": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "updateVerifying": "Verifying download…",
+  "updateReady": "Ready to install",
+  "updateInstallCancelled": "Installation cancelled",
+  "updateDownloadFailed": "Download failed",
+  "updateInstalling": "Opening Android installer…",
+  "updateOffline": "No internet connection. Everything else in DAWASA keeps working offline.",
+  "updateServerUnavailable": "The update server could not be reached. Try again later.",
+  "updateNotConfigured": "No update server is configured.",
+  "updateInvalidManifest": "The update information from the server is invalid.",
+  "updateChecksumMismatch": "The downloaded file failed the security check and was deleted.",
+  "updatePackageMismatch": "The downloaded file is not a valid DAWASA update and was deleted.",
+  "updateNow": "Update now",
+  "updateInstall": "Install",
+  "updateCancelDownload": "Cancel download",
+  "updateSize": "Download size: {size}",
+  "@updateSize": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "updateWifiOnlyBlocked": "You are on mobile data and \"Wi-Fi only\" is on.",
+  "updateDownloadAnyway": "Download anyway",
+  "updatePermissionTitle": "Allow installing the update",
+  "updatePermissionBody": "Android asks you to allow DAWASA to install its own updates. On the next screen, turn on \"Allow from this source\", then come back.",
+  "updateDataSafe": "Updating keeps all your data.",
+  "updateLastChecked": "Last checked: {date}",
+  "@updateLastChecked": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "updateNewVersionBanner": "A new version of DAWASA is available",
+  "updateWhatsNew": "What's new",
+  "moneyTitle": "Money",
+  "tabTransactions": "Transactions",
+  "tabAccounts": "Accounts",
+  "tabBudgets": "Budgets",
+  "tabBills": "Bills",
+  "tabSavings": "Savings",
+  "tabLoans": "Loans",
+  "homeAvailableBalance": "Available balance",
+  "homeTodayIncome": "Today's income",
+  "homeTodayExpenses": "Today's expenses",
+  "homeTodayNet": "Today's net cash flow",
+  "homeRemainingBudget": "Left to spend today",
+  "homeBudgetExceeded": "Over today's budget by {amount}",
+  "@homeBudgetExceeded": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNoBudget": "Set a daily budget",
+  "homeBudgetFromMonthly": "Based on your monthly budget",
+  "homePendingTasks": "Tasks for today",
+  "homeNoPendingTasks": "No tasks left for today",
+  "homeUpcomingPayments": "Upcoming payments",
+  "homeNoUpcomingPayments": "No payments due in the next 7 days",
+  "homeSavingsProgress": "Savings goals",
+  "homeNoSavingsGoals": "Create a savings goal to track your progress",
+  "homeLast7Days": "Spending — last 7 days",
+  "homeRecentTransactions": "Recent transactions",
+  "homeNoTransactions": "No transactions yet. Tap + to add your first expense or income.",
+  "homeHideBalances": "Hide balances",
+  "homeShowBalances": "Show balances",
+  "homeQuickActions": "Quick actions",
+  "quickAddExpense": "Add expense",
+  "quickAddIncome": "Add income",
+  "quickAddTask": "Add task",
+  "quickViewReports": "View reports",
+  "quickAddTransfer": "Transfer",
+  "homeChartSemantics": "Spending for the last 7 days. {summary}",
+  "@homeChartSemantics": {
+    "placeholders": {
+      "summary": {
+        "type": "String"
+      }
+    }
+  },
+  "hiddenAmount": "Hidden",
+  "txTypeExpense": "Expense",
+  "txTypeIncome": "Income",
+  "txTypeTransfer": "Transfer",
+  "txTypeReimbursement": "Reimbursement",
+  "txTypeLoanGiven": "Money lent",
+  "txTypeLoanReceived": "Money borrowed",
+  "txTypeLoanRepaymentReceived": "Loan repayment received",
+  "txTypeLoanRepaymentPaid": "Loan repayment paid",
+  "txTypeAdjustmentIn": "Balance correction (+)",
+  "txTypeAdjustmentOut": "Balance correction (−)",
+  "txTypeReimbursementHelp": "Money paid back to you for something you paid for someone else. It is not counted as income.",
+  "txTransferHelp": "Moving money between your own accounts is not income or spending.",
+  "txAddExpense": "Add expense",
+  "txAddIncome": "Add income",
+  "txAddTransfer": "Transfer between accounts",
+  "txAddReimbursement": "Add reimbursement",
+  "txEdit": "Edit transaction",
+  "txDetails": "Transaction",
+  "txPaidFrom": "Paid from",
+  "txReceivedInto": "Received into",
+  "txFromAccount": "From account",
+  "txToAccount": "To account",
+  "txDescriptionHint": "What was it for?",
+  "txNoteHint": "Extra details (optional)",
+  "txReceipt": "Receipt photo",
+  "txAddReceipt": "Add receipt photo",
+  "txTakePhoto": "Take photo",
+  "txChooseFromGallery": "Choose from gallery",
+  "txRemoveReceipt": "Remove photo",
+  "txSelectAccount": "Select account",
+  "txSelectCategory": "Select category",
+  "txErrorSameAccount": "Choose two different accounts",
+  "txErrorCurrencyMismatch": "Both accounts must use the same currency",
+  "txErrorNoAccount": "Create an account first",
+  "txErrorCategoryRequired": "Choose a category",
+  "txDeleteTitle": "Delete this transaction?",
+  "txDeleteLinkedWarning": "This transaction is linked to a bill, shopping list, savings goal or loan. The link will be removed, and the balance will be recalculated.",
+  "txDuplicated": "Copy created — check and save",
+  "txSearchHint": "Search description, note or amount",
+  "txNoResults": "No matching transactions",
+  "txEmpty": "No transactions yet",
+  "txFilterType": "Type",
+  "txFilterDates": "Dates",
+  "txFilterAnyDate": "Any date",
+  "txSourceRecurring": "Recurring",
+  "txSourceBill": "Bill payment",
+  "txSourceShopping": "Shopping list",
+  "txSourceSavings": "Savings goal",
+  "txSourceLoan": "Loan",
+  "txRepeatSection": "Make this a recurring transaction",
+  "txRepeatHelp": "DAWASA will add it automatically on each date. You can edit or delete any of them.",
+  "txOpeningBalance": "Opening balance",
+  "txSplitNote": "Transfers, loans and reimbursements are not counted as income or spending.",
+  "txMoreTypes": "More types",
+  "recurringTitle": "Recurring transactions",
+  "recurringEmpty": "No recurring transactions. Turn on \"Repeat\" when adding an expense or income.",
+  "recurringNext": "Next: {date}",
+  "@recurringNext": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "recurringEnded": "Ended",
+  "recurringPause": "Pause",
+  "recurringResume": "Resume",
+  "recurringStop": "Stop repeating",
+  "recurringStopBody": "Future transactions will no longer be added. Transactions already recorded are kept.",
+  "recurringGenerated": "{count, plural, =1{1 recurring transaction added} other{{count} recurring transactions added}}",
+  "@recurringGenerated": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "catFood": "Food",
+  "catTransport": "Transport",
+  "catShopping": "Shopping",
+  "catBills": "Bills",
+  "catHealthcare": "Healthcare",
+  "catEducation": "Education",
+  "catEntertainment": "Entertainment",
+  "catFamily": "Family",
+  "catFuel": "Fuel",
+  "catRent": "Rent",
+  "catInterestFees": "Interest & fees",
+  "catOther": "Other",
+  "catSalary": "Salary",
+  "catBusiness": "Business",
+  "catFreelancing": "Freelancing",
+  "catInterest": "Interest",
+  "catGifts": "Gifts",
+  "categoriesTitle": "Categories",
+  "categoriesExpense": "Expense categories",
+  "categoriesIncome": "Income sources",
+  "categoryAdd": "New category",
+  "categoryAddIncome": "New income source",
+  "categoryEdit": "Edit category",
+  "categoryName": "Category name",
+  "categoryIcon": "Icon",
+  "categoryColor": "Colour",
+  "categoryArchiveHelp": "Archived categories are hidden from new entries but kept in old transactions.",
+  "categoryDuplicateName": "A category with this name already exists",
+  "categoryUncategorized": "Uncategorised",
+  "accountsTitle": "Accounts",
+  "accountAdd": "Add account",
+  "accountEdit": "Edit account",
+  "accountName": "Account name",
+  "accountType": "Account type",
+  "accountTypeCash": "Cash",
+  "accountTypeBank": "Bank account",
+  "accountTypeEWallet": "E-wallet",
+  "accountTypeSavings": "Savings account",
+  "accountTypeOther": "Other",
+  "accountDefaultCash": "Cash",
+  "accountDefaultBank": "Bank",
+  "accountDefaultWallet": "Wallet",
+  "accountOpeningBalance": "Opening balance",
+  "accountOpeningBalanceHelp": "Money in this account before you started using DAWASA",
+  "accountIncludeInTotal": "Include in available balance",
+  "accountBalance": "Balance",
+  "accountTotalBalance": "Total in {currency}",
+  "@accountTotalBalance": {
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "accountCorrectBalance": "Correct balance",
+  "accountCorrectBalanceBody": "Enter the actual balance of this account. DAWASA records the difference as a balance correction — it is not counted as income or spending.",
+  "accountActualBalance": "Actual balance",
+  "accountCorrectionPreview": "A correction of {amount} will be recorded",
+  "@accountCorrectionPreview": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "accountCorrectionNone": "The balance is already correct",
+  "accountDeleteBlocked": "This account has transactions. Archive it instead to keep your history.",
+  "accountEmpty": "No accounts yet",
+  "accountArchivedSection": "Archived accounts",
+  "accountHistory": "Account history",
+  "accountOtherCurrencies": "Accounts in other currencies are not added to this total.",
+  "accountCurrencyLocked": "The currency cannot be changed after transactions are recorded."
+}

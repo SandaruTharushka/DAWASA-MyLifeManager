@@ -51,9 +51,7 @@ class AppDatabase extends _$AppDatabase {
     beforeOpen: (details) async {
       await customStatement('PRAGMA foreign_keys = ON');
       if (kDebugMode) {
-        final violations = await customSelect(
-          'PRAGMA foreign_key_check',
-        ).get();
+        final violations = await customSelect('PRAGMA foreign_key_check').get();
         assert(violations.isEmpty, 'Foreign key violations: $violations');
       }
     },

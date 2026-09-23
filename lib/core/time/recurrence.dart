@@ -81,8 +81,9 @@ class RecurrenceRule {
     for (final part in value.split(';')) {
       final idx = part.indexOf('=');
       if (idx <= 0) continue;
-      map[part.substring(0, idx).trim().toUpperCase()] =
-          part.substring(idx + 1).trim();
+      map[part.substring(0, idx).trim().toUpperCase()] = part
+          .substring(idx + 1)
+          .trim();
     }
     final freqName = map['FREQ']?.toLowerCase();
     final freq = RecurrenceFrequency.values

@@ -58,7 +58,9 @@ class Money {
     }
 
     final match = RegExp(r'^(\d*)(?:\.(\d*))?$').firstMatch(text);
-    if (match == null) throw const MoneyFormatException(MoneyParseError.invalid);
+    if (match == null) {
+      throw const MoneyFormatException(MoneyParseError.invalid);
+    }
     final wholePart = match.group(1) ?? '';
     var fracPart = match.group(2) ?? '';
     if (wholePart.isEmpty && fracPart.isEmpty) {
@@ -153,10 +155,7 @@ class Money {
     if (compact && minor.abs() >= 100000 * currency.minorPerMajor) {
       number = _compact(minor.abs(), currency);
     } else {
-      number = formatPlain(
-        minor.abs(),
-        decimalDigits: currency.decimalDigits,
-      );
+      number = formatPlain(minor.abs(), decimalDigits: currency.decimalDigits);
     }
     final sign = negative ? '-' : (showSign && minor > 0 ? '+' : '');
     return '$sign${currency.symbol} $number';

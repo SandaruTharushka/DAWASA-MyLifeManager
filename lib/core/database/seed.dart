@@ -1,7 +1,6 @@
 import 'package:drift/drift.dart';
 
 import 'app_database.dart';
-import 'enums.dart';
 
 /// Built-in category definition. Labels are localized from [key].
 class DefaultCategory {
