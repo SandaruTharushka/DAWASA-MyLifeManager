@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          # Instants are stored as ISO-8601 text in UTC ("...Z"). Calendar dates
+          # use the LocalDate converter ("YYYY-MM-DD"), which is DST-proof.
+          store_date_time_values_as_text: true
+          named_parameters: true
+          databases:
+            dawasa: lib/core/database/app_database.dart
+          schema_dir: drift_schemas/
+          test_dir: test/drift/
