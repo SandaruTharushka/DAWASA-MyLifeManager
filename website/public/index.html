@@ -6,6 +6,7 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <title>DAWASA — Daily Life Manager</title>
+<link rel="icon" href="icon-192.png">
 <meta name="description" content="DAWASA: a free, offline, private money and daily planner app for Android, in Sinhala and English. No ads, no subscriptions, no login.">
 <style>
   :root {
@@ -21,6 +22,7 @@
     font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Sinhala", "Iskoola Pota", sans-serif; }
   main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
   header { display: flex; align-items: center; gap: 16px; }
+  header img { border-radius: 16px; flex: none; }
   h1 { font-size: 1.9rem; margin: 0; }
   h2 { font-size: 1.2rem; margin: 0 0 8px; }
   .tagline { color: var(--brand); font-weight: 600; margin: 2px 0 0; }
@@ -46,12 +48,7 @@
 <body>
 <main>
   <header>
-    <svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="DAWASA">
-      <rect width="64" height="64" rx="16" fill="#15803d"/>
-      <circle cx="32" cy="30" r="11" fill="#fbbf24"/>
-      <path d="M4 50 C18 34 46 34 60 50 L60 64 L4 64 Z" fill="#86efac"/>
-      <path d="M24 46 l6 6 l12 -13" stroke="#15803d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <img src="icon-192.png" width="64" height="64" alt="DAWASA">
     <div>
       <h1>DAWASA</h1>
       <p class="tagline"><span data-lang="si">ඔබේ මුදල්. ඔබේ සැලසුම්. ඔබේ දවස.</span><span data-lang="en">Your Money. Your Plans. Your Day.</span></p>

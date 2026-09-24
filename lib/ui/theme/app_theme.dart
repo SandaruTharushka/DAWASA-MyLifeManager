@@ -39,7 +39,10 @@ class AppTheme {
       brightness: brightness,
     );
     final scheme = seed.copyWith(
-      primary: isDark ? const Color(0xFF4ADE80) : AppPalette.green,
+      // Green-700 in light mode: 5:1 contrast with white text and on white
+      // backgrounds (WCAG AA); the brighter brand green is kept for
+      // graphics such as the logo and charts.
+      primary: isDark ? const Color(0xFF4ADE80) : AppPalette.darkGreen,
       onPrimary: isDark ? const Color(0xFF052E16) : Colors.white,
       primaryContainer: isDark
           ? const Color(0xFF14532D)

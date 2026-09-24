@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- DAWASA mark: a sun rising over a hill with a check mark ("a day well
+       planned"). Same geometry as DawasaLogo in lib/ui/widgets/brand.dart. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22C55E"/><stop offset="0.5" stop-color="#16A34A"/><stop offset="1" stop-color="#15803D"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="512" height="512" rx="122.88"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="122.88" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <g stroke="#FFFFFF" stroke-width="28.16" stroke-linecap="round"><line x1="136.28" y1="238.08" x2="100.81" y2="217.6"/><line x1="186.88" y1="187.48" x2="166.4" y2="152.01"/><line x1="256" y1="168.96" x2="256" y2="128"/><line x1="325.12" y1="187.48" x2="345.6" y2="152.01"/><line x1="375.72" y1="238.08" x2="411.19" y2="217.6"/></g>
+    <circle cx="256" cy="307.2" r="102.4" fill="#FFFFFF"/>
+    <path d="M0,312.32 Q256,281.6 512,312.32 L512,512 L0,512 Z" fill="#DCFCE7"/>
+    <path d="M184.32,399.36 L235.52,445.44 L337.92,358.4" fill="none" stroke="#15803D" stroke-width="30.72" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

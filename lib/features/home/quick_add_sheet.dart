@@ -28,7 +28,7 @@ Future<void> showQuickAddSheet(BuildContext context) {
             },
           );
       return SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.only(bottom: Gap.md),
           child: Column(
             mainAxisSize: MainAxisSize.min,

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from tool/icon/dawasa_icon.svg geometry. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:pathData="M31.55,44.88 L24.9,41.04" android:strokeColor="#FFFFFF" android:strokeWidth="5.28" android:strokeLineCap="round" />
+    <path android:pathData="M41.04,35.39 L37.2,28.74" android:strokeColor="#FFFFFF" android:strokeWidth="5.28" android:strokeLineCap="round" />
+    <path android:pathData="M54,31.92 L54,24.24" android:strokeColor="#FFFFFF" android:strokeWidth="5.28" android:strokeLineCap="round" />
+    <path android:pathData="M66.96,35.39 L70.8,28.74" android:strokeColor="#FFFFFF" android:strokeWidth="5.28" android:strokeLineCap="round" />
+    <path android:pathData="M76.45,44.88 L83.1,41.04" android:strokeColor="#FFFFFF" android:strokeWidth="5.28" android:strokeLineCap="round" />
+    <path android:fillColor="#FFFFFF" android:pathData="M34.8,57.84 A19.2,19.2 0 0,1 73.2,57.84 Z" />
+    <path android:pathData="M40.56,75.12 L50.16,83.76 L69.36,67.44" android:strokeColor="#FFFFFF" android:strokeWidth="5.76" android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>

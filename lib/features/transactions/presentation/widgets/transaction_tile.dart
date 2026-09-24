@@ -141,27 +141,38 @@ class TransactionTile extends ConsumerWidget {
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
       ),
-      trailing: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          if (view.transaction.attachmentId != null)
-            Padding(
-              padding: const EdgeInsets.only(right: Gap.xs),
-              child: Icon(
-                Icons.receipt_long_rounded,
-                size: 16,
-                color: context.colors.onSurfaceVariant,
+      // Large amounts or large system text shrink the amount instead of
+      // pushing the title off the tile.
+      trailing: ConstrainedBox(
+        constraints: BoxConstraints(
+          maxWidth: MediaQuery.sizeOf(context).width * 0.42,
+        ),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerEnd,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (view.transaction.attachmentId != null)
+                Padding(
+                  padding: const EdgeInsets.only(right: Gap.xs),
+                  child: Icon(
+                    Icons.receipt_long_rounded,
+                    size: 16,
+                    color: context.colors.onSurfaceVariant,
+                  ),
+                ),
+              MoneyText(
+                look.sign * view.transaction.amountMinor,
+                currency: currency,
+                showSign: look.sign != 0,
+                color: look.color,
+                sensitive: false,
+                style: context.textTheme.titleSmall,
               ),
-            ),
-          MoneyText(
-            look.sign * view.transaction.amountMinor,
-            currency: currency,
-            showSign: look.sign != 0,
-            color: look.color,
-            sensitive: false,
-            style: context.textTheme.titleSmall,
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

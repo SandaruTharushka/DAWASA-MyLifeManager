@@ -39,18 +39,35 @@ class MoneyText extends ConsumerWidget {
     final text = hidden
         ? '${cur.symbol} ••••••'
         : Money.format(minor, cur, showSign: showSign, compact: compact);
+    final effective = (style ?? context.textTheme.bodyLarge)?.copyWith(
+      color: color,
+      fontFeatures: const [FontFeature.tabularFigures()],
+    );
+    // Amounts are never cut off with "…": very long amounts or very large
+    // system text scale the figure down to fit instead. Smaller amounts
+    // (usually next to a label) take at most 60% of the screen width.
+    final large = (effective?.fontSize ?? 14) >= 22;
+    final maxWidth = MediaQuery.sizeOf(context).width * (large ? 0.9 : 0.6);
     return Semantics(
       label: hidden ? context.l10n.hiddenAmount : null,
       excludeSemantics: hidden,
-      child: Text(
-        text,
-        style: (style ?? context.textTheme.bodyLarge)?.copyWith(
-          color: color,
-          fontFeatures: const [FontFeature.tabularFigures()],
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: maxWidth),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: switch (textAlign) {
+            TextAlign.center => Alignment.center,
+            TextAlign.end || TextAlign.right => AlignmentDirectional.centerEnd,
+            _ => AlignmentDirectional.centerStart,
+          },
+          child: Text(
+            text,
+            style: effective,
+            textAlign: textAlign,
+            maxLines: 1,
+            softWrap: false,
+          ),
         ),
-        textAlign: textAlign,
-        maxLines: 1,
-        overflow: TextOverflow.ellipsis,
       ),
     );
   }

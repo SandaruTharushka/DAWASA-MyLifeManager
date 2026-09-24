@@ -1,0 +1,7 @@
+# Copy to android/key.properties (ignored by Git) and fill in your own values.
+# Keep the keystore file and these passwords outside the repository and back
+# them up safely: every future update must be signed with the same key.
+storeFile=/absolute/path/to/dawasa-release.jks
+storePassword=CHANGE_ME
+keyAlias=dawasa
+keyPassword=CHANGE_ME
