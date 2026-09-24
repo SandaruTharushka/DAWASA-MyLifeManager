@@ -15,6 +15,7 @@ import '../../ui/widgets/money_widgets.dart';
 import '../accounts/presentation/account_providers.dart';
 import '../transactions/presentation/transaction_providers.dart';
 import '../transactions/presentation/widgets/transaction_tile.dart';
+import '../updates/presentation/update_screen.dart';
 import 'home_sections.dart';
 import 'quick_add_sheet.dart';
 
@@ -37,6 +38,7 @@ class HomeScreen extends ConsumerWidget {
           padding: EdgeInsets.fromLTRB(Gap.page, Gap.md, Gap.page, 120),
           children: [
             _Header(),
+            UpdateBanner(),
             SizedBox(height: Gap.lg),
             _BalanceCard(),
             SizedBox(height: Gap.md),

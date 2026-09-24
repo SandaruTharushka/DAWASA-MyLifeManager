@@ -3,6 +3,7 @@ package com.sandarutharushka.dawasa
 import android.view.WindowManager
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodChannel
 
 /**
@@ -26,6 +27,20 @@ class MainActivity : FlutterFragmentActivity() {
                     else -> result.notImplemented()
                 }
             }
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, ApkUpdates.METHOD_CHANNEL)
+            .setMethodCallHandler { call, result -> ApkUpdates.handle(this, call, result) }
+        EventChannel(flutterEngine.dartExecutor.binaryMessenger, ApkUpdates.EVENT_CHANNEL)
+            .setStreamHandler(
+                object : EventChannel.StreamHandler {
+                    override fun onListen(arguments: Any?, events: EventChannel.EventSink) {
+                        ApkUpdates.events = events
+                    }
+
+                    override fun onCancel(arguments: Any?) {
+                        ApkUpdates.events = null
+                    }
+                },
+            )
     }
 
     companion object {

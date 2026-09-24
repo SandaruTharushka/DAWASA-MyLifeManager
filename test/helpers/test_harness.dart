@@ -5,6 +5,7 @@ import 'package:dawasa/app/app_root.dart';
 import 'package:dawasa/core/database/app_database.dart';
 import 'package:dawasa/core/database/connection.dart';
 import 'package:dawasa/core/notifications/notification_service.dart';
+import 'package:dawasa/core/platform/app_info.dart';
 import 'package:dawasa/core/platform/data_paths.dart';
 import 'package:dawasa/core/platform/platform_bridge.dart';
 import 'package:dawasa/core/security/biometrics.dart';
@@ -17,6 +18,10 @@ import 'package:dawasa/features/security/app_lock.dart';
 import 'package:dawasa/features/transactions/data/category_repository.dart';
 import 'package:dawasa/features/transactions/data/transaction_repository.dart';
 import 'package:dawasa/features/transactions/domain/transaction_models.dart';
+import 'package:dawasa/features/updates/application/update_controller.dart';
+import 'package:dawasa/features/updates/data/apk_installer.dart';
+import 'package:dawasa/features/updates/data/network_status.dart';
+import 'package:dawasa/features/updates/data/update_client.dart';
 import 'package:drift/drift.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/misc.dart' show Override;
@@ -145,6 +150,18 @@ class TestPlatform {
   final MemorySecureStore secureStore;
   final FakeBiometricAuthenticator biometrics;
   final FakePlatformBridge bridge = FakePlatformBridge();
+  final FakeApkInstaller installer = FakeApkInstaller();
+  final FakeNetworkStatus network = FakeNetworkStatus();
+  AppVersion version = const AppVersion(
+    versionName: '1.0.0',
+    versionCode: 1,
+    packageName: 'com.sandarutharushka.dawasa',
+  );
+
+  /// Update server settings (defaults to the build configuration, which
+  /// has no server in tests).
+  UpdateConfig? updateConfig;
+  UpdateClient? updateClient;
 
   /// Private "app storage" for this test.
   final Directory root;
@@ -169,6 +186,13 @@ class TestPlatform {
     pinHasherProvider.overrideWithValue(pinHasher),
     platformBridgeProvider.overrideWithValue(bridge),
     dataPathsProvider.overrideWithValue(paths),
+    apkInstallerProvider.overrideWithValue(installer),
+    networkStatusProvider.overrideWithValue(network),
+    appVersionProvider.overrideWith((ref) async => version),
+    if (updateConfig != null)
+      updateConfigProvider.overrideWithValue(updateConfig!),
+    if (updateClient != null)
+      updateClientProvider.overrideWithValue(updateClient!),
   ];
 
   void dispose() {

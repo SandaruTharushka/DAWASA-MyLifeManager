@@ -19,6 +19,7 @@ import '../features/transactions/presentation/categories_screen.dart';
 import '../features/transactions/presentation/recurring_screen.dart';
 import '../features/transactions/presentation/transaction_detail_screen.dart';
 import '../features/transactions/presentation/transaction_form_screen.dart';
+import '../features/updates/presentation/update_screen.dart';
 import 'app_shell.dart';
 import 'extra_routes.dart';
 import 'routes.dart';
@@ -146,6 +147,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       _page(Routes.privacy, (_) => const PrivacyScreen()),
       _page(Routes.backup, (_) => const BackupScreen()),
       _page(Routes.restore, (_) => const RestoreScreen()),
+      _page(Routes.updates, (_) => const UpdateScreen()),
       _page(
         '/settings/pin',
         (s) => PinSetupScreen(

@@ -2998,4 +2998,54 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onbRestoreBackup => 'Restore from a backup';
+
+  @override
+  String get commonSaved => 'Saved';
+
+  @override
+  String get updateDisabledStore =>
+      'This copy of DAWASA is updated through the store it was installed from.';
+
+  @override
+  String get updateNotConfiguredBody =>
+      'To receive updates inside the app, enter the HTTPS address of the DAWASA update folder under \"Update server\".';
+
+  @override
+  String get updateDownloadPaused =>
+      'Download paused. It continues where it stopped.';
+
+  @override
+  String get updateResume => 'Continue download';
+
+  @override
+  String get updateStorageFailed =>
+      'There is not enough free space to download the update.';
+
+  @override
+  String get updateInstallFailed =>
+      'Android could not install the update. Please try again.';
+
+  @override
+  String updateProgressBytes(String received, String total) {
+    return '$received of $total';
+  }
+
+  @override
+  String get updateVerifiedNote =>
+      'The file matches its published SHA-256 fingerprint and is signed like the installed app.';
+
+  @override
+  String get updateInstallHint => 'Android will ask you to confirm the update.';
+
+  @override
+  String get updateNeverChecked => 'Not checked yet';
+
+  @override
+  String updateInstalledVersion(String version) {
+    return 'Installed: $version';
+  }
+
+  @override
+  String get updatePrivacyNote =>
+      'Checking for updates only downloads a small description file from the update server. No personal or financial information is sent.';
 }

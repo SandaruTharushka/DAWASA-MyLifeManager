@@ -5,6 +5,7 @@ import '../core/notifications/notification_providers.dart';
 import '../core/providers.dart';
 import '../features/reminders/reminder_sync_service.dart';
 import '../features/transactions/presentation/transaction_providers.dart';
+import '../features/updates/application/update_controller.dart';
 import 'router.dart';
 
 /// Hooks that other modules register to run on launch and resume.
@@ -60,7 +61,7 @@ final startupTasksProvider = Provider<StartupTasks>(StartupTasks.new);
 /// Additional launch/resume work of feature modules (reminder sync, update
 /// check, ...). Hooks must never throw for offline conditions.
 final startupHooksProvider = Provider<List<StartupHook>>(
-  (ref) => [_syncReminders],
+  (ref) => [_syncReminders, updateStartupHook],
 );
 
 Future<void> _syncReminders(Ref ref, {required bool launch}) async {

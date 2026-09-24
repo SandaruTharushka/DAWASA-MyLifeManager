@@ -5197,6 +5197,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Restore from a backup'**
   String get onbRestoreBackup;
+
+  /// No description provided for @commonSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get commonSaved;
+
+  /// No description provided for @updateDisabledStore.
+  ///
+  /// In en, this message translates to:
+  /// **'This copy of DAWASA is updated through the store it was installed from.'**
+  String get updateDisabledStore;
+
+  /// No description provided for @updateNotConfiguredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'To receive updates inside the app, enter the HTTPS address of the DAWASA update folder under \"Update server\".'**
+  String get updateNotConfiguredBody;
+
+  /// No description provided for @updateDownloadPaused.
+  ///
+  /// In en, this message translates to:
+  /// **'Download paused. It continues where it stopped.'**
+  String get updateDownloadPaused;
+
+  /// No description provided for @updateResume.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue download'**
+  String get updateResume;
+
+  /// No description provided for @updateStorageFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'There is not enough free space to download the update.'**
+  String get updateStorageFailed;
+
+  /// No description provided for @updateInstallFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Android could not install the update. Please try again.'**
+  String get updateInstallFailed;
+
+  /// No description provided for @updateProgressBytes.
+  ///
+  /// In en, this message translates to:
+  /// **'{received} of {total}'**
+  String updateProgressBytes(String received, String total);
+
+  /// No description provided for @updateVerifiedNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The file matches its published SHA-256 fingerprint and is signed like the installed app.'**
+  String get updateVerifiedNote;
+
+  /// No description provided for @updateInstallHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Android will ask you to confirm the update.'**
+  String get updateInstallHint;
+
+  /// No description provided for @updateNeverChecked.
+  ///
+  /// In en, this message translates to:
+  /// **'Not checked yet'**
+  String get updateNeverChecked;
+
+  /// No description provided for @updateInstalledVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Installed: {version}'**
+  String updateInstalledVersion(String version);
+
+  /// No description provided for @updatePrivacyNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking for updates only downloads a small description file from the update server. No personal or financial information is sent.'**
+  String get updatePrivacyNote;
 }
 
 class _AppLocalizationsDelegate

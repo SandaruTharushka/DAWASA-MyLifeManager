@@ -1481,5 +1481,35 @@
   "restoreDeleteSafetyCopy": "Delete this copy",
   "restoreCompleted": "Backup restored",
   "restoreFailedKept": "The backup could not be restored. Your previous data was kept.",
-  "onbRestoreBackup": "Restore from a backup"
+  "onbRestoreBackup": "Restore from a backup",
+  "commonSaved": "Saved",
+  "updateDisabledStore": "This copy of DAWASA is updated through the store it was installed from.",
+  "updateNotConfiguredBody": "To receive updates inside the app, enter the HTTPS address of the DAWASA update folder under \"Update server\".",
+  "updateDownloadPaused": "Download paused. It continues where it stopped.",
+  "updateResume": "Continue download",
+  "updateStorageFailed": "There is not enough free space to download the update.",
+  "updateInstallFailed": "Android could not install the update. Please try again.",
+  "updateProgressBytes": "{received} of {total}",
+  "@updateProgressBytes": {
+    "placeholders": {
+      "received": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "updateVerifiedNote": "The file matches its published SHA-256 fingerprint and is signed like the installed app.",
+  "updateInstallHint": "Android will ask you to confirm the update.",
+  "updateNeverChecked": "Not checked yet",
+  "updateInstalledVersion": "Installed: {version}",
+  "@updateInstalledVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "updatePrivacyNote": "Checking for updates only downloads a small description file from the update server. No personal or financial information is sent."
 }

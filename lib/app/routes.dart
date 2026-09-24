@@ -73,4 +73,5 @@ abstract final class Routes {
   static const backup = '/settings/backup';
   static const restore = '/settings/restore';
   static String pinSetup(String mode) => '/settings/pin?mode=$mode';
+  static const updates = '/settings/updates';
 }

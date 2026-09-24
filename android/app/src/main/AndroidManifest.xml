@@ -1,4 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Only used to check the configured update server and download new
+         versions of DAWASA. No personal or financial data is sent. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Lets Android's installer show the "update DAWASA" screen for a
+         downloaded, verified update. The user always confirms. -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <!-- Fingerprint / face unlock for the optional app lock. -->
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
@@ -28,6 +35,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- Result of an update installer session (only the system sends it,
+             through a PendingIntent created by the app). -->
+        <receiver
+            android:name=".InstallResultReceiver"
+            android:exported="false" />
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

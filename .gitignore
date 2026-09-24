@@ -58,3 +58,6 @@ android/key.properties
 /release/
 *.apk
 *.aab
+
+# Local build configuration (update server address etc.)
+/config/dawasa.json

@@ -3000,4 +3000,55 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get onbRestoreBackup => 'උපස්ථයකින් ප්‍රතිස්ථාපනය කරන්න';
+
+  @override
+  String get commonSaved => 'සුරකින ලදී';
+
+  @override
+  String get updateDisabledStore =>
+      'මෙම DAWASA පිටපත යාවත්කාලීන වන්නේ එය ස්ථාපනය කළ ගබඩාව හරහාය.';
+
+  @override
+  String get updateNotConfiguredBody =>
+      'යෙදුම තුළම යාවත්කාලීන ලබා ගැනීමට, \"යාවත්කාලීන සේවාදායකය\" යටතේ DAWASA යාවත්කාලීන ෆෝල්ඩරයේ HTTPS ලිපිනය ඇතුළත් කරන්න.';
+
+  @override
+  String get updateDownloadPaused =>
+      'බාගැනීම නවතා ඇත. එය නැවතුණු තැන සිට දිගටම කෙරේ.';
+
+  @override
+  String get updateResume => 'බාගැනීම දිගටම කරන්න';
+
+  @override
+  String get updateStorageFailed =>
+      'යාවත්කාලීනය බාගත කිරීමට ප්‍රමාණවත් ඉඩක් නැත.';
+
+  @override
+  String get updateInstallFailed =>
+      'Android හට යාවත්කාලීනය ස්ථාපනය කළ නොහැකි විය. කරුණාකර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String updateProgressBytes(String received, String total) {
+    return '$total න් $received';
+  }
+
+  @override
+  String get updateVerifiedNote =>
+      'ගොනුව එහි ප්‍රකාශිත SHA-256 ඇඟිලි සලකුණට ගැළපෙන අතර ස්ථාපිත යෙදුම මෙන්ම අත්සන් කර ඇත.';
+
+  @override
+  String get updateInstallHint =>
+      'යාවත්කාලීනය තහවුරු කිරීමට Android ඔබෙන් අසනු ඇත.';
+
+  @override
+  String get updateNeverChecked => 'තවම පරීක්ෂා කර නැත';
+
+  @override
+  String updateInstalledVersion(String version) {
+    return 'ස්ථාපිත: $version';
+  }
+
+  @override
+  String get updatePrivacyNote =>
+      'යාවත්කාලීන පරීක්ෂා කිරීමේදී යාවත්කාලීන සේවාදායකයෙන් කුඩා විස්තර ගොනුවක් පමණක් බාගත කෙරේ. කිසිදු පෞද්ගලික හෝ මූල්‍ය තොරතුරක් යවනු නොලැබේ.';
 }

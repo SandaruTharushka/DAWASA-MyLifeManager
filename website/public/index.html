@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="si">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>DAWASA — Daily Life Manager</title>
+<meta name="description" content="DAWASA: a free, offline, private money and daily planner app for Android, in Sinhala and English. No ads, no subscriptions, no login.">
+<style>
+  :root {
+    --bg: #f6f8f5; --card: #ffffff; --text: #17201a; --muted: #56635a;
+    --brand: #15803d; --brand-soft: #dcfce7; --line: #dfe6e0; --warn: #fef3c7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1511; --card: #18211b; --text: #e8eee9; --muted: #a3b1a7;
+      --brand: #4ade80; --brand-soft: #173622; --line: #26322a; --warn: #3a2f0d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Sinhala", "Iskoola Pota", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  h2 { font-size: 1.2rem; margin: 0 0 8px; }
+  .tagline { color: var(--brand); font-weight: 600; margin: 2px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; margin-top: 16px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .chip { background: var(--brand-soft); color: var(--brand); border-radius: 999px; padding: 4px 12px; font-weight: 600; font-size: .9rem; }
+  .btn { display: inline-block; background: var(--brand); color: #fff; text-decoration: none; font-weight: 700;
+    padding: 14px 22px; border-radius: 14px; margin-top: 12px; }
+  @media (prefers-color-scheme: dark) { .btn { color: #0f1511; } }
+  .muted { color: var(--muted); font-size: .92rem; }
+  code { word-break: break-all; font-size: .85rem; background: var(--bg); padding: 2px 6px; border-radius: 6px; }
+  ol, ul { padding-left: 22px; margin: 8px 0 0; }
+  .lang { margin-left: auto; }
+  .lang button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 10px;
+    padding: 6px 10px; font: inherit; cursor: pointer; }
+  .lang button[aria-pressed="true"] { border-color: var(--brand); color: var(--brand); font-weight: 700; }
+  .notice { background: var(--warn); }
+  [data-lang] { display: none; }
+  html[lang="si"] [data-lang="si"], html[lang="en"] [data-lang="en"] { display: revert; }
+  footer { margin-top: 32px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="DAWASA">
+      <rect width="64" height="64" rx="16" fill="#15803d"/>
+      <circle cx="32" cy="30" r="11" fill="#fbbf24"/>
+      <path d="M4 50 C18 34 46 34 60 50 L60 64 L4 64 Z" fill="#86efac"/>
+      <path d="M24 46 l6 6 l12 -13" stroke="#15803d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div>
+      <h1>DAWASA</h1>
+      <p class="tagline"><span data-lang="si">ඔබේ මුදල්. ඔබේ සැලසුම්. ඔබේ දවස.</span><span data-lang="en">Your Money. Your Plans. Your Day.</span></p>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="si" aria-pressed="true">සිංහල</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <section class="card">
+    <p data-lang="si">ශ්‍රී ලාංකිකයින් සඳහා නිර්මාණය කළ දෛනික ජීවිත කළමනාකරු: වියදම්, ආදායම්, අයවැය, බිල්පත්, කාර්යයන්, සාප්පු ලැයිස්තු, ඉතිරිකිරීම්, ණය සහ වැදගත් දින — සියල්ල එකම යෙදුමක.</p>
+    <p data-lang="en">A daily life manager made for Sri Lanka: expenses, income, budgets, bills, tasks, shopping lists, savings, loans and important dates — all in one app.</p>
+    <div class="chips">
+      <span class="chip" data-lang="si">100% නොමිලේ</span><span class="chip" data-lang="en">100% Free</span>
+      <span class="chip" data-lang="si">දැන්වීම් නැත</span><span class="chip" data-lang="en">No Ads</span>
+      <span class="chip" data-lang="si">දායකත්ව ගාස්තු නැත</span><span class="chip" data-lang="en">No Subscription</span>
+      <span class="chip" data-lang="si">පිවිසුමක් නැත</span><span class="chip" data-lang="en">No Login</span>
+      <span class="chip" data-lang="si">නොබැඳිව ක්‍රියා කරයි</span><span class="chip" data-lang="en">Works Offline</span>
+    </div>
+  </section>
+
+  <section class="card" id="download" aria-live="polite">
+    <h2><span data-lang="si">Android සඳහා බාගන්න</span><span data-lang="en">Download for Android</span></h2>
+    <p id="loading" class="muted"><span data-lang="si">නවතම අනුවාදය පූරණය කරමින්…</span><span data-lang="en">Loading the latest version…</span></p>
+    <div id="release" hidden>
+      <p><strong id="version"></strong> · <span id="size"></span> · <span id="date"></span></p>
+      <a class="btn" id="apk" href="#" download>
+        <span data-lang="si">APK ගොනුව බාගන්න</span><span data-lang="en">Download APK</span>
+      </a>
+      <p class="muted"><span data-lang="si">Android 7.0 හෝ නව අනුවාදයක් අවශ්‍යයි.</span><span data-lang="en">Requires Android 7.0 or newer.</span></p>
+      <div id="notes-wrap" hidden>
+        <h2><span data-lang="si">අලුත් දේ</span><span data-lang="en">What's new</span></h2>
+        <p id="notes-si" data-lang="si"></p><p id="notes-en" data-lang="en"></p>
+      </div>
+      <p class="muted"><span data-lang="si">SHA-256 ඇඟිලි සලකුණ (ගොනුව නිවැරදිදැයි පරීක්ෂා කිරීමට):</span><span data-lang="en">SHA-256 fingerprint (to check the file is genuine):</span><br><code id="sha"></code></p>
+    </div>
+    <p id="error" class="muted" hidden><span data-lang="si">අනුවාද තොරතුරු පූරණය කළ නොහැකි විය. කරුණාකර පසුව නැවත උත්සාහ කරන්න.</span><span data-lang="en">The version information could not be loaded. Please try again later.</span></p>
+  </section>
+
+  <section class="card">
+    <h2><span data-lang="si">ස්ථාපනය කරන ආකාරය</span><span data-lang="en">How to install</span></h2>
+    <ol data-lang="si">
+      <li>ඉහත බොත්තම ඔබා APK ගොනුව බාගන්න.</li>
+      <li>බාගත් ගොනුව විවෘත කරන්න. Android ඉල්ලා සිටියහොත්, ඔබේ බ්‍රව්සරයට හෝ ගොනු යෙදුමට "නොදන්නා යෙදුම් ස්ථාපනය" සඳහා ඉඩ දෙන්න.</li>
+      <li>"ස්ථාපනය කරන්න" ඔබන්න. DAWASA විවෘත කර පිළිගැනීමේ මාර්ගෝපදේශය අනුගමනය කරන්න.</li>
+    </ol>
+    <ol data-lang="en">
+      <li>Tap the button above to download the APK file.</li>
+      <li>Open the downloaded file. If Android asks, allow your browser or file manager to "install unknown apps".</li>
+      <li>Tap "Install", open DAWASA and follow the welcome guide.</li>
+    </ol>
+    <p class="muted"><span data-lang="si">පසුව නිකුත් වන යාවත්කාලීන DAWASA තුළම ලබා ගත හැක (සැකසීම් → යෙදුම් යාවත්කාලීන කිරීම්). යාවත්කාලීන කිරීමෙන් ඔබේ දත්ත මැකී නොයයි.</span><span data-lang="en">Later updates can be installed from inside DAWASA (Settings → App updates). Updating keeps all your data.</span></p>
+  </section>
+
+  <section class="card">
+    <h2><span data-lang="si">ඔබේ පෞද්ගලිකත්වය</span><span data-lang="en">Your privacy</span></h2>
+    <ul data-lang="si">
+      <li>ඔබේ සියලු වාර්තා ගබඩා වන්නේ ඔබේ දුරකථනයේ පමණි.</li>
+      <li>ගිණුමක්, පිවිසුමක් හෝ ලියාපදිංචියක් නැත.</li>
+      <li>දැන්වීම්, විශ්ලේෂණ හෝ ලුහුබැඳීම් නැත. කිසිදු මූල්‍ය දත්තයක් සේවාදායකයකට යවනු නොලැබේ.</li>
+      <li>උපස්ථ ඔබ පමණක් දන්නා මුරපදයකින් සංකේතනය වේ (AES-256-GCM).</li>
+    </ul>
+    <ul data-lang="en">
+      <li>All of your records are stored only on your phone.</li>
+      <li>No account, login or registration.</li>
+      <li>No ads, analytics or tracking. No financial data is ever sent to a server.</li>
+      <li>Backups are encrypted with a password only you know (AES-256-GCM).</li>
+    </ul>
+  </section>
+
+  <section class="card notice">
+    <p data-lang="si">DAWASA ඉවත් කිරීම හෝ එහි ගබඩාව හිස් කිරීම මඟින් ඔබේ දත්ත මැකී යයි. උපස්ථ ගොනුවක් ආරක්ෂිත ස්ථානයක තබා ගන්න.</p>
+    <p data-lang="en">Uninstalling DAWASA or clearing its storage deletes your data. Keep a backup file somewhere safe.</p>
+  </section>
+
+  <footer class="muted">
+    <p><span data-lang="si">සංවර්ධකයා</span><span data-lang="en">Developer</span>: Sandaru Tharushka</p>
+  </footer>
+</main>
+<script>
+(function () {
+  "use strict";
+  var root = document.documentElement;
+  function setLang(lang) {
+    root.lang = lang;
+    document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
+    });
+    try { localStorage.setItem("dawasa.lang", lang); } catch (e) { /* private mode */ }
+  }
+  document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-set-lang")); });
+  });
+  var saved = null;
+  try { saved = localStorage.getItem("dawasa.lang"); } catch (e) { saved = null; }
+  setLang(saved === "en" || saved === "si" ? saved : (navigator.language || "").indexOf("si") === 0 ? "si" : "en");
+
+  function show(id, visible) { document.getElementById(id).hidden = !visible; }
+  function formatSize(bytes) { return (bytes / (1024 * 1024)).toFixed(1) + " MB"; }
+
+  fetch("manifest.json", { cache: "no-store", credentials: "omit" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (m) {
+      var l = m && m.latest;
+      if (!m || m.app !== "dawasa" || !l || !/^[0-9a-f]{64}$/.test(l.sha256) ||
+          typeof l.apkUrl !== "string" || !/^[A-Za-z0-9._-]+\.apk$/.test(l.apkUrl)) {
+        throw new Error("invalid manifest");
+      }
+      document.getElementById("version").textContent = "DAWASA " + l.versionName;
+      document.getElementById("size").textContent = formatSize(l.sizeBytes);
+      document.getElementById("date").textContent = l.releasedAt || "";
+      document.getElementById("apk").href = l.apkUrl;
+      document.getElementById("sha").textContent = l.sha256;
+      var notes = l.releaseNotes || {};
+      document.getElementById("notes-si").textContent = notes.si || notes.en || "";
+      document.getElementById("notes-en").textContent = notes.en || "";
+      show("notes-wrap", Boolean(notes.si || notes.en));
+      show("loading", false);
+      show("release", true);
+    })
+    .catch(function () { show("loading", false); show("error", true); });
+})();
+</script>
+</body>
+</html>

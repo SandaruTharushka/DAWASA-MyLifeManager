@@ -100,6 +100,7 @@ class AppLockController extends Notifier<AppLockState> {
   DateTime? _backgroundedAt;
   bool _backgroundedDuringExternal = false;
   int _external = 0;
+  DateTime? _expectExternalUntil;
 
   final Completer<void> _loaded = Completer<void>();
 
@@ -269,15 +270,26 @@ class AppLockController extends Notifier<AppLockState> {
     }
   }
 
+  /// For screens that Android opens a moment after the app asked for them
+  /// (the installer's confirmation, the "install unknown apps" setting):
+  /// leaving the app within the next two minutes counts as external.
+  void expectExternalActivity() {
+    _expectExternalUntil = _now().add(const Duration(minutes: 2));
+  }
+
   void onBackgrounded() {
     if (!state.pinEnabled || state.phase != LockPhase.unlocked) return;
-    _backgroundedAt ??= _now();
-    _backgroundedDuringExternal = _external > 0;
+    final now = _now();
+    _backgroundedAt ??= now;
+    final expected = _expectExternalUntil;
+    _backgroundedDuringExternal =
+        _external > 0 || (expected != null && now.isBefore(expected));
   }
 
   void onForegrounded() {
     final at = _backgroundedAt;
     _backgroundedAt = null;
+    _expectExternalUntil = null;
     if (at == null || !state.pinEnabled || state.phase != LockPhase.unlocked) {
       return;
     }
