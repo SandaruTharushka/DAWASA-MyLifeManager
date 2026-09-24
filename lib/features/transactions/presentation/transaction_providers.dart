@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/database/app_database.dart';
-import '../../../core/database/connection.dart';
+import '../../../core/platform/data_paths.dart';
 import '../../../core/providers.dart';
 import '../../../core/time/date_range.dart';
 import '../../../core/time/local_date.dart';
@@ -27,7 +27,10 @@ final recurringRepositoryProvider = Provider<RecurringRepository>(
 );
 
 final attachmentStoreProvider = Provider<AttachmentStore>(
-  (ref) => AttachmentStore(ref.watch(databaseProvider), appDataDirectory),
+  (ref) => AttachmentStore(
+    ref.watch(databaseProvider),
+    ref.watch(dataPathsProvider).dataDirectory,
+  ),
 );
 
 /// Active categories of a kind for pickers.

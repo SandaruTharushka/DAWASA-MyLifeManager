@@ -70,4 +70,7 @@ abstract final class Routes {
 
   // Settings sub pages
   static const privacy = '/settings/privacy';
+  static const backup = '/settings/backup';
+  static const restore = '/settings/restore';
+  static String pinSetup(String mode) => '/settings/pin?mode=$mode';
 }

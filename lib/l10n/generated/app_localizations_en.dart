@@ -2850,4 +2850,152 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeSeeSavings => 'See goals';
+
+  @override
+  String securityPinDigitsEntered(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count digits entered',
+      one: '1 digit entered',
+      zero: 'No digits entered',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get securityPinDelete => 'Delete last digit';
+
+  @override
+  String securityPausedFor(String time) {
+    return 'Too many wrong PINs. Try again in $time.';
+  }
+
+  @override
+  String get securityEnterCurrentPin => 'Enter your current PIN';
+
+  @override
+  String get securityPinTooSimple =>
+      'That PIN is too easy to guess. Avoid repeated or consecutive digits.';
+
+  @override
+  String securityLockAfterSeconds(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'After $count seconds',
+      one: 'After 1 second',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get securityLockNote =>
+      'The PIN lock keeps other people who use your phone out of DAWASA. If you forget the PIN, it cannot be recovered.';
+
+  @override
+  String get securityBiometricFailed => 'Fingerprint or face was not confirmed';
+
+  @override
+  String get deleteAllBackupFirst =>
+      'Tip: create a backup first if you may need this data again.';
+
+  @override
+  String deleteAllTypeWord(String word) {
+    return 'Type $word to confirm';
+  }
+
+  @override
+  String get deleteAllAction => 'Delete everything';
+
+  @override
+  String get backupShowPassword => 'Show password';
+
+  @override
+  String get backupHidePassword => 'Hide password';
+
+  @override
+  String get backupFailed =>
+      'The backup could not be created. Please try again.';
+
+  @override
+  String get backupKeepSafe =>
+      'Anyone who has both the backup file and its password can read your records, so keep the password private. If you forget it, nobody can open the backup — not even the developer.';
+
+  @override
+  String get backupStoredHint =>
+      'Saved. Also keep a copy somewhere outside this phone.';
+
+  @override
+  String get backupNotStoredYet =>
+      'Now save the file to a folder or send it somewhere safe. It is not stored anywhere yet.';
+
+  @override
+  String get settingsRestoreDesc =>
+      'Replace the data on this phone with a backup file';
+
+  @override
+  String get restoreIntro =>
+      'Choose a DAWASA backup file (.dawasa). It is checked completely before anything on this phone is changed.';
+
+  @override
+  String get restoreCheck => 'Check backup';
+
+  @override
+  String get restoreChooseOther => 'Choose a different file';
+
+  @override
+  String get restoreVerified => 'The backup is valid and complete';
+
+  @override
+  String get restoreCountAccounts => 'Accounts';
+
+  @override
+  String get restoreCountTransactions => 'Transactions';
+
+  @override
+  String get restoreCountBudgets => 'Budgets';
+
+  @override
+  String get restoreCountBills => 'Bills';
+
+  @override
+  String get restoreCountTasks => 'Tasks';
+
+  @override
+  String get restoreCountSavings => 'Savings goals';
+
+  @override
+  String get restoreCountLoans => 'Loans';
+
+  @override
+  String get restoreCountPhotos => 'Receipt photos';
+
+  @override
+  String get restorePreviousData => 'Data from before the last restore';
+
+  @override
+  String restorePreviousDataDesc(String date) {
+    return 'Kept on this phone since $date';
+  }
+
+  @override
+  String get restoreBringBack => 'Bring back previous data';
+
+  @override
+  String get restoreBringBackBody =>
+      'Your current data will be replaced by the data you had before the last restore.';
+
+  @override
+  String get restoreDeleteSafetyCopy => 'Delete this copy';
+
+  @override
+  String get restoreCompleted => 'Backup restored';
+
+  @override
+  String get restoreFailedKept =>
+      'The backup could not be restored. Your previous data was kept.';
+
+  @override
+  String get onbRestoreBackup => 'Restore from a backup';
 }

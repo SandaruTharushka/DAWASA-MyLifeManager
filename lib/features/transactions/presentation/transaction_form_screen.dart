@@ -21,6 +21,7 @@ import '../../../ui/widgets/money_widgets.dart';
 import '../../../ui/widgets/recurrence_editor.dart';
 import '../../accounts/presentation/account_providers.dart';
 import '../../budgets/presentation/budget_alerts.dart';
+import '../../security/app_lock.dart';
 import '../domain/transaction_models.dart';
 import 'transaction_providers.dart';
 import 'widgets/pickers.dart';
@@ -162,12 +163,16 @@ class _TransactionFormScreenState extends ConsumerState<TransactionFormScreen> {
       accounts.where((a) => a.id == id).firstOrNull;
 
   Future<void> _pickReceipt(ImageSource source) async {
-    final picked = await ImagePicker().pickImage(
-      source: source,
-      maxWidth: 1600,
-      maxHeight: 1600,
-      imageQuality: 70,
-    );
+    final picked = await ref
+        .read(appLockProvider.notifier)
+        .whileExternal(
+          () => ImagePicker().pickImage(
+            source: source,
+            maxWidth: 1600,
+            maxHeight: 1600,
+            imageQuality: 70,
+          ),
+        );
     if (picked == null || !mounted) return;
     setState(() {
       _newReceipt = File(picked.path);

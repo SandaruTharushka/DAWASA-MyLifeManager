@@ -1,27 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/database/app_database.dart';
 import '../core/database/connection.dart';
 import '../core/notifications/notification_providers.dart';
 import '../core/notifications/notification_service.dart';
+import '../core/platform/data_paths.dart';
 import '../core/providers.dart';
 import '../core/settings/user_settings.dart';
 import '../ui/theme/app_theme.dart';
 import '../ui/widgets/brand.dart';
 import 'app.dart';
-
-/// Closes the database, optionally runs [whileClosed] (for example to
-/// replace the database file during a restore) and opens everything again.
-typedef AppReloader = Future<void> Function({
-  Future<void> Function()? whileClosed,
-});
-
-final appReloaderProvider = Provider<AppReloader>(
-  (ref) =>
-      ({whileClosed}) async => whileClosed?.call(),
-);
 
 /// Owns the database connection and the [ProviderScope]. Reloading creates a
 /// fresh scope so that every provider re-reads the (possibly restored) data.
@@ -31,6 +22,7 @@ class AppRoot extends StatefulWidget {
     required this.preferences,
     required this.notificationGateway,
     this.openDatabase,
+    this.overrides = const [],
   });
 
   final SharedPreferences preferences;
@@ -38,6 +30,9 @@ class AppRoot extends StatefulWidget {
 
   /// Custom database opener (tests use an in-memory database).
   final Future<AppDatabase> Function()? openDatabase;
+
+  /// Extra provider overrides (tests replace platform services).
+  final List<Override> overrides;
 
   @override
   State<AppRoot> createState() => _AppRootState();
@@ -115,6 +110,7 @@ class _AppRootState extends State<AppRoot> {
           widget.notificationGateway,
         ),
         appReloaderProvider.overrideWithValue(_reload),
+        ...widget.overrides,
       ],
       child: const DawasaApp(),
     );

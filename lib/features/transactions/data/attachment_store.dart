@@ -4,6 +4,7 @@ import 'package:drift/drift.dart';
 import 'package:path/path.dart' as p;
 
 import '../../../core/database/app_database.dart';
+import '../../../core/platform/data_paths.dart';
 
 /// Stores receipt images inside the app's private directory. Files are never
 /// uploaded anywhere; they are included in encrypted backups.
@@ -13,7 +14,7 @@ class AttachmentStore {
   final AppDatabase _db;
   final Future<Directory> Function() _baseDirectory;
 
-  static const String folderName = 'attachments';
+  static const String folderName = DataPaths.attachmentsFolder;
 
   Future<Directory> directory() async {
     final base = await _baseDirectory();

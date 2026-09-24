@@ -6,6 +6,7 @@ import '../../core/notifications/notification_providers.dart';
 import '../../core/providers.dart';
 import '../../ui/theme/app_colors.dart';
 import '../../ui/theme/app_theme.dart';
+import '../security/app_lock.dart';
 import 'widgets/settings_widgets.dart';
 
 final _systemNotificationsProvider = FutureProvider.autoDispose<bool>(
@@ -27,8 +28,10 @@ class RemindersSettingsSection extends ConsumerWidget {
     Future<void> setMaster(bool on) async {
       if (on) {
         final granted = await ref
-            .read(notificationGatewayProvider)
-            .requestPermission();
+            .read(appLockProvider.notifier)
+            .whileExternal(
+              ref.read(notificationGatewayProvider).requestPermission,
+            );
         ref.invalidate(_systemNotificationsProvider);
         await ctrl.update((p) => p.copyWith(notificationsEnabled: granted));
       } else {

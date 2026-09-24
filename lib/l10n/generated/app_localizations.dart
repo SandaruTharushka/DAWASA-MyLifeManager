@@ -4969,6 +4969,234 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See goals'**
   String get homeSeeSavings;
+
+  /// No description provided for @securityPinDigitsEntered.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No digits entered} =1{1 digit entered} other{{count} digits entered}}'**
+  String securityPinDigitsEntered(int count);
+
+  /// No description provided for @securityPinDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete last digit'**
+  String get securityPinDelete;
+
+  /// No description provided for @securityPausedFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many wrong PINs. Try again in {time}.'**
+  String securityPausedFor(String time);
+
+  /// No description provided for @securityEnterCurrentPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your current PIN'**
+  String get securityEnterCurrentPin;
+
+  /// No description provided for @securityPinTooSimple.
+  ///
+  /// In en, this message translates to:
+  /// **'That PIN is too easy to guess. Avoid repeated or consecutive digits.'**
+  String get securityPinTooSimple;
+
+  /// No description provided for @securityLockAfterSeconds.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{After 1 second} other{After {count} seconds}}'**
+  String securityLockAfterSeconds(int count);
+
+  /// No description provided for @securityLockNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The PIN lock keeps other people who use your phone out of DAWASA. If you forget the PIN, it cannot be recovered.'**
+  String get securityLockNote;
+
+  /// No description provided for @securityBiometricFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Fingerprint or face was not confirmed'**
+  String get securityBiometricFailed;
+
+  /// No description provided for @deleteAllBackupFirst.
+  ///
+  /// In en, this message translates to:
+  /// **'Tip: create a backup first if you may need this data again.'**
+  String get deleteAllBackupFirst;
+
+  /// No description provided for @deleteAllTypeWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Type {word} to confirm'**
+  String deleteAllTypeWord(String word);
+
+  /// No description provided for @deleteAllAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete everything'**
+  String get deleteAllAction;
+
+  /// No description provided for @backupShowPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Show password'**
+  String get backupShowPassword;
+
+  /// No description provided for @backupHidePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide password'**
+  String get backupHidePassword;
+
+  /// No description provided for @backupFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The backup could not be created. Please try again.'**
+  String get backupFailed;
+
+  /// No description provided for @backupKeepSafe.
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone who has both the backup file and its password can read your records, so keep the password private. If you forget it, nobody can open the backup — not even the developer.'**
+  String get backupKeepSafe;
+
+  /// No description provided for @backupStoredHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved. Also keep a copy somewhere outside this phone.'**
+  String get backupStoredHint;
+
+  /// No description provided for @backupNotStoredYet.
+  ///
+  /// In en, this message translates to:
+  /// **'Now save the file to a folder or send it somewhere safe. It is not stored anywhere yet.'**
+  String get backupNotStoredYet;
+
+  /// No description provided for @settingsRestoreDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace the data on this phone with a backup file'**
+  String get settingsRestoreDesc;
+
+  /// No description provided for @restoreIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a DAWASA backup file (.dawasa). It is checked completely before anything on this phone is changed.'**
+  String get restoreIntro;
+
+  /// No description provided for @restoreCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'Check backup'**
+  String get restoreCheck;
+
+  /// No description provided for @restoreChooseOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a different file'**
+  String get restoreChooseOther;
+
+  /// No description provided for @restoreVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'The backup is valid and complete'**
+  String get restoreVerified;
+
+  /// No description provided for @restoreCountAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Accounts'**
+  String get restoreCountAccounts;
+
+  /// No description provided for @restoreCountTransactions.
+  ///
+  /// In en, this message translates to:
+  /// **'Transactions'**
+  String get restoreCountTransactions;
+
+  /// No description provided for @restoreCountBudgets.
+  ///
+  /// In en, this message translates to:
+  /// **'Budgets'**
+  String get restoreCountBudgets;
+
+  /// No description provided for @restoreCountBills.
+  ///
+  /// In en, this message translates to:
+  /// **'Bills'**
+  String get restoreCountBills;
+
+  /// No description provided for @restoreCountTasks.
+  ///
+  /// In en, this message translates to:
+  /// **'Tasks'**
+  String get restoreCountTasks;
+
+  /// No description provided for @restoreCountSavings.
+  ///
+  /// In en, this message translates to:
+  /// **'Savings goals'**
+  String get restoreCountSavings;
+
+  /// No description provided for @restoreCountLoans.
+  ///
+  /// In en, this message translates to:
+  /// **'Loans'**
+  String get restoreCountLoans;
+
+  /// No description provided for @restoreCountPhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'Receipt photos'**
+  String get restoreCountPhotos;
+
+  /// No description provided for @restorePreviousData.
+  ///
+  /// In en, this message translates to:
+  /// **'Data from before the last restore'**
+  String get restorePreviousData;
+
+  /// No description provided for @restorePreviousDataDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Kept on this phone since {date}'**
+  String restorePreviousDataDesc(String date);
+
+  /// No description provided for @restoreBringBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Bring back previous data'**
+  String get restoreBringBack;
+
+  /// No description provided for @restoreBringBackBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your current data will be replaced by the data you had before the last restore.'**
+  String get restoreBringBackBody;
+
+  /// No description provided for @restoreDeleteSafetyCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this copy'**
+  String get restoreDeleteSafetyCopy;
+
+  /// No description provided for @restoreCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup restored'**
+  String get restoreCompleted;
+
+  /// No description provided for @restoreFailedKept.
+  ///
+  /// In en, this message translates to:
+  /// **'The backup could not be restored. Your previous data was kept.'**
+  String get restoreFailedKept;
+
+  /// No description provided for @onbRestoreBackup.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore from a backup'**
+  String get onbRestoreBackup;
 }
 
 class _AppLocalizationsDelegate

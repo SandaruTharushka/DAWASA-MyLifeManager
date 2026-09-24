@@ -6,11 +6,14 @@ import '../core/database/enums.dart';
 import '../core/providers.dart';
 import '../features/accounts/presentation/account_detail_screen.dart';
 import '../features/accounts/presentation/account_form_screen.dart';
+import '../features/backup/presentation/backup_screen.dart';
+import '../features/backup/presentation/restore_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/money/money_screen.dart';
 import '../features/onboarding/onboarding_screen.dart';
 import '../features/planner/planner_screen.dart';
 import '../features/reports/reports_screen.dart';
+import '../features/security/pin_setup_screen.dart';
 import '../features/settings/settings_screen.dart';
 import '../features/transactions/presentation/categories_screen.dart';
 import '../features/transactions/presentation/recurring_screen.dart';
@@ -49,6 +52,8 @@ final routerProvider = Provider<GoRouter>((ref) {
     redirect: (context, state) {
       final done = ref.read(preferencesProvider).onboardingComplete;
       final atOnboarding = state.matchedLocation == Routes.onboarding;
+      // A backup can be restored instead of going through the guide.
+      if (!done && state.matchedLocation == Routes.restore) return null;
       if (!done && !atOnboarding) return Routes.onboarding;
       if (done && atOnboarding) return Routes.home;
       return null;
@@ -139,6 +144,18 @@ final routerProvider = Provider<GoRouter>((ref) {
         (s) => AccountFormScreen(accountId: s.pathParameters['id']),
       ),
       _page(Routes.privacy, (_) => const PrivacyScreen()),
+      _page(Routes.backup, (_) => const BackupScreen()),
+      _page(Routes.restore, (_) => const RestoreScreen()),
+      _page(
+        '/settings/pin',
+        (s) => PinSetupScreen(
+          mode:
+              PinSetupMode.values
+                  .where((m) => m.name == s.uri.queryParameters['mode'])
+                  .firstOrNull ??
+              PinSetupMode.create,
+        ),
+      ),
       ...extraRoutes(_page),
     ],
   );

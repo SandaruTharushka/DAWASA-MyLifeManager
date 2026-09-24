@@ -27,6 +27,7 @@ import '../budgets/presentation/budget_providers.dart';
 import '../budgets/presentation/budgets_tab.dart';
 import '../loans/presentation/loan_providers.dart';
 import '../savings/presentation/savings_providers.dart';
+import '../security/app_lock.dart';
 import '../transactions/domain/transaction_models.dart';
 import '../transactions/presentation/transaction_providers.dart';
 import 'data/csv_exporter.dart';
@@ -200,7 +201,13 @@ class ReportsScreen extends ConsumerWidget {
       builder: (_) => _ShareSheet(data: data),
     );
     if (text == null) return;
-    await SharePlus.instance.share(ShareParams(text: text, subject: 'DAWASA'));
+    await ref
+        .read(appLockProvider.notifier)
+        .whileExternal(
+          () => SharePlus.instance.share(
+            ShareParams(text: text, subject: 'DAWASA'),
+          ),
+        );
   }
 }
 
@@ -759,12 +766,16 @@ class _ExportSheetState extends ConsumerState<ExportSheet> {
     final dir = await getTemporaryDirectory();
     final file = File(p.join(dir.path, name));
     await file.writeAsBytes(bytes, flush: true);
-    await SharePlus.instance.share(
-      ShareParams(
-        files: [XFile(file.path, mimeType: 'text/csv')],
-        subject: name,
-      ),
-    );
+    await ref
+        .read(appLockProvider.notifier)
+        .whileExternal(
+          () => SharePlus.instance.share(
+            ShareParams(
+              files: [XFile(file.path, mimeType: 'text/csv')],
+              subject: name,
+            ),
+          ),
+        );
   }
 
   Future<void> _save() async {
@@ -775,13 +786,17 @@ class _ExportSheetState extends ConsumerState<ExportSheet> {
       showAppSnackBar(context, l10n.exportNothing);
       return;
     }
-    final uri = await FilePicker.saveFile(
-      fileName: name,
-      bytes: Uint8List.fromList(bytes),
-      mimeType: 'text/csv',
-      allowedExtensions: const ['csv'],
-      type: FileType.custom,
-    );
+    final uri = await ref
+        .read(appLockProvider.notifier)
+        .whileExternal(
+          () => FilePicker.saveFile(
+            fileName: name,
+            bytes: Uint8List.fromList(bytes),
+            mimeType: 'text/csv',
+            allowedExtensions: const ['csv'],
+            type: FileType.custom,
+          ),
+        );
     if (uri != null && mounted) showAppSnackBar(context, l10n.exportDone);
   }
 

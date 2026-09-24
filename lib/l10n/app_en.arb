@@ -1408,5 +1408,78 @@
   "csvCountsIncome": "Income",
   "csvCountsExpense": "Expense",
   "csvCountsNeither": "Not income or expense",
-  "homeSeeSavings": "See goals"
+  "homeSeeSavings": "See goals",
+  "securityPinDigitsEntered": "{count, plural, =0{No digits entered} =1{1 digit entered} other{{count} digits entered}}",
+  "@securityPinDigitsEntered": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "securityPinDelete": "Delete last digit",
+  "securityPausedFor": "Too many wrong PINs. Try again in {time}.",
+  "@securityPausedFor": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "securityEnterCurrentPin": "Enter your current PIN",
+  "securityPinTooSimple": "That PIN is too easy to guess. Avoid repeated or consecutive digits.",
+  "securityLockAfterSeconds": "{count, plural, =1{After 1 second} other{After {count} seconds}}",
+  "@securityLockAfterSeconds": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "securityLockNote": "The PIN lock keeps other people who use your phone out of DAWASA. If you forget the PIN, it cannot be recovered.",
+  "securityBiometricFailed": "Fingerprint or face was not confirmed",
+  "deleteAllBackupFirst": "Tip: create a backup first if you may need this data again.",
+  "deleteAllTypeWord": "Type {word} to confirm",
+  "@deleteAllTypeWord": {
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAllAction": "Delete everything",
+  "backupShowPassword": "Show password",
+  "backupHidePassword": "Hide password",
+  "backupFailed": "The backup could not be created. Please try again.",
+  "backupKeepSafe": "Anyone who has both the backup file and its password can read your records, so keep the password private. If you forget it, nobody can open the backup — not even the developer.",
+  "backupStoredHint": "Saved. Also keep a copy somewhere outside this phone.",
+  "backupNotStoredYet": "Now save the file to a folder or send it somewhere safe. It is not stored anywhere yet.",
+  "settingsRestoreDesc": "Replace the data on this phone with a backup file",
+  "restoreIntro": "Choose a DAWASA backup file (.dawasa). It is checked completely before anything on this phone is changed.",
+  "restoreCheck": "Check backup",
+  "restoreChooseOther": "Choose a different file",
+  "restoreVerified": "The backup is valid and complete",
+  "restoreCountAccounts": "Accounts",
+  "restoreCountTransactions": "Transactions",
+  "restoreCountBudgets": "Budgets",
+  "restoreCountBills": "Bills",
+  "restoreCountTasks": "Tasks",
+  "restoreCountSavings": "Savings goals",
+  "restoreCountLoans": "Loans",
+  "restoreCountPhotos": "Receipt photos",
+  "restorePreviousData": "Data from before the last restore",
+  "restorePreviousDataDesc": "Kept on this phone since {date}",
+  "@restorePreviousDataDesc": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBringBack": "Bring back previous data",
+  "restoreBringBackBody": "Your current data will be replaced by the data you had before the last restore.",
+  "restoreDeleteSafetyCopy": "Delete this copy",
+  "restoreCompleted": "Backup restored",
+  "restoreFailedKept": "The backup could not be restored. Your previous data was kept.",
+  "onbRestoreBackup": "Restore from a backup"
 }

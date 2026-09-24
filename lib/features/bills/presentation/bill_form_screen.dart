@@ -18,6 +18,7 @@ import '../../../ui/widgets/common.dart';
 import '../../../ui/widgets/form_widgets.dart';
 import '../../../ui/widgets/money_widgets.dart';
 import '../../../ui/widgets/recurrence_editor.dart';
+import '../../security/app_lock.dart';
 import '../../transactions/presentation/widgets/pickers.dart';
 import '../data/bill_repository.dart';
 import 'bill_providers.dart';
@@ -96,7 +97,9 @@ class _BillFormScreenState extends ConsumerState<BillFormScreen> {
     if (_reminders) {
       final gateway = ref.read(notificationGatewayProvider);
       if (!await gateway.areNotificationsEnabled()) {
-        final granted = await gateway.requestPermission();
+        final granted = await ref
+            .read(appLockProvider.notifier)
+            .whileExternal(gateway.requestPermission);
         await ref
             .read(preferencesProvider.notifier)
             .update((p) => p.copyWith(notificationsEnabled: granted));

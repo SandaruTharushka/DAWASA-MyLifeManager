@@ -2852,4 +2852,152 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get homeSeeSavings => 'ඉලක්ක බලන්න';
+
+  @override
+  String securityPinDigitsEntered(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ඉලක්කම් $countක් ඇතුළත් කළා',
+      one: 'ඉලක්කම් 1ක් ඇතුළත් කළා',
+      zero: 'ඉලක්කම් ඇතුළත් කර නැත',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get securityPinDelete => 'අවසන් ඉලක්කම මකන්න';
+
+  @override
+  String securityPausedFor(String time) {
+    return 'වැරදි PIN අංක වැඩියි. $time කින් නැවත උත්සාහ කරන්න.';
+  }
+
+  @override
+  String get securityEnterCurrentPin => 'ඔබේ වත්මන් PIN අංකය ඇතුළත් කරන්න';
+
+  @override
+  String get securityPinTooSimple =>
+      'එම PIN අංකය අනුමාන කිරීමට ඉතා පහසුය. එකම ඉලක්කම හෝ අනුපිළිවෙළින් ඇති ඉලක්කම් භාවිත නොකරන්න.';
+
+  @override
+  String securityLockAfterSeconds(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'තත්පර $countකට පසු',
+      one: 'තත්පර 1කට පසු',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get securityLockNote =>
+      'PIN අගුල ඔබේ දුරකථනය භාවිත කරන වෙනත් අයට DAWASA විවෘත කිරීම වළක්වයි. PIN අංකය අමතක වුවහොත් එය නැවත ලබාගත නොහැක.';
+
+  @override
+  String get securityBiometricFailed => 'ඇඟිලි සලකුණ හෝ මුහුණ තහවුරු නොවීය';
+
+  @override
+  String get deleteAllBackupFirst =>
+      'ඉඟිය: මෙම දත්ත නැවත අවශ්‍ය විය හැකි නම්, පළමුව උපස්ථයක් සාදන්න.';
+
+  @override
+  String deleteAllTypeWord(String word) {
+    return 'තහවුරු කිරීමට $word ලෙස ටයිප් කරන්න';
+  }
+
+  @override
+  String get deleteAllAction => 'සියල්ල මකන්න';
+
+  @override
+  String get backupShowPassword => 'මුරපදය පෙන්වන්න';
+
+  @override
+  String get backupHidePassword => 'මුරපදය සඟවන්න';
+
+  @override
+  String get backupFailed =>
+      'උපස්ථය සෑදිය නොහැකි විය. කරුණාකර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get backupKeepSafe =>
+      'උපස්ථ ගොනුව සහ එහි මුරපදය යන දෙකම ඇති ඕනෑම අයෙකුට ඔබේ වාර්තා කියවිය හැකි බැවින් මුරපදය රහසිගතව තබා ගන්න. එය අමතක වුවහොත් කිසිවෙකුට — සංවර්ධකයාටවත් — උපස්ථය විවෘත කළ නොහැක.';
+
+  @override
+  String get backupStoredHint =>
+      'සුරකින ලදී. මෙම දුරකථනයෙන් පිටත ස්ථානයක ද පිටපතක් තබා ගන්න.';
+
+  @override
+  String get backupNotStoredYet =>
+      'දැන් ගොනුව ෆෝල්ඩරයකට සුරකින්න, නැතහොත් ආරක්ෂිත ස්ථානයකට යවන්න. එය තවම කොතැනකවත් ගබඩා කර නැත.';
+
+  @override
+  String get settingsRestoreDesc =>
+      'මෙම දුරකථනයේ දත්ත උපස්ථ ගොනුවකින් ප්‍රතිස්ථාපනය කරන්න';
+
+  @override
+  String get restoreIntro =>
+      'DAWASA උපස්ථ ගොනුවක් (.dawasa) තෝරන්න. මෙම දුරකථනයේ කිසිවක් වෙනස් කිරීමට පෙර එය සම්පූර්ණයෙන්ම පරීක්ෂා කෙරේ.';
+
+  @override
+  String get restoreCheck => 'උපස්ථය පරීක්ෂා කරන්න';
+
+  @override
+  String get restoreChooseOther => 'වෙනත් ගොනුවක් තෝරන්න';
+
+  @override
+  String get restoreVerified => 'උපස්ථය වලංගු සහ සම්පූර්ණයි';
+
+  @override
+  String get restoreCountAccounts => 'ගිණුම්';
+
+  @override
+  String get restoreCountTransactions => 'ගනුදෙනු';
+
+  @override
+  String get restoreCountBudgets => 'අයවැය';
+
+  @override
+  String get restoreCountBills => 'බිල්පත්';
+
+  @override
+  String get restoreCountTasks => 'කාර්යයන්';
+
+  @override
+  String get restoreCountSavings => 'ඉතිරිකිරීම් ඉලක්ක';
+
+  @override
+  String get restoreCountLoans => 'ණය';
+
+  @override
+  String get restoreCountPhotos => 'රිසිට්පත් ඡායාරූප';
+
+  @override
+  String get restorePreviousData => 'අවසන් ප්‍රතිස්ථාපනයට පෙර දත්ත';
+
+  @override
+  String restorePreviousDataDesc(String date) {
+    return '$date සිට මෙම දුරකථනයේ තබා ඇත';
+  }
+
+  @override
+  String get restoreBringBack => 'පෙර දත්ත නැවත ගෙන එන්න';
+
+  @override
+  String get restoreBringBackBody =>
+      'ඔබේ වත්මන් දත්ත, අවසන් ප්‍රතිස්ථාපනයට පෙර ඔබ සතුව තිබූ දත්තවලින් ප්‍රතිස්ථාපනය වේ.';
+
+  @override
+  String get restoreDeleteSafetyCopy => 'මෙම පිටපත මකන්න';
+
+  @override
+  String get restoreCompleted => 'උපස්ථය ප්‍රතිස්ථාපනය කරන ලදී';
+
+  @override
+  String get restoreFailedKept =>
+      'උපස්ථය ප්‍රතිස්ථාපනය කළ නොහැකි විය. ඔබේ පෙර දත්ත එලෙසම තබා ඇත.';
+
+  @override
+  String get onbRestoreBackup => 'උපස්ථයකින් ප්‍රතිස්ථාපනය කරන්න';
 }

@@ -223,4 +223,23 @@ class PreferencesStore {
   }
 
   Future<void> clear() => _prefs.clear();
+
+  /// Removes every preference except the chosen language, so the welcome
+  /// guide after "delete all data" appears in the user's language.
+  Future<void> resetKeepingLanguage() async {
+    final language = _prefs.getString(_kLanguage);
+    await _prefs.clear();
+    if (language != null) await _prefs.setString(_kLanguage, language);
+  }
+
+  static const _kNotice = 'app.notice';
+
+  /// One-time message shown after the app reloads (restore, delete all).
+  Future<void> setNotice(String notice) => _prefs.setString(_kNotice, notice);
+
+  String? takeNotice() {
+    final notice = _prefs.getString(_kNotice);
+    if (notice != null) _prefs.remove(_kNotice);
+    return notice;
+  }
 }

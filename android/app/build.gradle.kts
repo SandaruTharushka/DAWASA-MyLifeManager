@@ -47,3 +47,9 @@ kotlin {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // AppCompat launch themes are required by the biometric prompt
+    // (FlutterFragmentActivity) on older Android versions.
+    implementation("androidx.appcompat:appcompat:1.7.1")
+}

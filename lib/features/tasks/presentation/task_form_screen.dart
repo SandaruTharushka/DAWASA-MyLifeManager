@@ -13,6 +13,7 @@ import '../../../ui/theme/app_theme.dart';
 import '../../../ui/widgets/common.dart';
 import '../../../ui/widgets/form_widgets.dart';
 import '../../../ui/widgets/recurrence_editor.dart';
+import '../../security/app_lock.dart';
 import '../data/task_repository.dart';
 import 'task_providers.dart';
 import 'tasks_tab.dart';
@@ -87,7 +88,9 @@ class _TaskFormScreenState extends ConsumerState<TaskFormScreen> {
       // Ask for notification permission only when a reminder is used.
       final gateway = ref.read(notificationGatewayProvider);
       if (!await gateway.areNotificationsEnabled()) {
-        final granted = await gateway.requestPermission();
+        final granted = await ref
+            .read(appLockProvider.notifier)
+            .whileExternal(gateway.requestPermission);
         await ref
             .read(preferencesProvider.notifier)
             .update((p) => p.copyWith(notificationsEnabled: granted));

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../app/routes.dart';
 import '../../core/l10n/l10n.dart';
 import '../../core/money/currency.dart';
 import '../../core/notifications/notification_providers.dart';
@@ -241,6 +243,12 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                         _next(steps);
                       },
                       child: Text(l10n.actionSkip),
+                    )
+                  else if (_index == 0)
+                    TextButton.icon(
+                      icon: const Icon(Icons.settings_backup_restore_rounded),
+                      label: Text(l10n.onbRestoreBackup),
+                      onPressed: () => context.push(Routes.restore),
                     )
                   else
                     const SizedBox(height: 48),
