@@ -13,6 +13,7 @@ import '../../ui/theme/app_theme.dart';
 import '../../ui/widgets/common.dart';
 import '../../ui/widgets/money_widgets.dart';
 import '../accounts/presentation/account_providers.dart';
+import '../backup/presentation/backup_reminder.dart';
 import '../transactions/presentation/transaction_providers.dart';
 import '../transactions/presentation/widgets/transaction_tile.dart';
 import '../updates/presentation/update_screen.dart';
@@ -39,6 +40,7 @@ class HomeScreen extends ConsumerWidget {
           children: [
             _Header(),
             UpdateBanner(),
+            BackupReminderCard(),
             SizedBox(height: Gap.lg),
             _BalanceCard(),
             SizedBox(height: Gap.md),

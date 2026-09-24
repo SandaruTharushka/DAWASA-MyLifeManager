@@ -104,12 +104,6 @@ abstract class AppLocalizations {
   /// **'DAWASA'**
   String get appName;
 
-  /// No description provided for @appTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'DAWASA — Daily Life Manager'**
-  String get appTitle;
-
   /// No description provided for @appTagline.
   ///
   /// In en, this message translates to:
@@ -200,12 +194,6 @@ abstract class AppLocalizations {
   /// **'Skip'**
   String get actionSkip;
 
-  /// No description provided for @actionClose.
-  ///
-  /// In en, this message translates to:
-  /// **'Close'**
-  String get actionClose;
-
   /// No description provided for @actionConfirm.
   ///
   /// In en, this message translates to:
@@ -217,12 +205,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Try again'**
   String get actionRetry;
-
-  /// No description provided for @actionSearch.
-  ///
-  /// In en, this message translates to:
-  /// **'Search'**
-  String get actionSearch;
 
   /// No description provided for @actionFilter.
   ///
@@ -247,18 +229,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Share'**
   String get actionShare;
-
-  /// No description provided for @actionExport.
-  ///
-  /// In en, this message translates to:
-  /// **'Export'**
-  String get actionExport;
-
-  /// No description provided for @actionChange.
-  ///
-  /// In en, this message translates to:
-  /// **'Change'**
-  String get actionChange;
 
   /// No description provided for @actionUndo.
   ///
@@ -296,36 +266,6 @@ abstract class AppLocalizations {
   /// **'See all'**
   String get actionSeeAll;
 
-  /// No description provided for @actionShow.
-  ///
-  /// In en, this message translates to:
-  /// **'Show'**
-  String get actionShow;
-
-  /// No description provided for @actionHide.
-  ///
-  /// In en, this message translates to:
-  /// **'Hide'**
-  String get actionHide;
-
-  /// No description provided for @actionSelect.
-  ///
-  /// In en, this message translates to:
-  /// **'Select'**
-  String get actionSelect;
-
-  /// No description provided for @actionAllow.
-  ///
-  /// In en, this message translates to:
-  /// **'Allow'**
-  String get actionAllow;
-
-  /// No description provided for @actionNotNow.
-  ///
-  /// In en, this message translates to:
-  /// **'Not now'**
-  String get actionNotNow;
-
   /// No description provided for @actionOpenSettings.
   ///
   /// In en, this message translates to:
@@ -343,12 +283,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'None'**
   String get commonNone;
-
-  /// No description provided for @commonOptional.
-  ///
-  /// In en, this message translates to:
-  /// **'Optional'**
-  String get commonOptional;
 
   /// No description provided for @commonAmount.
   ///
@@ -392,12 +326,6 @@ abstract class AppLocalizations {
   /// **'Account'**
   String get commonAccount;
 
-  /// No description provided for @commonName.
-  ///
-  /// In en, this message translates to:
-  /// **'Name'**
-  String get commonName;
-
   /// No description provided for @commonToday.
   ///
   /// In en, this message translates to:
@@ -415,24 +343,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tomorrow'**
   String get commonTomorrow;
-
-  /// No description provided for @commonYes.
-  ///
-  /// In en, this message translates to:
-  /// **'Yes'**
-  String get commonYes;
-
-  /// No description provided for @commonNo.
-  ///
-  /// In en, this message translates to:
-  /// **'No'**
-  String get commonNo;
-
-  /// No description provided for @commonOk.
-  ///
-  /// In en, this message translates to:
-  /// **'OK'**
-  String get commonOk;
 
   /// No description provided for @commonTotal.
   ///
@@ -470,65 +380,17 @@ abstract class AppLocalizations {
   /// **'Details'**
   String get commonDetails;
 
-  /// No description provided for @commonHistory.
-  ///
-  /// In en, this message translates to:
-  /// **'History'**
-  String get commonHistory;
-
-  /// No description provided for @commonActive.
-  ///
-  /// In en, this message translates to:
-  /// **'Active'**
-  String get commonActive;
-
   /// No description provided for @commonArchived.
   ///
   /// In en, this message translates to:
   /// **'Archived'**
   String get commonArchived;
 
-  /// No description provided for @commonProgress.
-  ///
-  /// In en, this message translates to:
-  /// **'Progress'**
-  String get commonProgress;
-
-  /// No description provided for @commonRemaining.
-  ///
-  /// In en, this message translates to:
-  /// **'Remaining'**
-  String get commonRemaining;
-
   /// No description provided for @commonOverdue.
   ///
   /// In en, this message translates to:
   /// **'Overdue'**
   String get commonOverdue;
-
-  /// No description provided for @commonCompleted.
-  ///
-  /// In en, this message translates to:
-  /// **'Completed'**
-  String get commonCompleted;
-
-  /// No description provided for @commonPending.
-  ///
-  /// In en, this message translates to:
-  /// **'Pending'**
-  String get commonPending;
-
-  /// No description provided for @commonUnknown.
-  ///
-  /// In en, this message translates to:
-  /// **'Unknown'**
-  String get commonUnknown;
-
-  /// No description provided for @commonLoading.
-  ///
-  /// In en, this message translates to:
-  /// **'Loading…'**
-  String get commonLoading;
 
   /// No description provided for @commonNotSet.
   ///
@@ -542,12 +404,6 @@ abstract class AppLocalizations {
   /// **'Currency'**
   String get commonCurrency;
 
-  /// No description provided for @commonReminder.
-  ///
-  /// In en, this message translates to:
-  /// **'Reminder'**
-  String get commonReminder;
-
   /// No description provided for @commonRepeat.
   ///
   /// In en, this message translates to:
@@ -559,30 +415,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{percent}% used'**
   String commonPercentUsed(int percent);
-
-  /// No description provided for @commonOfAmount.
-  ///
-  /// In en, this message translates to:
-  /// **'{amount} of {total}'**
-  String commonOfAmount(String amount, String total);
-
-  /// No description provided for @commonDaysLeft.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =0{Due today} =1{1 day left} other{{count} days left}}'**
-  String commonDaysLeft(int count);
-
-  /// No description provided for @commonDaysOverdue.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =1{1 day overdue} other{{count} days overdue}}'**
-  String commonDaysOverdue(int count);
-
-  /// No description provided for @commonItemsCount.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =0{No items} =1{1 item} other{{count} items}}'**
-  String commonItemsCount(int count);
 
   /// No description provided for @validationRequired.
   ///
@@ -614,12 +446,6 @@ abstract class AppLocalizations {
   /// **'Too many decimal places'**
   String get validationTooManyDecimals;
 
-  /// No description provided for @validationNameTooLong.
-  ///
-  /// In en, this message translates to:
-  /// **'Name is too long'**
-  String get validationNameTooLong;
-
   /// No description provided for @validationNumberInvalid.
   ///
   /// In en, this message translates to:
@@ -643,12 +469,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Deleted'**
   String get feedbackDeleted;
-
-  /// No description provided for @feedbackError.
-  ///
-  /// In en, this message translates to:
-  /// **'Something went wrong. Please try again.'**
-  String get feedbackError;
 
   /// No description provided for @feedbackAlreadySaved.
   ///
@@ -1214,12 +1034,6 @@ abstract class AppLocalizations {
   /// **'Blocks screenshots and hides DAWASA in the recent apps view'**
   String get settingsScreenProtectionDesc;
 
-  /// No description provided for @settingsNotifications.
-  ///
-  /// In en, this message translates to:
-  /// **'Notifications'**
-  String get settingsNotifications;
-
   /// No description provided for @settingsNotificationsEnabled.
   ///
   /// In en, this message translates to:
@@ -1303,12 +1117,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Create backup'**
   String get settingsBackup;
-
-  /// No description provided for @settingsBackupDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Encrypted file protected with your password'**
-  String get settingsBackupDesc;
 
   /// No description provided for @settingsRestore.
   ///
@@ -1394,12 +1202,6 @@ abstract class AppLocalizations {
   /// **'Use default server'**
   String get settingsUpdateServerReset;
 
-  /// No description provided for @settingsReleaseNotes.
-  ///
-  /// In en, this message translates to:
-  /// **'Release notes'**
-  String get settingsReleaseNotes;
-
   /// No description provided for @settingsReplayOnboarding.
   ///
   /// In en, this message translates to:
@@ -1423,12 +1225,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Developer'**
   String get aboutDeveloper;
-
-  /// No description provided for @aboutDeveloperName.
-  ///
-  /// In en, this message translates to:
-  /// **'Sandaru Tharushka'**
-  String get aboutDeveloperName;
 
   /// No description provided for @aboutFree.
   ///
@@ -1574,12 +1370,6 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Wrong PIN. 1 attempt left before a pause.} other{Wrong PIN. {count} attempts left before a pause.}}'**
   String securityWrongPin(int count);
 
-  /// No description provided for @securityLockedOut.
-  ///
-  /// In en, this message translates to:
-  /// **'Too many attempts. Try again in {seconds} seconds.'**
-  String securityLockedOut(int seconds);
-
   /// No description provided for @securityUnlockTitle.
   ///
   /// In en, this message translates to:
@@ -1627,12 +1417,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Erase data and reset'**
   String get securityDeleteAndReset;
-
-  /// No description provided for @backupTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Backup & restore'**
-  String get backupTitle;
 
   /// No description provided for @backupIntro.
   ///
@@ -1748,12 +1532,6 @@ abstract class AppLocalizations {
   /// **'Backup from {date} · app {version}'**
   String restoreBackupInfo(String date, String version);
 
-  /// No description provided for @restoreContents.
-  ///
-  /// In en, this message translates to:
-  /// **'Contains {transactions} transactions, {accounts} accounts, {tasks} tasks'**
-  String restoreContents(int transactions, int accounts, int tasks);
-
   /// No description provided for @restoreAction.
   ///
   /// In en, this message translates to:
@@ -1765,12 +1543,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Restoring…'**
   String get restoreInProgress;
-
-  /// No description provided for @restoreDone.
-  ///
-  /// In en, this message translates to:
-  /// **'Restore complete. DAWASA will reload.'**
-  String get restoreDone;
 
   /// No description provided for @restoreErrorWrongPassword.
   ///
@@ -1795,12 +1567,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This backup was made by a newer version of DAWASA. Update the app first.'**
   String get restoreErrorNewer;
-
-  /// No description provided for @restoreSafetyNote.
-  ///
-  /// In en, this message translates to:
-  /// **'Safety copy saved in the app before restoring.'**
-  String get restoreSafetyNote;
 
   /// No description provided for @deleteAllTitle.
   ///
@@ -1880,12 +1646,6 @@ abstract class AppLocalizations {
   /// **'Installation cancelled'**
   String get updateInstallCancelled;
 
-  /// No description provided for @updateDownloadFailed.
-  ///
-  /// In en, this message translates to:
-  /// **'Download failed'**
-  String get updateDownloadFailed;
-
   /// No description provided for @updateInstalling.
   ///
   /// In en, this message translates to:
@@ -1903,12 +1663,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The update server could not be reached. Try again later.'**
   String get updateServerUnavailable;
-
-  /// No description provided for @updateNotConfigured.
-  ///
-  /// In en, this message translates to:
-  /// **'No update server is configured.'**
-  String get updateNotConfigured;
 
   /// No description provided for @updateInvalidManifest.
   ///
@@ -2156,12 +1910,6 @@ abstract class AppLocalizations {
   /// **'Show balances'**
   String get homeShowBalances;
 
-  /// No description provided for @homeQuickActions.
-  ///
-  /// In en, this message translates to:
-  /// **'Quick actions'**
-  String get homeQuickActions;
-
   /// No description provided for @quickAddExpense.
   ///
   /// In en, this message translates to:
@@ -2354,12 +2102,6 @@ abstract class AppLocalizations {
   /// **'Receipt photo'**
   String get txReceipt;
 
-  /// No description provided for @txAddReceipt.
-  ///
-  /// In en, this message translates to:
-  /// **'Add receipt photo'**
-  String get txAddReceipt;
-
   /// No description provided for @txTakePhoto.
   ///
   /// In en, this message translates to:
@@ -2383,12 +2125,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Select account'**
   String get txSelectAccount;
-
-  /// No description provided for @txSelectCategory.
-  ///
-  /// In en, this message translates to:
-  /// **'Select category'**
-  String get txSelectCategory;
 
   /// No description provided for @txErrorSameAccount.
   ///
@@ -2425,12 +2161,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This transaction is linked to a bill, shopping list, savings goal or loan. The link will be removed, and the balance will be recalculated.'**
   String get txDeleteLinkedWarning;
-
-  /// No description provided for @txDuplicated.
-  ///
-  /// In en, this message translates to:
-  /// **'Copy created — check and save'**
-  String get txDuplicated;
 
   /// No description provided for @txSearchHint.
   ///
@@ -2510,23 +2240,11 @@ abstract class AppLocalizations {
   /// **'DAWASA will add it automatically on each date. You can edit or delete any of them.'**
   String get txRepeatHelp;
 
-  /// No description provided for @txOpeningBalance.
-  ///
-  /// In en, this message translates to:
-  /// **'Opening balance'**
-  String get txOpeningBalance;
-
   /// No description provided for @txSplitNote.
   ///
   /// In en, this message translates to:
   /// **'Transfers, loans and reimbursements are not counted as income or spending.'**
   String get txSplitNote;
-
-  /// No description provided for @txMoreTypes.
-  ///
-  /// In en, this message translates to:
-  /// **'More types'**
-  String get txMoreTypes;
 
   /// No description provided for @recurringTitle.
   ///
@@ -2575,12 +2293,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Future transactions will no longer be added. Transactions already recorded are kept.'**
   String get recurringStopBody;
-
-  /// No description provided for @recurringGenerated.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =1{1 recurring transaction added} other{{count} recurring transactions added}}'**
-  String recurringGenerated(int count);
 
   /// No description provided for @catFood.
   ///
@@ -2960,12 +2672,6 @@ abstract class AppLocalizations {
   /// **'Dates'**
   String get tabEvents;
 
-  /// No description provided for @budgetsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Budgets'**
-  String get budgetsTitle;
-
   /// No description provided for @budgetAdd.
   ///
   /// In en, this message translates to:
@@ -3128,12 +2834,6 @@ abstract class AppLocalizations {
   /// **'Budget performance'**
   String get budgetPerformance;
 
-  /// No description provided for @tasksTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Tasks'**
-  String get tasksTitle;
-
   /// No description provided for @taskAdd.
   ///
   /// In en, this message translates to:
@@ -3206,12 +2906,6 @@ abstract class AppLocalizations {
   /// **'Reminder'**
   String get taskReminder;
 
-  /// No description provided for @taskReminderNone.
-  ///
-  /// In en, this message translates to:
-  /// **'No reminder'**
-  String get taskReminderNone;
-
   /// No description provided for @taskReminderAtTime.
   ///
   /// In en, this message translates to:
@@ -3278,12 +2972,6 @@ abstract class AppLocalizations {
   /// **'Overdue'**
   String get taskOverdue;
 
-  /// No description provided for @taskNoDate.
-  ///
-  /// In en, this message translates to:
-  /// **'No due date'**
-  String get taskNoDate;
-
   /// No description provided for @taskEmptyToday.
   ///
   /// In en, this message translates to:
@@ -3349,12 +3037,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =0{No tasks} =1{1 task} other{{count} tasks}}'**
   String taskCountToday(int count);
-
-  /// No description provided for @billsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Bills & payments'**
-  String get billsTitle;
 
   /// No description provided for @billAdd.
   ///
@@ -3476,18 +3158,6 @@ abstract class AppLocalizations {
   /// **'Usually paid from'**
   String get billPaymentAccount;
 
-  /// No description provided for @billPaid.
-  ///
-  /// In en, this message translates to:
-  /// **'Paid'**
-  String get billPaid;
-
-  /// No description provided for @billUnpaid.
-  ///
-  /// In en, this message translates to:
-  /// **'Unpaid'**
-  String get billUnpaid;
-
   /// No description provided for @billDueToday.
   ///
   /// In en, this message translates to:
@@ -3566,12 +3236,6 @@ abstract class AppLocalizations {
   /// **'Create a new expense'**
   String get billCreateNew;
 
-  /// No description provided for @billDontRecord.
-  ///
-  /// In en, this message translates to:
-  /// **'Just mark as paid'**
-  String get billDontRecord;
-
   /// No description provided for @billPaymentSaved.
   ///
   /// In en, this message translates to:
@@ -3643,12 +3307,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Resume this bill'**
   String get billResume;
-
-  /// No description provided for @shoppingTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Shopping lists'**
-  String get shoppingTitle;
 
   /// No description provided for @shoppingNewList.
   ///
@@ -3980,12 +3638,6 @@ abstract class AppLocalizations {
   /// **'Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.'**
   String get billLoanNote;
 
-  /// No description provided for @savingsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Savings goals'**
-  String get savingsTitle;
-
   /// No description provided for @savingsAdd.
   ///
   /// In en, this message translates to:
@@ -4148,12 +3800,6 @@ abstract class AppLocalizations {
   /// **'{amount} to go. Add a little today?'**
   String notifSavingsBody(String amount);
 
-  /// No description provided for @loansTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Loans & debts'**
-  String get loansTitle;
-
   /// No description provided for @loanAdd.
   ///
   /// In en, this message translates to:
@@ -4165,12 +3811,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Edit loan'**
   String get loanEdit;
-
-  /// No description provided for @loanDirection.
-  ///
-  /// In en, this message translates to:
-  /// **'Type'**
-  String get loanDirection;
 
   /// No description provided for @loanLent.
   ///
@@ -4370,12 +4010,6 @@ abstract class AppLocalizations {
   /// **'Total you owe'**
   String get loanTotalYouOwe;
 
-  /// No description provided for @habitsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Habits'**
-  String get habitsTitle;
-
   /// No description provided for @habitAdd.
   ///
   /// In en, this message translates to:
@@ -4429,12 +4063,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{Once a week} other{{count} times a week}}'**
   String habitTimesPerWeek(int count);
-
-  /// No description provided for @habitTarget.
-  ///
-  /// In en, this message translates to:
-  /// **'Times'**
-  String get habitTarget;
 
   /// No description provided for @habitReminder.
   ///
@@ -4514,12 +4142,6 @@ abstract class AppLocalizations {
   /// **'The habit and its history will be deleted.'**
   String get habitDeleteBody;
 
-  /// No description provided for @eventsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Important dates'**
-  String get eventsTitle;
-
   /// No description provided for @eventAdd.
   ///
   /// In en, this message translates to:
@@ -4543,12 +4165,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'e.g. Amma\'s birthday'**
   String get eventTitleHint;
-
-  /// No description provided for @eventType.
-  ///
-  /// In en, this message translates to:
-  /// **'Type'**
-  String get eventType;
 
   /// No description provided for @eventBirthday.
   ///
@@ -4591,12 +4207,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remind me'**
   String get eventRemind;
-
-  /// No description provided for @eventNoReminder.
-  ///
-  /// In en, this message translates to:
-  /// **'No reminder'**
-  String get eventNoReminder;
 
   /// No description provided for @eventBudget.
   ///
@@ -4855,12 +4465,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Include account names'**
   String get exportIncludeAccounts;
-
-  /// No description provided for @exportRows.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =1{1 transaction} other{{count} transactions}}'**
-  String exportRows(int count);
 
   /// No description provided for @exportDone.
   ///
@@ -5275,6 +4879,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Checking for updates only downloads a small description file from the update server. No personal or financial information is sent.'**
   String get updatePrivacyNote;
+
+  /// No description provided for @backupReminderTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep a backup of your records'**
+  String get backupReminderTitle;
+
+  /// No description provided for @backupReminderOldTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your last backup is more than a month old'**
+  String get backupReminderOldTitle;
+
+  /// No description provided for @backupReminderBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your data is stored only on this phone. If the phone is lost or reset, a backup file is the only way to get it back.'**
+  String get backupReminderBody;
+
+  /// No description provided for @backupReminderLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Later'**
+  String get backupReminderLater;
 }
 
 class _AppLocalizationsDelegate

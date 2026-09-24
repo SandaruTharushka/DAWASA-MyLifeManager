@@ -30,6 +30,7 @@ class AppPreferences {
     this.customUpdateUrl,
     this.lastUpdateCheck,
     this.lastBackupAt,
+    this.backupReminderDismissedAt,
   });
 
   /// `en` or `si`; null until the user picks one.
@@ -61,6 +62,9 @@ class AppPreferences {
   final DateTime? lastUpdateCheck;
   final DateTime? lastBackupAt;
 
+  /// When the user last tapped "Later" on the home backup reminder.
+  final DateTime? backupReminderDismissedAt;
+
   AppPreferences copyWith({
     String? languageCode,
     ThemeMode? themeMode,
@@ -84,6 +88,7 @@ class AppPreferences {
     bool clearCustomUpdateUrl = false,
     DateTime? lastUpdateCheck,
     DateTime? lastBackupAt,
+    DateTime? backupReminderDismissedAt,
   }) {
     return AppPreferences(
       languageCode: languageCode ?? this.languageCode,
@@ -109,6 +114,8 @@ class AppPreferences {
           : (customUpdateUrl ?? this.customUpdateUrl),
       lastUpdateCheck: lastUpdateCheck ?? this.lastUpdateCheck,
       lastBackupAt: lastBackupAt ?? this.lastBackupAt,
+      backupReminderDismissedAt:
+          backupReminderDismissedAt ?? this.backupReminderDismissedAt,
     );
   }
 }
@@ -140,6 +147,7 @@ class PreferencesStore {
   static const _kUpdateUrl = 'pref.update.customUrl';
   static const _kLastUpdateCheck = 'pref.update.lastCheck';
   static const _kLastBackup = 'pref.backup.last';
+  static const _kBackupReminder = 'pref.backup.reminderDismissed';
 
   AppPreferences load() {
     const d = AppPreferences();
@@ -175,6 +183,7 @@ class PreferencesStore {
       customUpdateUrl: _prefs.getString(_kUpdateUrl),
       lastUpdateCheck: readDate(_kLastUpdateCheck),
       lastBackupAt: readDate(_kLastBackup),
+      backupReminderDismissedAt: readDate(_kBackupReminder),
     );
   }
 
@@ -209,6 +218,10 @@ class PreferencesStore {
       setOrRemove(_kUpdateUrl, p.customUpdateUrl),
       setOrRemove(_kLastUpdateCheck, p.lastUpdateCheck?.toIso8601String()),
       setOrRemove(_kLastBackup, p.lastBackupAt?.toIso8601String()),
+      setOrRemove(
+        _kBackupReminder,
+        p.backupReminderDismissedAt?.toIso8601String(),
+      ),
     ]);
   }
 

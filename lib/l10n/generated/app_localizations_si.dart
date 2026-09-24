@@ -13,9 +13,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get appName => 'DAWASA';
 
   @override
-  String get appTitle => 'DAWASA — දෛනික ජීවිත කළමනාකරු';
-
-  @override
   String get appTagline => 'ඔබේ මුදල්. ඔබේ සැලසුම්. ඔබේ දවස.';
 
   @override
@@ -61,16 +58,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get actionSkip => 'මඟ හරින්න';
 
   @override
-  String get actionClose => 'වසන්න';
-
-  @override
   String get actionConfirm => 'තහවුරු කරන්න';
 
   @override
   String get actionRetry => 'නැවත උත්සාහ කරන්න';
-
-  @override
-  String get actionSearch => 'සොයන්න';
 
   @override
   String get actionFilter => 'පෙරහන';
@@ -83,12 +74,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get actionShare => 'බෙදාගන්න';
-
-  @override
-  String get actionExport => 'අපනයනය';
-
-  @override
-  String get actionChange => 'වෙනස් කරන්න';
 
   @override
   String get actionUndo => 'අහෝසි කරන්න';
@@ -109,21 +94,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get actionSeeAll => 'සියල්ල බලන්න';
 
   @override
-  String get actionShow => 'පෙන්වන්න';
-
-  @override
-  String get actionHide => 'සඟවන්න';
-
-  @override
-  String get actionSelect => 'තෝරන්න';
-
-  @override
-  String get actionAllow => 'ඉඩ දෙන්න';
-
-  @override
-  String get actionNotNow => 'දැන් නොවේ';
-
-  @override
   String get actionOpenSettings => 'සැකසීම් විවෘත කරන්න';
 
   @override
@@ -131,9 +101,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get commonNone => 'කිසිවක් නැත';
-
-  @override
-  String get commonOptional => 'අත්‍යවශ්‍ය නැත';
 
   @override
   String get commonAmount => 'මුදල';
@@ -157,9 +124,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get commonAccount => 'ගිණුම';
 
   @override
-  String get commonName => 'නම';
-
-  @override
   String get commonToday => 'අද';
 
   @override
@@ -167,15 +131,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get commonTomorrow => 'හෙට';
-
-  @override
-  String get commonYes => 'ඔව්';
-
-  @override
-  String get commonNo => 'නැත';
-
-  @override
-  String get commonOk => 'හරි';
 
   @override
   String get commonTotal => 'එකතුව';
@@ -196,34 +151,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get commonDetails => 'විස්තර';
 
   @override
-  String get commonHistory => 'ඉතිහාසය';
-
-  @override
-  String get commonActive => 'සක්‍රිය';
-
-  @override
   String get commonArchived => 'සංරක්ෂිත';
 
   @override
-  String get commonProgress => 'ප්‍රගතිය';
-
-  @override
-  String get commonRemaining => 'ඉතිරි';
-
-  @override
   String get commonOverdue => 'කල් ඉකුත් වී ඇත';
-
-  @override
-  String get commonCompleted => 'සම්පූර්ණයි';
-
-  @override
-  String get commonPending => 'ඉතිරිව ඇත';
-
-  @override
-  String get commonUnknown => 'නොදනී';
-
-  @override
-  String get commonLoading => 'පූරණය වෙමින්…';
 
   @override
   String get commonNotSet => 'සකසා නැත';
@@ -232,54 +163,11 @@ class AppLocalizationsSi extends AppLocalizations {
   String get commonCurrency => 'මුදල් ඒකකය';
 
   @override
-  String get commonReminder => 'සිහිකැඳවීම';
-
-  @override
   String get commonRepeat => 'නැවත නැවත';
 
   @override
   String commonPercentUsed(int percent) {
     return '$percent% භාවිත කර ඇත';
-  }
-
-  @override
-  String commonOfAmount(String amount, String total) {
-    return '$total න් $amount';
-  }
-
-  @override
-  String commonDaysLeft(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'තව දින $countයි',
-      one: 'තව දින 1යි',
-      zero: 'අද නියමිතයි',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String commonDaysOverdue(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'දින $countක් ප්‍රමාදයි',
-      one: 'දින 1ක් ප්‍රමාදයි',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String commonItemsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'අයිතම $countයි',
-      one: 'අයිතම 1යි',
-      zero: 'අයිතම නැත',
-    );
-    return '$_temp0';
   }
 
   @override
@@ -298,9 +186,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get validationTooManyDecimals => 'දශම ස්ථාන වැඩියි';
 
   @override
-  String get validationNameTooLong => 'නම දිග වැඩියි';
-
-  @override
   String get validationNumberInvalid => 'වලංගු අංකයක් ඇතුළත් කරන්න';
 
   @override
@@ -312,9 +197,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get feedbackDeleted => 'මකා දමන ලදී';
-
-  @override
-  String get feedbackError => 'යම් දෝෂයක් සිදු විය. කරුණාකර නැවත උත්සාහ කරන්න.';
 
   @override
   String get feedbackAlreadySaved => 'දැනටමත් සුරකින ලදී';
@@ -654,9 +536,6 @@ class AppLocalizationsSi extends AppLocalizations {
       'තිර රූප ගැනීම අවහිර කර මෑත යෙදුම් දසුනේ DAWASA සඟවයි';
 
   @override
-  String get settingsNotifications => 'දැනුම්දීම්';
-
-  @override
   String get settingsNotificationsEnabled => 'සිහිකැඳවීම්වලට ඉඩ දෙන්න';
 
   @override
@@ -700,9 +579,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get settingsBackup => 'උපස්ථයක් සාදන්න';
-
-  @override
-  String get settingsBackupDesc => 'ඔබේ මුරපදයෙන් ආරක්ෂිත සංකේතිත ගොනුවක්';
 
   @override
   String get settingsRestore => 'උපස්ථයෙන් ප්‍රතිස්ථාපනය';
@@ -752,9 +628,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get settingsUpdateServerReset => 'පෙරනිමි සේවාදායකය භාවිත කරන්න';
 
   @override
-  String get settingsReleaseNotes => 'නිකුතු සටහන්';
-
-  @override
   String get settingsReplayOnboarding => 'පිළිගැනීමේ මාර්ගෝපදේශය නැවත පෙන්වන්න';
 
   @override
@@ -765,9 +638,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get aboutDeveloper => 'සංවර්ධකයා';
-
-  @override
-  String get aboutDeveloperName => 'Sandaru Tharushka';
 
   @override
   String get aboutFree => '100% නොමිලේ';
@@ -863,11 +733,6 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String securityLockedOut(int seconds) {
-    return 'උත්සාහයන් වැඩියි. තත්පර $secondsකින් නැවත උත්සාහ කරන්න.';
-  }
-
-  @override
   String get securityUnlockTitle => 'DAWASA අගුලු දමා ඇත';
 
   @override
@@ -891,9 +756,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get securityDeleteAndReset => 'දත්ත මකා යළි සකසන්න';
-
-  @override
-  String get backupTitle => 'උපස්ථය සහ ප්‍රතිස්ථාපනය';
 
   @override
   String get backupIntro =>
@@ -961,18 +823,10 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String restoreContents(int transactions, int accounts, int tasks) {
-    return 'ගනුදෙනු $transactionsක්, ගිණුම් $accountsක්, කාර්ය $tasksක් අඩංගුයි';
-  }
-
-  @override
   String get restoreAction => 'ප්‍රතිස්ථාපනය කරන්න';
 
   @override
   String get restoreInProgress => 'ප්‍රතිස්ථාපනය කරමින්…';
-
-  @override
-  String get restoreDone => 'ප්‍රතිස්ථාපනය සම්පූර්ණයි. DAWASA නැවත පූරණය වේ.';
 
   @override
   String get restoreErrorWrongPassword =>
@@ -988,10 +842,6 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get restoreErrorNewer =>
       'මෙම උපස්ථය DAWASA හි නව අනුවාදයකින් සාදා ඇත. පළමුව යෙදුම යාවත්කාලීන කරන්න.';
-
-  @override
-  String get restoreSafetyNote =>
-      'ප්‍රතිස්ථාපනයට පෙර ආරක්ෂිත පිටපතක් යෙදුම තුළ සුරකින ලදී.';
 
   @override
   String get deleteAllTitle => 'සියලු පෞද්ගලික දත්ත මකන්නද?';
@@ -1039,9 +889,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get updateInstallCancelled => 'ස්ථාපනය අවලංගු කරන ලදී';
 
   @override
-  String get updateDownloadFailed => 'බාගැනීම අසාර්ථකයි';
-
-  @override
   String get updateInstalling => 'Android ස්ථාපකය විවෘත කරමින්…';
 
   @override
@@ -1051,9 +898,6 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get updateServerUnavailable =>
       'යාවත්කාලීන සේවාදායකයට සම්බන්ධ විය නොහැකි විය. පසුව නැවත උත්සාහ කරන්න.';
-
-  @override
-  String get updateNotConfigured => 'යාවත්කාලීන සේවාදායකයක් සකසා නැත.';
 
   @override
   String get updateInvalidManifest =>
@@ -1192,9 +1036,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get homeShowBalances => 'ශේෂයන් පෙන්වන්න';
 
   @override
-  String get homeQuickActions => 'ඉක්මන් ක්‍රියා';
-
-  @override
   String get quickAddExpense => 'වියදමක් එක් කරන්න';
 
   @override
@@ -1295,9 +1136,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get txReceipt => 'රිසිට්පත් ඡායාරූපය';
 
   @override
-  String get txAddReceipt => 'රිසිට්පත් ඡායාරූපය එක් කරන්න';
-
-  @override
   String get txTakePhoto => 'ඡායාරූපයක් ගන්න';
 
   @override
@@ -1308,9 +1146,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get txSelectAccount => 'ගිණුම තෝරන්න';
-
-  @override
-  String get txSelectCategory => 'වර්ගය තෝරන්න';
 
   @override
   String get txErrorSameAccount => 'වෙනස් ගිණුම් දෙකක් තෝරන්න';
@@ -1331,9 +1166,6 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get txDeleteLinkedWarning =>
       'මෙම ගනුදෙනුව බිල්පතකට, සාප්පු ලැයිස්තුවකට, ඉතිරිකිරීම් ඉලක්කයකට හෝ ණයකට සම්බන්ධයි. සම්බන්ධය ඉවත් කර ශේෂය නැවත ගණනය කෙරේ.';
-
-  @override
-  String get txDuplicated => 'පිටපතක් සාදන ලදී — පරීක්ෂා කර සුරකින්න';
 
   @override
   String get txSearchHint => 'විස්තරය, සටහන හෝ මුදල සොයන්න';
@@ -1376,14 +1208,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'DAWASA එය එක් එක් දිනයේ ස්වයංක්‍රීයව එක් කරයි. ඔබට ඕනෑම එකක් සංස්කරණය හෝ මකා දැමිය හැක.';
 
   @override
-  String get txOpeningBalance => 'ආරම්භක ශේෂය';
-
-  @override
   String get txSplitNote =>
       'මාරු කිරීම්, ණය සහ ප්‍රතිපූරණ ආදායම හෝ වියදම ලෙස ගණන් නොගැනේ.';
-
-  @override
-  String get txMoreTypes => 'තවත් වර්ග';
 
   @override
   String get recurringTitle => 'පුනරාවර්තන ගනුදෙනු';
@@ -1412,17 +1238,6 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get recurringStopBody =>
       'අනාගත ගනුදෙනු තවදුරටත් එක් නොකෙරේ. දැනටමත් සටහන් කළ ගනුදෙනු රඳවා ගැනේ.';
-
-  @override
-  String recurringGenerated(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'පුනරාවර්තන ගනුදෙනු $countක් එක් කරන ලදී',
-      one: 'පුනරාවර්තන ගනුදෙනු 1ක් එක් කරන ලදී',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get catFood => 'ආහාර';
@@ -1624,9 +1439,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tabEvents => 'දින';
 
   @override
-  String get budgetsTitle => 'අයවැය';
-
-  @override
   String get budgetAdd => 'නව අයවැයක්';
 
   @override
@@ -1726,9 +1538,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get budgetPerformance => 'අයවැය කාර්ය සාධනය';
 
   @override
-  String get tasksTitle => 'කාර්යයන්';
-
-  @override
   String get taskAdd => 'නව කාර්යයක්';
 
   @override
@@ -1763,9 +1572,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get taskReminder => 'සිහිකැඳවීම';
-
-  @override
-  String get taskReminderNone => 'සිහිකැඳවීමක් නැත';
 
   @override
   String get taskReminderAtTime => 'නියමිත වේලාවට';
@@ -1826,9 +1632,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get taskOverdue => 'කල් ඉකුත්';
 
   @override
-  String get taskNoDate => 'නියමිත දිනයක් නැත';
-
-  @override
   String get taskEmptyToday =>
       'අදට කිසිවක් සැලසුම් කර නැත. ඔබේ දවස භුක්ති විඳින්න!';
 
@@ -1872,9 +1675,6 @@ class AppLocalizationsSi extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get billsTitle => 'බිල්පත් සහ ගෙවීම්';
 
   @override
   String get billAdd => 'නව බිල්පතක්';
@@ -1946,12 +1746,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get billPaymentAccount => 'සාමාන්‍යයෙන් ගෙවන ගිණුම';
 
   @override
-  String get billPaid => 'ගෙවා ඇත';
-
-  @override
-  String get billUnpaid => 'නොගෙවූ';
-
-  @override
   String get billDueToday => 'අද නියමිතයි';
 
   @override
@@ -2009,9 +1803,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get billCreateNew => 'නව වියදමක් සාදන්න';
 
   @override
-  String get billDontRecord => 'ගෙවූ ලෙස පමණක් සලකුණු කරන්න';
-
-  @override
   String get billPaymentSaved => 'ගෙවීම සටහන් කරන ලදී';
 
   @override
@@ -2048,9 +1839,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get billResume => 'මෙම බිල්පත නැවත ආරම්භ කරන්න';
-
-  @override
-  String get shoppingTitle => 'සාප්පු ලැයිස්තු';
 
   @override
   String get shoppingNewList => 'නව ලැයිස්තුවක්';
@@ -2254,9 +2042,6 @@ class AppLocalizationsSi extends AppLocalizations {
       'ණය වාරිකවලින් වැඩි කොටස ණය මුදල වන අතර එය වියදමක් නොවේ. ඔබ ගෙවිය යුතු මුදල නිවැරදිව අඩු වීමට ණය කොටසේ ආපසු ගෙවීම සටහන් කරන්න.';
 
   @override
-  String get savingsTitle => 'ඉතිරිකිරීම් ඉලක්ක';
-
-  @override
   String get savingsAdd => 'නව ඉලක්කයක්';
 
   @override
@@ -2350,16 +2135,10 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get loansTitle => 'ණය සහ බැඳීම්';
-
-  @override
   String get loanAdd => 'නව ණයක්';
 
   @override
   String get loanEdit => 'ණය සංස්කරණය';
-
-  @override
-  String get loanDirection => 'වර්ගය';
 
   @override
   String get loanLent => 'මම මුදල් ණයට දුන්නා';
@@ -2474,9 +2253,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get loanTotalYouOwe => 'ඔබ ගෙවිය යුතු මුළු මුදල';
 
   @override
-  String get habitsTitle => 'පුරුදු';
-
-  @override
   String get habitAdd => 'නව පුරුද්දක්';
 
   @override
@@ -2518,9 +2294,6 @@ class AppLocalizationsSi extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get habitTarget => 'වාර ගණන';
 
   @override
   String get habitReminder => 'දෛනික සිහිකැඳවීම';
@@ -2589,9 +2362,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get habitDeleteBody => 'පුරුද්ද සහ එහි ඉතිහාසය මකා දමනු ලැබේ.';
 
   @override
-  String get eventsTitle => 'වැදගත් දින';
-
-  @override
   String get eventAdd => 'නව දිනයක්';
 
   @override
@@ -2602,9 +2372,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get eventTitleHint => 'උදා: අම්මාගේ උපන්දිනය';
-
-  @override
-  String get eventType => 'වර්ගය';
 
   @override
   String get eventBirthday => 'උපන්දිනය';
@@ -2626,9 +2393,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get eventRemind => 'මට මතක් කරන්න';
-
-  @override
-  String get eventNoReminder => 'සිහිකැඳවීමක් නැත';
 
   @override
   String get eventBudget => 'මෙම අවස්ථාව සඳහා අයවැය (අත්‍යවශ්‍ය නැත)';
@@ -2786,17 +2550,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get exportIncludeAccounts => 'ගිණුම් නම් ඇතුළත් කරන්න';
-
-  @override
-  String exportRows(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ගනුදෙනු $count',
-      one: 'ගනුදෙනු 1',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get exportDone => 'CSV ගොනුව සූදානම්';
@@ -3051,4 +2804,17 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get updatePrivacyNote =>
       'යාවත්කාලීන පරීක්ෂා කිරීමේදී යාවත්කාලීන සේවාදායකයෙන් කුඩා විස්තර ගොනුවක් පමණක් බාගත කෙරේ. කිසිදු පෞද්ගලික හෝ මූල්‍ය තොරතුරක් යවනු නොලැබේ.';
+
+  @override
+  String get backupReminderTitle => 'ඔබේ වාර්තාවල උපස්ථයක් තබා ගන්න';
+
+  @override
+  String get backupReminderOldTitle => 'ඔබේ අවසන් උපස්ථයට මාසයකට වඩා පැරණියි';
+
+  @override
+  String get backupReminderBody =>
+      'ඔබේ දත්ත ගබඩා වී ඇත්තේ මෙම දුරකථනයේ පමණි. දුරකථනය නැති වුවහොත් හෝ යළි සැකසුවහොත්, ඒවා නැවත ලබා ගත හැක්කේ උපස්ථ ගොනුවකින් පමණි.';
+
+  @override
+  String get backupReminderLater => 'පසුව';
 }

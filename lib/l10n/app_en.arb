@@ -1,7 +1,6 @@
 {
   "@@locale": "en",
   "appName": "DAWASA",
-  "appTitle": "DAWASA — Daily Life Manager",
   "appTagline": "Your Money. Your Plans. Your Day.",
   "navHome": "Home",
   "navMoney": "Money",
@@ -17,31 +16,21 @@
   "actionNext": "Next",
   "actionBack": "Back",
   "actionSkip": "Skip",
-  "actionClose": "Close",
   "actionConfirm": "Confirm",
   "actionRetry": "Try again",
-  "actionSearch": "Search",
   "actionFilter": "Filter",
   "actionClear": "Clear",
   "actionDuplicate": "Duplicate",
   "actionShare": "Share",
-  "actionExport": "Export",
-  "actionChange": "Change",
   "actionUndo": "Undo",
   "actionArchive": "Archive",
   "actionUnarchive": "Restore from archive",
   "actionGetStarted": "Get started",
   "actionContinue": "Continue",
   "actionSeeAll": "See all",
-  "actionShow": "Show",
-  "actionHide": "Hide",
-  "actionSelect": "Select",
-  "actionAllow": "Allow",
-  "actionNotNow": "Not now",
   "actionOpenSettings": "Open settings",
   "commonAll": "All",
   "commonNone": "None",
-  "commonOptional": "Optional",
   "commonAmount": "Amount",
   "commonDate": "Date",
   "commonTime": "Time",
@@ -49,32 +38,19 @@
   "commonDescription": "Description",
   "commonCategory": "Category",
   "commonAccount": "Account",
-  "commonName": "Name",
   "commonToday": "Today",
   "commonYesterday": "Yesterday",
   "commonTomorrow": "Tomorrow",
-  "commonYes": "Yes",
-  "commonNo": "No",
-  "commonOk": "OK",
   "commonTotal": "Total",
   "commonStartDate": "Start date",
   "commonEndDate": "End date",
   "commonNoDate": "No date",
   "commonNoTime": "No time",
   "commonDetails": "Details",
-  "commonHistory": "History",
-  "commonActive": "Active",
   "commonArchived": "Archived",
-  "commonProgress": "Progress",
-  "commonRemaining": "Remaining",
   "commonOverdue": "Overdue",
-  "commonCompleted": "Completed",
-  "commonPending": "Pending",
-  "commonUnknown": "Unknown",
-  "commonLoading": "Loading…",
   "commonNotSet": "Not set",
   "commonCurrency": "Currency",
-  "commonReminder": "Reminder",
   "commonRepeat": "Repeat",
   "commonPercentUsed": "{percent}% used",
   "@commonPercentUsed": {
@@ -84,52 +60,15 @@
       }
     }
   },
-  "commonOfAmount": "{amount} of {total}",
-  "@commonOfAmount": {
-    "placeholders": {
-      "amount": {
-        "type": "String"
-      },
-      "total": {
-        "type": "String"
-      }
-    }
-  },
-  "commonDaysLeft": "{count, plural, =0{Due today} =1{1 day left} other{{count} days left}}",
-  "@commonDaysLeft": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "commonDaysOverdue": "{count, plural, =1{1 day overdue} other{{count} days overdue}}",
-  "@commonDaysOverdue": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "commonItemsCount": "{count, plural, =0{No items} =1{1 item} other{{count} items}}",
-  "@commonItemsCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "validationRequired": "This field is required",
   "validationAmountInvalid": "Enter a valid amount",
   "validationAmountPositive": "Amount must be greater than zero",
   "validationAmountTooLarge": "Amount is too large",
   "validationTooManyDecimals": "Too many decimal places",
-  "validationNameTooLong": "Name is too long",
   "validationNumberInvalid": "Enter a valid number",
   "validationEndBeforeStart": "End date cannot be before start date",
   "feedbackSaved": "Saved",
   "feedbackDeleted": "Deleted",
-  "feedbackError": "Something went wrong. Please try again.",
   "feedbackAlreadySaved": "Already saved",
   "confirmDeleteTitle": "Delete?",
   "confirmDeleteMessage": "This cannot be undone.",
@@ -286,7 +225,6 @@
   "settingsPrivacyModeDesc": "Useful when you open DAWASA in public",
   "settingsScreenProtection": "Protect screen contents",
   "settingsScreenProtectionDesc": "Blocks screenshots and hides DAWASA in the recent apps view",
-  "settingsNotifications": "Notifications",
   "settingsNotificationsEnabled": "Allow reminders",
   "settingsNotifyTasks": "Task reminders",
   "settingsNotifyBills": "Bill reminders",
@@ -301,7 +239,6 @@
   "settingsNotificationsBlocked": "Notifications are turned off for DAWASA in Android settings.",
   "settingsBatteryNote": "Some phones delay reminders to save battery. If reminders arrive late, allow DAWASA to run without battery restrictions.",
   "settingsBackup": "Create backup",
-  "settingsBackupDesc": "Encrypted file protected with your password",
   "settingsRestore": "Restore from backup",
   "settingsExportCsv": "Export transactions (CSV)",
   "settingsDeleteAll": "Delete all personal data",
@@ -316,12 +253,10 @@
   "settingsUpdateServerHint": "HTTPS address of the DAWASA update folder",
   "settingsUpdateServerInvalid": "Enter a valid https:// address",
   "settingsUpdateServerReset": "Use default server",
-  "settingsReleaseNotes": "Release notes",
   "settingsReplayOnboarding": "Show welcome guide again",
   "settingsLicenses": "Open-source licenses",
   "settingsPrivacyPolicy": "Privacy",
   "aboutDeveloper": "Developer",
-  "aboutDeveloperName": "Sandaru Tharushka",
   "aboutFree": "100% Free",
   "aboutNoAds": "No Ads",
   "aboutNoSubscription": "No Subscription",
@@ -370,14 +305,6 @@
       }
     }
   },
-  "securityLockedOut": "Too many attempts. Try again in {seconds} seconds.",
-  "@securityLockedOut": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
   "securityUnlockTitle": "DAWASA is locked",
   "securityUseBiometric": "Use fingerprint / face",
   "securityBiometricReason": "Unlock DAWASA",
@@ -386,7 +313,6 @@
   "securityForgotPin": "Forgot PIN?",
   "securityForgotPinBody": "For your privacy the PIN cannot be recovered. You can erase all data on this phone and restore from a backup file.",
   "securityDeleteAndReset": "Erase data and reset",
-  "backupTitle": "Backup & restore",
   "backupIntro": "A backup is a single encrypted file with all your records and receipt photos. Keep it somewhere safe, such as Google Drive, a computer or a memory card.",
   "backupPassword": "Backup password",
   "backupPasswordConfirm": "Confirm password",
@@ -423,28 +349,12 @@
       }
     }
   },
-  "restoreContents": "Contains {transactions} transactions, {accounts} accounts, {tasks} tasks",
-  "@restoreContents": {
-    "placeholders": {
-      "transactions": {
-        "type": "int"
-      },
-      "accounts": {
-        "type": "int"
-      },
-      "tasks": {
-        "type": "int"
-      }
-    }
-  },
   "restoreAction": "Replace and restore",
   "restoreInProgress": "Restoring…",
-  "restoreDone": "Restore complete. DAWASA will reload.",
   "restoreErrorWrongPassword": "Wrong password, or the file was changed or damaged.",
   "restoreErrorNotBackup": "This is not a DAWASA backup file.",
   "restoreErrorCorrupted": "The backup file is damaged and cannot be restored.",
   "restoreErrorNewer": "This backup was made by a newer version of DAWASA. Update the app first.",
-  "restoreSafetyNote": "Safety copy saved in the app before restoring.",
   "deleteAllTitle": "Delete all personal data?",
   "deleteAllBody": "Every account, transaction, task, bill, receipt photo and setting will be erased from this phone. This cannot be undone. Type DELETE to confirm.",
   "deleteAllConfirmWord": "DELETE",
@@ -472,11 +382,9 @@
   "updateVerifying": "Verifying download…",
   "updateReady": "Ready to install",
   "updateInstallCancelled": "Installation cancelled",
-  "updateDownloadFailed": "Download failed",
   "updateInstalling": "Opening Android installer…",
   "updateOffline": "No internet connection. Everything else in DAWASA keeps working offline.",
   "updateServerUnavailable": "The update server could not be reached. Try again later.",
-  "updateNotConfigured": "No update server is configured.",
   "updateInvalidManifest": "The update information from the server is invalid.",
   "updateChecksumMismatch": "The downloaded file failed the security check and was deleted.",
   "updatePackageMismatch": "The downloaded file is not a valid DAWASA update and was deleted.",
@@ -539,7 +447,6 @@
   "homeNoTransactions": "No transactions yet. Tap + to add your first expense or income.",
   "homeHideBalances": "Hide balances",
   "homeShowBalances": "Show balances",
-  "homeQuickActions": "Quick actions",
   "quickAddExpense": "Add expense",
   "quickAddIncome": "Add income",
   "quickAddTask": "Add task",
@@ -579,19 +486,16 @@
   "txDescriptionHint": "What was it for?",
   "txNoteHint": "Extra details (optional)",
   "txReceipt": "Receipt photo",
-  "txAddReceipt": "Add receipt photo",
   "txTakePhoto": "Take photo",
   "txChooseFromGallery": "Choose from gallery",
   "txRemoveReceipt": "Remove photo",
   "txSelectAccount": "Select account",
-  "txSelectCategory": "Select category",
   "txErrorSameAccount": "Choose two different accounts",
   "txErrorCurrencyMismatch": "Both accounts must use the same currency",
   "txErrorNoAccount": "Create an account first",
   "txErrorCategoryRequired": "Choose a category",
   "txDeleteTitle": "Delete this transaction?",
   "txDeleteLinkedWarning": "This transaction is linked to a bill, shopping list, savings goal or loan. The link will be removed, and the balance will be recalculated.",
-  "txDuplicated": "Copy created — check and save",
   "txSearchHint": "Search description, note or amount",
   "txNoResults": "No matching transactions",
   "txEmpty": "No transactions yet",
@@ -605,9 +509,7 @@
   "txSourceLoan": "Loan",
   "txRepeatSection": "Make this a recurring transaction",
   "txRepeatHelp": "DAWASA will add it automatically on each date. You can edit or delete any of them.",
-  "txOpeningBalance": "Opening balance",
   "txSplitNote": "Transfers, loans and reimbursements are not counted as income or spending.",
-  "txMoreTypes": "More types",
   "recurringTitle": "Recurring transactions",
   "recurringEmpty": "No recurring transactions. Turn on \"Repeat\" when adding an expense or income.",
   "recurringNext": "Next: {date}",
@@ -623,14 +525,6 @@
   "recurringResume": "Resume",
   "recurringStop": "Stop repeating",
   "recurringStopBody": "Future transactions will no longer be added. Transactions already recorded are kept.",
-  "recurringGenerated": "{count, plural, =1{1 recurring transaction added} other{{count} recurring transactions added}}",
-  "@recurringGenerated": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "catFood": "Food",
   "catTransport": "Transport",
   "catShopping": "Shopping",
@@ -708,7 +602,6 @@
   "tabShopping": "Shopping",
   "tabHabits": "Habits",
   "tabEvents": "Dates",
-  "budgetsTitle": "Budgets",
   "budgetAdd": "New budget",
   "budgetEdit": "Edit budget",
   "budgetName": "Budget name",
@@ -771,7 +664,6 @@
   "budgetDeleteBody": "Your transactions are not affected.",
   "budgetChooseCategories": "Choose at least one category",
   "budgetPerformance": "Budget performance",
-  "tasksTitle": "Tasks",
   "taskAdd": "New task",
   "taskEdit": "Edit task",
   "taskTitle": "Title",
@@ -784,7 +676,6 @@
   "taskPriorityMedium": "Medium",
   "taskPriorityHigh": "High",
   "taskReminder": "Reminder",
-  "taskReminderNone": "No reminder",
   "taskReminderAtTime": "At the due time",
   "taskReminderMinutes": "{count, plural, =1{1 minute before} other{{count} minutes before}}",
   "@taskReminderMinutes": {
@@ -817,7 +708,6 @@
   "taskViewCompleted": "Completed",
   "taskViewAll": "All",
   "taskOverdue": "Overdue",
-  "taskNoDate": "No due date",
   "taskEmptyToday": "Nothing planned for today. Enjoy your day!",
   "taskEmpty": "No tasks here",
   "taskCompleted": "Task completed",
@@ -843,7 +733,6 @@
       }
     }
   },
-  "billsTitle": "Bills & payments",
   "billAdd": "New bill",
   "billEdit": "Edit bill",
   "billName": "Bill name",
@@ -871,8 +760,6 @@
     }
   },
   "billPaymentAccount": "Usually paid from",
-  "billPaid": "Paid",
-  "billUnpaid": "Unpaid",
   "billDueToday": "Due today",
   "billDueIn": "{count, plural, =1{Due tomorrow} other{Due in {count} days}}",
   "@billDueIn": {
@@ -900,7 +787,6 @@
   "billPossibleDuplicateBody": "Link that expense to this bill instead of creating a duplicate?",
   "billLinkExisting": "Link existing expense",
   "billCreateNew": "Create a new expense",
-  "billDontRecord": "Just mark as paid",
   "billPaymentSaved": "Payment recorded",
   "billAlreadyPaid": "This due date is already marked as paid",
   "billHistory": "Payment history",
@@ -913,7 +799,6 @@
   "billInactive": "Finished",
   "billStop": "Stop this bill",
   "billResume": "Resume this bill",
-  "shoppingTitle": "Shopping lists",
   "shoppingNewList": "New list",
   "shoppingListName": "List name",
   "shoppingListNameHint": "e.g. Weekly groceries",
@@ -1068,7 +953,6 @@
     }
   },
   "billLoanNote": "Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.",
-  "savingsTitle": "Savings goals",
   "savingsAdd": "New goal",
   "savingsEdit": "Edit goal",
   "savingsName": "Goal name",
@@ -1127,10 +1011,8 @@
       }
     }
   },
-  "loansTitle": "Loans & debts",
   "loanAdd": "New loan",
   "loanEdit": "Edit loan",
-  "loanDirection": "Type",
   "loanLent": "I lent money",
   "loanBorrowed": "I borrowed money",
   "loanOwedToYou": "Owed to you",
@@ -1195,7 +1077,6 @@
   },
   "loanTotalOwedToYou": "Total owed to you",
   "loanTotalYouOwe": "Total you owe",
-  "habitsTitle": "Habits",
   "habitAdd": "New habit",
   "habitEdit": "Edit habit",
   "habitName": "Habit",
@@ -1219,7 +1100,6 @@
       }
     }
   },
-  "habitTarget": "Times",
   "habitReminder": "Daily reminder",
   "habitStreak": "{count, plural, =0{No streak yet} =1{1 day streak} other{{count} day streak}}",
   "@habitStreak": {
@@ -1281,12 +1161,10 @@
   },
   "habitNotifBody": "Keep your streak going!",
   "habitDeleteBody": "The habit and its history will be deleted.",
-  "eventsTitle": "Important dates",
   "eventAdd": "New date",
   "eventEdit": "Edit date",
   "eventTitle": "Title",
   "eventTitleHint": "e.g. Amma's birthday",
-  "eventType": "Type",
   "eventBirthday": "Birthday",
   "eventAnniversary": "Anniversary",
   "eventAppointment": "Appointment",
@@ -1294,7 +1172,6 @@
   "eventOther": "Other",
   "eventDate": "Date",
   "eventRemind": "Remind me",
-  "eventNoReminder": "No reminder",
   "eventBudget": "Budget for this event (optional)",
   "eventBudgetHelp": "A plan only — it does not change your balances.",
   "eventEmpty": "Never forget a birthday, anniversary or exam again.",
@@ -1383,14 +1260,6 @@
   "exportTitle": "Export transactions",
   "exportIncludeNotes": "Include descriptions and notes",
   "exportIncludeAccounts": "Include account names",
-  "exportRows": "{count, plural, =1{1 transaction} other{{count} transactions}}",
-  "@exportRows": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "exportDone": "CSV file ready",
   "exportNothing": "No transactions to export in this period",
   "exportPrivacyNote": "A CSV file is not encrypted. Anyone who gets the file can read it.",
@@ -1511,5 +1380,9 @@
       }
     }
   },
-  "updatePrivacyNote": "Checking for updates only downloads a small description file from the update server. No personal or financial information is sent."
+  "updatePrivacyNote": "Checking for updates only downloads a small description file from the update server. No personal or financial information is sent.",
+  "backupReminderTitle": "Keep a backup of your records",
+  "backupReminderOldTitle": "Your last backup is more than a month old",
+  "backupReminderBody": "Your data is stored only on this phone. If the phone is lost or reset, a backup file is the only way to get it back.",
+  "backupReminderLater": "Later"
 }

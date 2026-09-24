@@ -13,9 +13,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appName => 'DAWASA';
 
   @override
-  String get appTitle => 'DAWASA — Daily Life Manager';
-
-  @override
   String get appTagline => 'Your Money. Your Plans. Your Day.';
 
   @override
@@ -61,16 +58,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get actionSkip => 'Skip';
 
   @override
-  String get actionClose => 'Close';
-
-  @override
   String get actionConfirm => 'Confirm';
 
   @override
   String get actionRetry => 'Try again';
-
-  @override
-  String get actionSearch => 'Search';
 
   @override
   String get actionFilter => 'Filter';
@@ -83,12 +74,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get actionShare => 'Share';
-
-  @override
-  String get actionExport => 'Export';
-
-  @override
-  String get actionChange => 'Change';
 
   @override
   String get actionUndo => 'Undo';
@@ -109,21 +94,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get actionSeeAll => 'See all';
 
   @override
-  String get actionShow => 'Show';
-
-  @override
-  String get actionHide => 'Hide';
-
-  @override
-  String get actionSelect => 'Select';
-
-  @override
-  String get actionAllow => 'Allow';
-
-  @override
-  String get actionNotNow => 'Not now';
-
-  @override
   String get actionOpenSettings => 'Open settings';
 
   @override
@@ -131,9 +101,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get commonNone => 'None';
-
-  @override
-  String get commonOptional => 'Optional';
 
   @override
   String get commonAmount => 'Amount';
@@ -157,9 +124,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get commonAccount => 'Account';
 
   @override
-  String get commonName => 'Name';
-
-  @override
   String get commonToday => 'Today';
 
   @override
@@ -167,15 +131,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get commonTomorrow => 'Tomorrow';
-
-  @override
-  String get commonYes => 'Yes';
-
-  @override
-  String get commonNo => 'No';
-
-  @override
-  String get commonOk => 'OK';
 
   @override
   String get commonTotal => 'Total';
@@ -196,34 +151,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get commonDetails => 'Details';
 
   @override
-  String get commonHistory => 'History';
-
-  @override
-  String get commonActive => 'Active';
-
-  @override
   String get commonArchived => 'Archived';
 
   @override
-  String get commonProgress => 'Progress';
-
-  @override
-  String get commonRemaining => 'Remaining';
-
-  @override
   String get commonOverdue => 'Overdue';
-
-  @override
-  String get commonCompleted => 'Completed';
-
-  @override
-  String get commonPending => 'Pending';
-
-  @override
-  String get commonUnknown => 'Unknown';
-
-  @override
-  String get commonLoading => 'Loading…';
 
   @override
   String get commonNotSet => 'Not set';
@@ -232,54 +163,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get commonCurrency => 'Currency';
 
   @override
-  String get commonReminder => 'Reminder';
-
-  @override
   String get commonRepeat => 'Repeat';
 
   @override
   String commonPercentUsed(int percent) {
     return '$percent% used';
-  }
-
-  @override
-  String commonOfAmount(String amount, String total) {
-    return '$amount of $total';
-  }
-
-  @override
-  String commonDaysLeft(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count days left',
-      one: '1 day left',
-      zero: 'Due today',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String commonDaysOverdue(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count days overdue',
-      one: '1 day overdue',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String commonItemsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count items',
-      one: '1 item',
-      zero: 'No items',
-    );
-    return '$_temp0';
   }
 
   @override
@@ -298,9 +186,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get validationTooManyDecimals => 'Too many decimal places';
 
   @override
-  String get validationNameTooLong => 'Name is too long';
-
-  @override
   String get validationNumberInvalid => 'Enter a valid number';
 
   @override
@@ -311,9 +196,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get feedbackDeleted => 'Deleted';
-
-  @override
-  String get feedbackError => 'Something went wrong. Please try again.';
 
   @override
   String get feedbackAlreadySaved => 'Already saved';
@@ -652,9 +534,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Blocks screenshots and hides DAWASA in the recent apps view';
 
   @override
-  String get settingsNotifications => 'Notifications';
-
-  @override
   String get settingsNotificationsEnabled => 'Allow reminders';
 
   @override
@@ -698,10 +577,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsBackup => 'Create backup';
-
-  @override
-  String get settingsBackupDesc =>
-      'Encrypted file protected with your password';
 
   @override
   String get settingsRestore => 'Restore from backup';
@@ -749,9 +624,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsUpdateServerReset => 'Use default server';
 
   @override
-  String get settingsReleaseNotes => 'Release notes';
-
-  @override
   String get settingsReplayOnboarding => 'Show welcome guide again';
 
   @override
@@ -762,9 +634,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aboutDeveloper => 'Developer';
-
-  @override
-  String get aboutDeveloperName => 'Sandaru Tharushka';
 
   @override
   String get aboutFree => '100% Free';
@@ -860,11 +729,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String securityLockedOut(int seconds) {
-    return 'Too many attempts. Try again in $seconds seconds.';
-  }
-
-  @override
   String get securityUnlockTitle => 'DAWASA is locked';
 
   @override
@@ -888,9 +752,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get securityDeleteAndReset => 'Erase data and reset';
-
-  @override
-  String get backupTitle => 'Backup & restore';
 
   @override
   String get backupIntro =>
@@ -957,18 +818,10 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String restoreContents(int transactions, int accounts, int tasks) {
-    return 'Contains $transactions transactions, $accounts accounts, $tasks tasks';
-  }
-
-  @override
   String get restoreAction => 'Replace and restore';
 
   @override
   String get restoreInProgress => 'Restoring…';
-
-  @override
-  String get restoreDone => 'Restore complete. DAWASA will reload.';
 
   @override
   String get restoreErrorWrongPassword =>
@@ -984,10 +837,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get restoreErrorNewer =>
       'This backup was made by a newer version of DAWASA. Update the app first.';
-
-  @override
-  String get restoreSafetyNote =>
-      'Safety copy saved in the app before restoring.';
 
   @override
   String get deleteAllTitle => 'Delete all personal data?';
@@ -1035,9 +884,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get updateInstallCancelled => 'Installation cancelled';
 
   @override
-  String get updateDownloadFailed => 'Download failed';
-
-  @override
   String get updateInstalling => 'Opening Android installer…';
 
   @override
@@ -1047,9 +893,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get updateServerUnavailable =>
       'The update server could not be reached. Try again later.';
-
-  @override
-  String get updateNotConfigured => 'No update server is configured.';
 
   @override
   String get updateInvalidManifest =>
@@ -1188,9 +1031,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeShowBalances => 'Show balances';
 
   @override
-  String get homeQuickActions => 'Quick actions';
-
-  @override
   String get quickAddExpense => 'Add expense';
 
   @override
@@ -1291,9 +1131,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get txReceipt => 'Receipt photo';
 
   @override
-  String get txAddReceipt => 'Add receipt photo';
-
-  @override
   String get txTakePhoto => 'Take photo';
 
   @override
@@ -1304,9 +1141,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get txSelectAccount => 'Select account';
-
-  @override
-  String get txSelectCategory => 'Select category';
 
   @override
   String get txErrorSameAccount => 'Choose two different accounts';
@@ -1327,9 +1161,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get txDeleteLinkedWarning =>
       'This transaction is linked to a bill, shopping list, savings goal or loan. The link will be removed, and the balance will be recalculated.';
-
-  @override
-  String get txDuplicated => 'Copy created — check and save';
 
   @override
   String get txSearchHint => 'Search description, note or amount';
@@ -1372,14 +1203,8 @@ class AppLocalizationsEn extends AppLocalizations {
       'DAWASA will add it automatically on each date. You can edit or delete any of them.';
 
   @override
-  String get txOpeningBalance => 'Opening balance';
-
-  @override
   String get txSplitNote =>
       'Transfers, loans and reimbursements are not counted as income or spending.';
-
-  @override
-  String get txMoreTypes => 'More types';
 
   @override
   String get recurringTitle => 'Recurring transactions';
@@ -1408,17 +1233,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get recurringStopBody =>
       'Future transactions will no longer be added. Transactions already recorded are kept.';
-
-  @override
-  String recurringGenerated(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count recurring transactions added',
-      one: '1 recurring transaction added',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get catFood => 'Food';
@@ -1621,9 +1435,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tabEvents => 'Dates';
 
   @override
-  String get budgetsTitle => 'Budgets';
-
-  @override
   String get budgetAdd => 'New budget';
 
   @override
@@ -1724,9 +1535,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get budgetPerformance => 'Budget performance';
 
   @override
-  String get tasksTitle => 'Tasks';
-
-  @override
   String get taskAdd => 'New task';
 
   @override
@@ -1761,9 +1569,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get taskReminder => 'Reminder';
-
-  @override
-  String get taskReminderNone => 'No reminder';
 
   @override
   String get taskReminderAtTime => 'At the due time';
@@ -1823,9 +1628,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get taskOverdue => 'Overdue';
 
   @override
-  String get taskNoDate => 'No due date';
-
-  @override
   String get taskEmptyToday => 'Nothing planned for today. Enjoy your day!';
 
   @override
@@ -1868,9 +1670,6 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get billsTitle => 'Bills & payments';
 
   @override
   String get billAdd => 'New bill';
@@ -1942,12 +1741,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get billPaymentAccount => 'Usually paid from';
 
   @override
-  String get billPaid => 'Paid';
-
-  @override
-  String get billUnpaid => 'Unpaid';
-
-  @override
   String get billDueToday => 'Due today';
 
   @override
@@ -2005,9 +1798,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get billCreateNew => 'Create a new expense';
 
   @override
-  String get billDontRecord => 'Just mark as paid';
-
-  @override
   String get billPaymentSaved => 'Payment recorded';
 
   @override
@@ -2044,9 +1834,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get billResume => 'Resume this bill';
-
-  @override
-  String get shoppingTitle => 'Shopping lists';
 
   @override
   String get shoppingNewList => 'New list';
@@ -2251,9 +2038,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Loan instalments are mostly principal, which is not spending. Record the repayment in Loans so what you owe goes down correctly.';
 
   @override
-  String get savingsTitle => 'Savings goals';
-
-  @override
   String get savingsAdd => 'New goal';
 
   @override
@@ -2347,16 +2131,10 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get loansTitle => 'Loans & debts';
-
-  @override
   String get loanAdd => 'New loan';
 
   @override
   String get loanEdit => 'Edit loan';
-
-  @override
-  String get loanDirection => 'Type';
 
   @override
   String get loanLent => 'I lent money';
@@ -2471,9 +2249,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get loanTotalYouOwe => 'Total you owe';
 
   @override
-  String get habitsTitle => 'Habits';
-
-  @override
   String get habitAdd => 'New habit';
 
   @override
@@ -2515,9 +2290,6 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get habitTarget => 'Times';
 
   @override
   String get habitReminder => 'Daily reminder';
@@ -2586,9 +2358,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get habitDeleteBody => 'The habit and its history will be deleted.';
 
   @override
-  String get eventsTitle => 'Important dates';
-
-  @override
   String get eventAdd => 'New date';
 
   @override
@@ -2599,9 +2368,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventTitleHint => 'e.g. Amma\'s birthday';
-
-  @override
-  String get eventType => 'Type';
 
   @override
   String get eventBirthday => 'Birthday';
@@ -2623,9 +2389,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventRemind => 'Remind me';
-
-  @override
-  String get eventNoReminder => 'No reminder';
 
   @override
   String get eventBudget => 'Budget for this event (optional)';
@@ -2784,17 +2547,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get exportIncludeAccounts => 'Include account names';
-
-  @override
-  String exportRows(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count transactions',
-      one: '1 transaction',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get exportDone => 'CSV file ready';
@@ -3048,4 +2800,18 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get updatePrivacyNote =>
       'Checking for updates only downloads a small description file from the update server. No personal or financial information is sent.';
+
+  @override
+  String get backupReminderTitle => 'Keep a backup of your records';
+
+  @override
+  String get backupReminderOldTitle =>
+      'Your last backup is more than a month old';
+
+  @override
+  String get backupReminderBody =>
+      'Your data is stored only on this phone. If the phone is lost or reset, a backup file is the only way to get it back.';
+
+  @override
+  String get backupReminderLater => 'Later';
 }
